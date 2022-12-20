@@ -296,6 +296,9 @@ a:link, a:visited, a:hover, a:focus, a:active {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+		background-image: url("banner.png");
+		background-repeat: no-repeat;
+		background-position: right;
     }
 }
 
