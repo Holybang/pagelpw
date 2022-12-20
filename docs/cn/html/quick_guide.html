@@ -1,0 +1,225 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: 快速上手</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
+   <!--<div id="projectname">LPW-->
+   <!--</div>-->
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief"><a href="../../cn/html/index.html">中文</a> / <a href="../../en/html/index.html">English</a></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">快速上手 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t01_quick_guide"></a> <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+压缩包安装</h1>
+<ol type="1">
+<li>解压 lpw_sdk_x.x.x.x.zip 文件到任意目录。</li>
+<li><em>[可选]</em> 如果未安装 Visual C++ Redistributable Package 14 或以上版本，需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以从我们提供的<a href="http://fileserver.hzleaper.com:8086/f/9c787cde6b8b475e97fc/">下载链接</a>下载。</li>
+<li>使用压缩包安装需手动注册 LPW 模块。</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md5"></a>
+手动注册</h3>
+<ol type="1">
+<li>右键 LPW 根目录下的 <b>reg_run_as_admin.bat</b> 文件，选择以管理员运行，在所有平台(x64和x86)下注册所有授权的 LPW 模块。</li>
+<li>双击运行 LPW 根目录下的 <b>check_lpv_module_path.bat</b> 文件，可查看已注册的 LPW 模块路径。</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md6"></a>
+安装包安装</h1>
+<p>下载 lpw_x.x.x.x_installer.exe 安装包。按照安装包步骤选择合适的文件夹安装 LPW 模块。安装包将自动执行解压 LPW 各模块、安装运行时库、注册 LPW 模块等动作。</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+授权</h1>
+<h3><a class="anchor" id="autotoc_md8"></a>
+试用版：使用 License 文件进行授权</h3>
+<ol type="1">
+<li>运行 LPW 运行目录下的 <b>lpvKeyTool.exe</b> ，生成 <b>lpv.key</b> 文件。</li>
+<li>将生成的 lpv.key 文件放给我们或者您的 LPW SDK 技术支持，我们将为您的机器进行授权，并发回 <b>lpv.lic</b> 文件。</li>
+<li>您可按照以下任一方式部署授权文件：</li>
+</ol>
+<ul>
+<li>将 lpv.lic 文件放在安装后的运行根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
+<li>将 lpv.lic 文件放在用户目录下 (AppData%/LPV)，保证名称与 “lpv.lic” 完全一致。</li>
+<li>打开任意一个 demo 程序，弹出未授权提示，选择是并上传 lpv.lic 文件，我们将自动复制该文件到可授权的目录。</li>
+</ul>
+<p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，请联系我们或者您的 LPW SDK 技术支持。</em></p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+正式版：使用圣天诺加密狗进行授权</h3>
+<ol type="1">
+<li>插入 LPW 加密狗，检查加密狗是否亮灯并常亮。</li>
+<li>打开任意一个 demo 程序，检测授权是否正常。</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md10"></a>
+正式版：使用深思加密狗进行授权</h3>
+<ol type="1">
+<li>下载并安装深思驱动，可从 <a href="https://lm.virbox.com/tools.html">官网</a> 或我们提供的 <a href="http://fileserver.hzleaper.com:8086/f/210d89dee4674fb98469/">链接</a> 下载。</li>
+<li>插入 LPW 加密狗，检查加密狗是否亮灯并常亮。</li>
+<li>打开任意一个 demo 程序，检测授权是否正常。</li>
+</ol>
+<p><br  />
+ </p><hr  />
+<h1><a class="anchor" id="autotoc_md11"></a>
+集成和调用</h1>
+<h2><a class="anchor" id="autotoc_md12"></a>
+添加库到 Visual Studio 工程</h2>
+ <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
+<li>右键工程的 Reference 项，点击 Add Reference</li>
+<li>选择 COM 页面，找到 LPVCoreLib（必须）、LPVGeomLib（必须）及其他希望加入的 LPVXXXLib 算法库，勾选后点击 OK 。</li>
+<li>在代码文件中添加 <code>using LPVXXXLib;</code> ，以使用 LPW 中的算法类： <div class="fragment"><div class="line"><span class="comment">// 添加using</span></div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a>;</div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_pat_lib.html">LPVPatLib</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 添加算法类声明并实例化</span></div>
+<div class="line">LMatch m_lmatch = <span class="keyword">new</span> LMatch();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 调用接口函数，如下，设置模板匹配数量，设置角度范围</span></div>
+<div class="line">m_lmatch.MaxCount = 1;</div>
+<div class="line">m_lmatch.AngleTolerance = 180;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 调用接口，处理返回错误码，如下，进行模板匹配</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) {}</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、region、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:106</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV 几何库，提供几何形状相关的数据定义、计算和测量功能。</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:50</div></div>
+<div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV 模板匹配模块，用于提供模板匹配功能。</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:50</div></div>
+</div><!-- fragment --></li>
+</ol>
+ </div>  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>我们推荐使用基于 <a href="https://docs.microsoft.com/zh-cn/cpp/cpp/compiler-com-support"><b>编译器 COM 支持</b></a> 的方式，将 LPW 模块编译转换为 C++ 头文件并调用。</p><ol type="1">
+<li>在程序开始处调用 <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex">CoInitializeEx</a>，结束处调用 <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize">CoUnitialize</a>。如果你希望在子线程中创建和保管 LPW 实例，那么就需要在线程开始和结束时也调用这两个函数。需要在使用 LPW 模块前调用初始化。<br  />
+以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中，如： <div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 你需要根据应用程序的实际情况选择 COINIT_MULTITHREADED 或 COINIT_APARTMENTTHREADED</span></div>
+<div class="line">    <span class="comment">// 如，MFC 使用 COINIT_APARTMENTTHREADED，其余情况可使用 COINIT_MULTITHREADED</span></div>
+<div class="line">    <span class="comment">// 如果你并不确定，请仔细阅读文档 https://docs.microsoft.com/zh-cn/windows/win32/learnwin32/initializing-the-com-library</span></div>
+<div class="line">    CoInitializeEx(NULL, COINIT_APARTMENTTHREADED);</div>
+<div class="line">    <span class="comment">// etc.</span></div>
+<div class="line">    CWinApp::InitInstance();</div>
+<div class="line">}</div>
+<div class="line">INT CMFCApp::ExitInstance()</div>
+<div class="line">{</div>
+<div class="line">    CoUninitialize();</div>
+<div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
+<li>使用 <a href="https://docs.microsoft.com/zh-cn/cpp/preprocessor/hash-import-directive-cpp">#import 指令</a> 导入 LPW 类型库，包括 LPVCoreLib（必须）、LPVGeomLib（必须）及其他希望加入的 LPVXXXLib 算法库。<br  />
+以 LPVCore 模块为例，在代码中添加以下导入命令： <div class="fragment"><div class="line"><span class="comment">// 使用 demo/include 文件夹中我们为各个模块准备的 #import 用的头文件</span></div>
+<div class="line"><span class="comment">// 需先拷贝 demo/include 文件夹到工程目录，或添加该目录到工程配置中</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
+</div><!-- fragment --> 或者 <div class="fragment"><div class="line"><span class="comment">// 使用模块文件所在的路径</span></div>
+<div class="line"><span class="preprocessor">#import &quot;Y:\\runner\\x86\\lpvCore.dll&quot;</span></div>
+</div><!-- fragment --> 或者 <div class="fragment"><div class="line"><span class="comment">// 使用模块中某个类的 progid</span></div>
+<div class="line"><span class="preprocessor">#import &quot;progid:LPV.LImage&quot;</span></div>
+</div><!-- fragment --> 或者 <div class="fragment"><div class="line"><span class="comment">// 使用模块的 uuid，可在 OLE/COM Object Viewer 中查到</span></div>
+<div class="line"><span class="preprocessor">#import &quot;libid:c34b3e9e-6dea-4aa9-b500-0266f90dc15f&quot;</span></div>
+</div><!-- fragment --></li>
+<li>创建类及其对应的接口，以 LImage 为例： <div class="fragment"><div class="line"><span class="comment">// 导入库</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVGeom.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVPat.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 添加算法接口声明，并生成对应的实例</span></div>
+<div class="line"><span class="comment">// 以下定义了一个 ILMatch 接口的指针，指向一个 LMatch 对象</span></div>
+<div class="line">ILMatchPtr m_lmatch(__uuidof(LMatch));</div>
+<div class="line"><span class="comment">// 或者也可以手动调用 CreateInstance，如下：</span></div>
+<div class="line"><span class="comment">// ILMatchPtr m_lmatch;</span></div>
+<div class="line"><span class="comment">// 进行一些其他操作，如其他成员变量的初始化，随后再生成实例</span></div>
+<div class="line"><span class="comment">// ...</span></div>
+<div class="line"><span class="comment">// m_lmatch.CreateInstance(__uuidof(LMatch));</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 调用属性接口，如下，设置模板匹配数量，设置角度范围</span></div>
+<div class="line">m_lmatch-&gt;MaxCount = 1;</div>
+<div class="line">m_lmatch-&gt;AngleTolerance = 180;</div>
+<div class="line">    </div>
+<div class="line"><span class="comment">// 调用接口，处理返回错误码，如下，进行模板匹配</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch-&gt;Match(m_source_img, m_roi, &amp;m_match_results);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != LPVErrorCode::LPVNoError) {</div>
+<div class="line">    <span class="comment">// handle error</span></div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
+</ol>
+<p>另外对于 QT 程序，也可使用 <b>Active Qt 框架</b> 生成 LPW 类的 QAxObject 形式的封装，请参照 QT 的<a href="https://doc.qt.io/qt-5/activeqt-container.html">官方教程</a>。</p>
+ </div>  </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
+</body>
+</html>

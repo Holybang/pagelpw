@@ -1,0 +1,240 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: LPWWaferMapLib 模块参考手册</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
+   <!--<div id="projectname">LPW-->
+   <!--</div>-->
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief"><a href="../../cn/html/index.html">中文</a> / <a href="../../en/html/index.html">English</a></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle">
+<div class="title">LPWWaferMapLib 模块参考手册</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>LPW Wafer Map 模块，提供晶圆图的生成、排序、显示、读写功能等  
+<a href="namespace_l_p_w_wafer_map_lib.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_die.html">ILDie</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应单个 DIE，可获取其具体属性。  <a href="interface_l_p_w_wafer_map_lib_1_1_i_l_die.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_props.html">ILWaferProps</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应单个晶圆，用于保存和获取其设备信息。  <a href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_props.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_sorter.html">ILWaferSorter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供晶圆图排序的功能，用于生成实时或最终排序后的晶圆图。  <a href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_sorter.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html">ILWaferMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应单个晶圆图，用于提供晶圆图生成、存储、读取、显示绘制，以及 DIE 访问和数量统计等功能。  <a href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_w_wafer_map_lib_1_1_l_die.html">LDie</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_w_wafer_map_lib_1_1_l_wafer_props.html">LWaferProps</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_w_wafer_map_lib_1_1_l_wafer_sorter.html">LWaferSorter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_w_wafer_map_lib_1_1_l_wafer_map.html">LWaferMap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ad0dbc42e0c54aaf28b2c5f9a2fc83079"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079">LPWBinQuality</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079a69d1526ddf3c5034ecd75976b6995f68">LPWBinNull</a> = 0
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079aff9d4f58f6f4a55ff7b8bc0fc1cf83a8">LPWBinRef</a> = 1
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079ab50e682bd9a622b76ab41e391d4b3398">LPWBinMirror</a> = 2
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079a410870008b072e401ec7ca12a077389d">LPWBinUgly</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079ab6986eb0fa181a2ca1f9170f0abee40e">LPWBinEdge</a> = 4
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079aefc64537aedc1a7ddaf8f9db8718bc38">LPWBinFail</a> = 5
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079ae5d60a789f4d3337df142a6cfe2e2079">LPWBinPass</a> = 6
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079ae1fa00a81177c24d4d8c5d794256988a">LPWBinFirst</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079a66f822a7ee8b3082ce867fdbdd8e4164">LPWBinSkip</a> = 8
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079a1e0d961236622d24346d8e3b3d612a9d">LPWBinUnknown</a> = 9
+<br />
+ }</td></tr>
+<tr class="memdesc:ad0dbc42e0c54aaf28b2c5f9a2fc83079"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示 Bin 类型，用于标记 Wafer 上的 Die  <a href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079">更多...</a><br /></td></tr>
+<tr class="separator:ad0dbc42e0c54aaf28b2c5f9a2fc83079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3dc5b70c7c0233f5a69edfe67cfa939"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939">LPWWaferMapDrawFlags</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939a1d9aa6a04444b97c94b65be29029bafd">LPWWaferMapDrawWafer</a> = 0x01
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939aea320508917a5f7ab2b01542ccaf265a">LPWWaferMapDrawBin</a> = 0x02
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939ae0ad5e919e91f3a3bbbc9fb2f31657b0">LPWWaferMapDrawStreet</a> = 0x04
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939a3e546ac834d337abe02fdde3b76cacf0">LPWWaferMapDrawSelected</a> = 0x08
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939a1846f58b2ca1ca8d10ebbeaa7eb74a81">LPWWaferMapDrawData</a> = 0x10
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939ab154de9beb9b7f710bb9b83a6ed21c45">LPWWaferMapDrawDataHeatMap</a> = 0x20
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939a3d98944feae0cc09fcabf40b6e8f160e">LPWWaferMapDrawDefault</a> = LPWWaferMapDrawBin + LPWWaferMapDrawStreet + LPWWaferMapDrawSelected
+, <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939abeaa2f10c2c4bd037c477eb944c52965">LPWWaferMapDrawAll</a> = 0xff
+<br />
+ }</td></tr>
+<tr class="memdesc:ae3dc5b70c7c0233f5a69edfe67cfa939"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于控制晶圆图绘制的行为  <a href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939">更多...</a><br /></td></tr>
+<tr class="separator:ae3dc5b70c7c0233f5a69edfe67cfa939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>LPW Wafer Map 模块，提供晶圆图的生成、排序、显示、读写功能等 </p>
+<p>使用该模块中的类和算法，需按照以下方式引用该模块：</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPWWaferMap.h&quot;</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_w_wafer_map_lib.html">LPWWaferMapLib</a>;</div>
+<div class="ttc" id="anamespace_l_p_w_wafer_map_lib_html"><div class="ttname"><a href="namespace_l_p_w_wafer_map_lib.html">LPWWaferMapLib</a></div><div class="ttdoc">LPW Wafer Map 模块，提供晶圆图的生成、排序、显示、读写功能等</div><div class="ttdef"><b>Definition:</b> LPWWaferMap.idl:51</div></div>
+</div><!-- fragment --> </div> <p><b>MFC Demo:</b> MFCWaferMap, MFCWaferEditor <br  />
+<b>C# Demo:</b> </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0dbc42e0c54aaf28b2c5f9a2fc83079">&#9670;&nbsp;</a></span>LPWBinQuality</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079">LPWBinQuality</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于表示 Bin 类型，用于标记 Wafer 上的 Die </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079a69d1526ddf3c5034ecd75976b6995f68"></a>LPWBinNull&#160;</td><td class="fielddoc"><p>空位 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079aff9d4f58f6f4a55ff7b8bc0fc1cf83a8"></a>LPWBinRef&#160;</td><td class="fielddoc"><p>用于对位的参考 DIE，以对齐晶圆，通常比较容易与普通芯片进行区分。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079ab50e682bd9a622b76ab41e391d4b3398"></a>LPWBinMirror&#160;</td><td class="fielddoc"><p>具有高反射性的镜面 DIE，设备能够从整个晶圆视图中比较容易地找到镜面 DIE。镜面 DIE 通常与参考 DIE 相邻放置。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079a410870008b072e401ec7ca12a077389d"></a>LPWBinUgly&#160;</td><td class="fielddoc"><p>几何形状完整但质量差或没有图案的 DIE，通常在处理过程中被损坏或位于已被截断的区域。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079ab6986eb0fa181a2ca1f9170f0abee40e"></a>LPWBinEdge&#160;</td><td class="fielddoc"><p>沿着晶圆周边的几何不完整的 DIE，由于边缘附近的处理不一致而被拒绝。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079aefc64537aedc1a7ddaf8f9db8718bc38"></a>LPWBinFail&#160;</td><td class="fielddoc"><p>在测试/探测时失败的 DIE，将不会被挑选以进行进一步处理 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079ae5d60a789f4d3337df142a6cfe2e2079"></a>LPWBinPass&#160;</td><td class="fielddoc"><p>在测试/探测/检测中通过的 DIE，将被挑选以进行进一步处理 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079ae1fa00a81177c24d4d8c5d794256988a"></a>LPWBinFirst&#160;</td><td class="fielddoc"><p>最先探测的 DIE </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079a66f822a7ee8b3082ce867fdbdd8e4164"></a>LPWBinSkip&#160;</td><td class="fielddoc"><p>在探测时跳过的 DIE（在探测区域内），有时也被指定为 NULL。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0dbc42e0c54aaf28b2c5f9a2fc83079a1e0d961236622d24346d8e3b3d612a9d"></a>LPWBinUnknown&#160;</td><td class="fielddoc"><p>未检测的 DIE </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae3dc5b70c7c0233f5a69edfe67cfa939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3dc5b70c7c0233f5a69edfe67cfa939">&#9670;&nbsp;</a></span>LPWWaferMapDrawFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939">LPWWaferMapDrawFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于控制晶圆图绘制的行为 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939a1d9aa6a04444b97c94b65be29029bafd"></a>LPWWaferMapDrawWafer&#160;</td><td class="fielddoc"><p>绘制晶圆 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939aea320508917a5f7ab2b01542ccaf265a"></a>LPWWaferMapDrawBin&#160;</td><td class="fielddoc"><p>绘制 BIN，使用指定的颜色 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939ae0ad5e919e91f3a3bbbc9fb2f31657b0"></a>LPWWaferMapDrawStreet&#160;</td><td class="fielddoc"><p>绘制 Street </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939a3e546ac834d337abe02fdde3b76cacf0"></a>LPWWaferMapDrawSelected&#160;</td><td class="fielddoc"><p>绘制当前选中的 DIE </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939a1846f58b2ca1ca8d10ebbeaa7eb74a81"></a>LPWWaferMapDrawData&#160;</td><td class="fielddoc"><p>绘制数据数值 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939ab154de9beb9b7f710bb9b83a6ed21c45"></a>LPWWaferMapDrawDataHeatMap&#160;</td><td class="fielddoc"><p>绘制数据热力图。感兴趣数据区间的下限及以下为蓝色，然后过渡到绿色，最后感兴趣数据区间的上限及以上为红色。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939a3d98944feae0cc09fcabf40b6e8f160e"></a>LPWWaferMapDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制 Bin、Street 和当前选中的 DIE </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3dc5b70c7c0233f5a69edfe67cfa939abeaa2f10c2c4bd037c477eb944c52965"></a>LPWWaferMapDrawAll&#160;</td><td class="fielddoc"><p>绘制所有部分 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
+</body>
+</html>

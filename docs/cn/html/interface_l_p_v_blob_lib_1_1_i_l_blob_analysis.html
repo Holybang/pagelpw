@@ -1,0 +1,1369 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: ILBlobAnalysis接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
+   <!--<div id="projectname">LPW-->
+   <!--</div>-->
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief"><a href="../../cn/html/index.html">中文</a> / <a href="../../en/html/index.html">English</a></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_l_p_v_blob_lib.html">LPVBlobLib</a></li><li class="navelem"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html">ILBlobAnalysis</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">ILBlobAnalysis接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该接口提供斑点分析的功能。  
+ <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#details">更多...</a></p>
+<div class="dynheader">
+类 ILBlobAnalysis 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.png" usemap="#ILBlobAnalysis_map" alt=""/>
+  <map id="ILBlobAnalysis_map" name="ILBlobAnalysis_map">
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="0,56,95,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a28b3e77770d7ddfde96e70dcd61847fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange</a> (int grayLB, int grayUB)</td></tr>
+<tr class="separator:a28b3e77770d7ddfde96e70dcd61847fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4811a357b537de588da10da3da12b363"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4811a357b537de588da10da3da12b363">CountBlobRange</a> ()</td></tr>
+<tr class="separator:a4811a357b537de588da10da3da12b363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87eeb51e78c40e4e536b692f9682d52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac87eeb51e78c40e4e536b692f9682d52">ItemBlobRange</a> (int index, int *grayLB, int *grayUB)</td></tr>
+<tr class="separator:ac87eeb51e78c40e4e536b692f9682d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a35add2a0ebed6e897047987e530ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a25a35add2a0ebed6e897047987e530ee">ResetBlobRange</a> ()</td></tr>
+<tr class="separator:a25a35add2a0ebed6e897047987e530ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3dcb6d76d5d979ad8b4e7a150a8e428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange</a> (int grayLB, int grayUB)</td></tr>
+<tr class="separator:ab3dcb6d76d5d979ad8b4e7a150a8e428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8415215e56da834aefe0053397adb6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af8415215e56da834aefe0053397adb6d">CountBackgroundRange</a> ()</td></tr>
+<tr class="separator:af8415215e56da834aefe0053397adb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d2286606822bcb7569a72756468b0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a84d2286606822bcb7569a72756468b0e">ItemBackgroundRange</a> (int index, int *grayLB, int *grayUB)</td></tr>
+<tr class="separator:a84d2286606822bcb7569a72756468b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f37cb8c0678f3479d7c8ccfa40c1ae7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a1f37cb8c0678f3479d7c8ccfa40c1ae7">ResetBackgroundRange</a> ()</td></tr>
+<tr class="separator:a1f37cb8c0678f3479d7c8ccfa40c1ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9267b751bc487e2c17f1025a46c8d46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a9267b751bc487e2c17f1025a46c8d46b">SelectRangeAuto</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, int x, int y, double zoomX, double zoomY, double panX, double panY, int tolerance, int *grayLB, int *grayUB, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *rangeMask)</td></tr>
+<tr class="separator:a9267b751bc487e2c17f1025a46c8d46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity)</td></tr>
+<tr class="separator:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
+<tr class="separator:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef671f7367adaf9fd523e108b1202523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aef671f7367adaf9fd523e108b1202523">SetSoftThresholdRange</a> (int softRange)</td></tr>
+<tr class="separator:aef671f7367adaf9fd523e108b1202523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc583ffbdc7101ddf7147f95bd7b5e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#abc583ffbdc7101ddf7147f95bd7b5e8d">AddBlobFilter</a> (<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a> *filter)</td></tr>
+<tr class="separator:abc583ffbdc7101ddf7147f95bd7b5e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cbc650cb0b35e55b803c08b0b2f365e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2cbc650cb0b35e55b803c08b0b2f365e">CountBlobFilter</a> ()</td></tr>
+<tr class="separator:a2cbc650cb0b35e55b803c08b0b2f365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f887c547d4dfa8476d16cd06980ba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab7f887c547d4dfa8476d16cd06980ba4">ItemBlobFilter</a> (int index)</td></tr>
+<tr class="separator:ab7f887c547d4dfa8476d16cd06980ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f1e028b5180c68b2b14fc91e036e82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa2f1e028b5180c68b2b14fc91e036e82">ResetBlobFilter</a> ()</td></tr>
+<tr class="separator:aa2f1e028b5180c68b2b14fc91e036e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa422a523020216c502e3c17a35118e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a3fa422a523020216c502e3c17a35118e">Build</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **results)</td></tr>
+<tr class="separator:a3fa422a523020216c502e3c17a35118e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a96cd3e656608ae2fd27d2773ee9b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a29a96cd3e656608ae2fd27d2773ee9b7">Preview</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *outputImg)</td></tr>
+<tr class="separator:a29a96cd3e656608ae2fd27d2773ee9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c4c4c30996f4c872b2cd6645e15d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> colorLB, struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> colorUB)</td></tr>
+<tr class="separator:aa7c4c4c30996f4c872b2cd6645e15d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af801147ac700a508d57a54c75e59baf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af801147ac700a508d57a54c75e59baf7">CountBlobRangeColor</a> ()</td></tr>
+<tr class="separator:af801147ac700a508d57a54c75e59baf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab7b3b532dbaecb42972c0383edbd30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a5ab7b3b532dbaecb42972c0383edbd30">ItemBlobRangeColor</a> (int index, <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *colorLB, struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *colorUB)</td></tr>
+<tr class="separator:a5ab7b3b532dbaecb42972c0383edbd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637443908dbedaf9ad472951a89ffc35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a637443908dbedaf9ad472951a89ffc35">ResetBlobRangeColor</a> ()</td></tr>
+<tr class="separator:a637443908dbedaf9ad472951a89ffc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70381d428edc2af7ca1ddd352d21115c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a70381d428edc2af7ca1ddd352d21115c">AddBackgroundRangeColor</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> colorLB, struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> colorUB)</td></tr>
+<tr class="separator:a70381d428edc2af7ca1ddd352d21115c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8adf82b569f27bb5229c2182462b0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aca8adf82b569f27bb5229c2182462b0e">CountBackgroundRangeColor</a> ()</td></tr>
+<tr class="separator:aca8adf82b569f27bb5229c2182462b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446136cd14d0c9064cfac738c2eeeb72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a446136cd14d0c9064cfac738c2eeeb72">ItemBackgroundRangeColor</a> (int index, <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *colorLB, struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *colorUB)</td></tr>
+<tr class="separator:a446136cd14d0c9064cfac738c2eeeb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1db37b8a8b5f01632670e744089cea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab1db37b8a8b5f01632670e744089cea3">ResetBackgroundRangeColor</a> ()</td></tr>
+<tr class="separator:ab1db37b8a8b5f01632670e744089cea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b28fcc0ce2b451bc446ff25079c043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a00b28fcc0ce2b451bc446ff25079c043">SelectRangeAutoColor</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, int x, int y, double zoomX, double zoomY, double panX, double panY, int tolerance, <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *colorLB, struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *colorUB, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *rangeMask)</td></tr>
+<tr class="separator:a00b28fcc0ce2b451bc446ff25079c043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf9b00d47787a935a044ce74d0df887 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
+<tr class="separator:aedf9b00d47787a935a044ce74d0df887 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a77f715bc781e4a18ea0c14a21e0d8b53"><td class="memItemLeft" align="right" valign="top"><a id="a77f715bc781e4a18ea0c14a21e0d8b53"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a77f715bc781e4a18ea0c14a21e0d8b53">FillHole</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a77f715bc781e4a18ea0c14a21e0d8b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否填充斑点内部孔洞，该配置将影响检出斑点的面积、重心等几何属性的计算。默认配置为关闭。 <br /></td></tr>
+<tr class="separator:a77f715bc781e4a18ea0c14a21e0d8b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0af46e25eefcb153ca18c7f1d13a491"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">LPVBlobContourType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ad0af46e25eefcb153ca18c7f1d13a491">ContourType</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ad0af46e25eefcb153ca18c7f1d13a491"><td class="mdescLeft">&#160;</td><td class="mdescRight">斑点外轮廓的类型，查看 LPVBlobContourType  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ad0af46e25eefcb153ca18c7f1d13a491">更多...</a><br /></td></tr>
+<tr class="separator:ad0af46e25eefcb153ca18c7f1d13a491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759c03e2b252669aee63d2e178835685"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a759c03e2b252669aee63d2e178835685">Hierarchy</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a759c03e2b252669aee63d2e178835685"><td class="mdescLeft">&#160;</td><td class="mdescRight">斑点外轮廓的层级，从 0 开始。负值表示所有层级。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a759c03e2b252669aee63d2e178835685">更多...</a><br /></td></tr>
+<tr class="separator:a759c03e2b252669aee63d2e178835685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5">更多...</a><br /></td></tr>
+<tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a770cb473e4565576f64d52faf7147"><td class="memItemLeft" align="right" valign="top"><a id="a53a770cb473e4565576f64d52faf7147"></a>
+<a class="el" href="namespace_l_p_v_core_lib.html#a94e1c7f9477f3336e89b598280ef0ebe">LPVExcludeBoundaryMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a53a770cb473e4565576f64d52faf7147">ExcludeBoundaryMode</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a53a770cb473e4565576f64d52faf7147"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义如何处理斑点超出图像或检测区域边界的情况（剔除整个斑点，剔除边界像素，或忽略），查看 LPVExcludeBoundaryMode. <br /></td></tr>
+<tr class="separator:a53a770cb473e4565576f64d52faf7147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848fb8adacf95a0394b3656bb53233b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">SortBy</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a848fb8adacf95a0394b3656bb53233b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">更多...</a><br /></td></tr>
+<tr class="separator:a848fb8adacf95a0394b3656bb53233b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bbdb0a7c27819253704905dfd3d871"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">SortByDescending</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">与 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。">SortBy</a> 一同起效。True 表示降序排序候选斑点（数值从大到小排序），False 表示升序。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">更多...</a><br /></td></tr>
+<tr class="separator:a26bbdb0a7c27819253704905dfd3d871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578080e61d50698076077b040524ba0b"><td class="memItemLeft" align="right" valign="top"><a id="a578080e61d50698076077b040524ba0b"></a>
+<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a578080e61d50698076077b040524ba0b">ColorMode</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a578080e61d50698076077b040524ba0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置斑点分析的模式，处理灰度或彩色斑点 <br /></td></tr>
+<tr class="separator:a578080e61d50698076077b040524ba0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156c414aad3afe8be70b8192a41afd1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c">ThresholdType</a><code> [get]</code></td></tr>
+<tr class="memdesc:a156c414aad3afe8be70b8192a41afd1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">分割斑点时所使用的阈值类型  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c">更多...</a><br /></td></tr>
+<tr class="separator:a156c414aad3afe8be70b8192a41afd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522729648745589adc38a155835514f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a522729648745589adc38a155835514f4">AdaptBlobPolarity</a><code> [get]</code></td></tr>
+<tr class="memdesc:a522729648745589adc38a155835514f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">局部或全局自适应阈值用于分割时所使用的斑点极性  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a522729648745589adc38a155835514f4">更多...</a><br /></td></tr>
+<tr class="separator:a522729648745589adc38a155835514f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cff8ca122008799c6417cd212772899"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a5cff8ca122008799c6417cd212772899">LocalBlockSize</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5cff8ca122008799c6417cd212772899"><td class="mdescLeft">&#160;</td><td class="mdescRight">局部阈值所使用的局部区域尺寸  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a5cff8ca122008799c6417cd212772899">更多...</a><br /></td></tr>
+<tr class="separator:a5cff8ca122008799c6417cd212772899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99d514297e576fa945c8ad5adc774b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab99d514297e576fa945c8ad5adc774b9">LocalBias</a><code> [get]</code></td></tr>
+<tr class="memdesc:ab99d514297e576fa945c8ad5adc774b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">局部自适应阈值的修正值  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab99d514297e576fa945c8ad5adc774b9">更多...</a><br /></td></tr>
+<tr class="separator:ab99d514297e576fa945c8ad5adc774b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该接口提供斑点分析的功能。 </p>
+<p>斑点分析是机器视觉系统中常见的前景目标分割方法，用于从背景中提取灰度值近似的连通域生成斑点对象。 再计算斑点对象的属性特征，典型的几何特征如面积、轮廓周长、圆度等，图像特征如平均亮度、对比度等， 可用于定位、测量、缺陷检测等大多数典型视觉应用场景。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_analysis.html">LBlobAnalysis</a> 对象。</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBlobAnalysisPtr m_blob_ana(__uuidof(LBlobAnalysis));</div>
+<div class="line">m_blob_ana-&gt;AddBlobRange(50, 100);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_blob_ana-&gt;Build(m_img, m_roi, &amp;m_blob_result);</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlobAnalysis m_blob_ana = <span class="keyword">new</span> LBlobAnalysis();</div>
+<div class="line">m_blob_ana.AddBlobRange(50, 100);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_blob_ana.Build(m_img, (LRegion)m_roi, out m_blob_result);</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a28b3e77770d7ddfde96e70dcd61847fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b3e77770d7ddfde96e70dcd61847fb">&#9670;&nbsp;</a></span>AddBlobRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddBlobRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grayLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grayUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>添加斑点对象的灰度值范围。若像素的灰度值在该范围内，将被视为前景像素，参与生成斑点连通域。<br  />
+这表示该斑点分析工具为灰度模式，在此之前设置的彩色斑点颜色范围将被清空。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>灰度值范围的下限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>灰度值范围的上限，取值在 0 ~ 255 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a9267b751bc487e2c17f1025a46c8d46b">SelectRangeAuto()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4811a357b537de588da10da3da12b363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4811a357b537de588da10da3da12b363">&#9670;&nbsp;</a></span>CountBlobRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CountBlobRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取斑点对象灰度值范围设置的总数 </p>
+
+</div>
+</div>
+<a id="ac87eeb51e78c40e4e536b692f9682d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87eeb51e78c40e4e536b692f9682d52">&#9670;&nbsp;</a></span>ItemBlobRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ItemBlobRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定索引对应的斑点对象灰度值范围设置 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>返回灰度值范围的下限 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>返回灰度值范围的上限 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25a35add2a0ebed6e897047987e530ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a35add2a0ebed6e897047987e530ee">&#9670;&nbsp;</a></span>ResetBlobRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResetBlobRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>重置斑点对象灰度值范围设置，清空所有设置 </p>
+
+</div>
+</div>
+<a id="ab3dcb6d76d5d979ad8b4e7a150a8e428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3dcb6d76d5d979ad8b4e7a150a8e428">&#9670;&nbsp;</a></span>AddBackgroundRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddBackgroundRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grayLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grayUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>添加背景的灰度值范围。若像素的灰度值在该范围内，将被视为背景，其他像素则为前景。<br  />
+这表示该斑点分析工具为灰度模式，在此之前设置的彩色斑点颜色范围将被清空。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>灰度值范围的下限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>灰度值范围的上限，取值在 0 ~ 255 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a70381d428edc2af7ca1ddd352d21115c">AddBackgroundRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a9267b751bc487e2c17f1025a46c8d46b">SelectRangeAuto()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="af8415215e56da834aefe0053397adb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8415215e56da834aefe0053397adb6d">&#9670;&nbsp;</a></span>CountBackgroundRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CountBackgroundRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取背景灰度值范围设置的总数 </p>
+
+</div>
+</div>
+<a id="a84d2286606822bcb7569a72756468b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d2286606822bcb7569a72756468b0e">&#9670;&nbsp;</a></span>ItemBackgroundRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ItemBackgroundRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定索引对应的背景灰度值范围设置 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>返回灰度值范围的下限 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>返回灰度值范围的上限 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f37cb8c0678f3479d7c8ccfa40c1ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f37cb8c0678f3479d7c8ccfa40c1ae7">&#9670;&nbsp;</a></span>ResetBackgroundRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResetBackgroundRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>重置背景灰度值范围设置，清空所有设置 </p>
+
+</div>
+</div>
+<a id="a9267b751bc487e2c17f1025a46c8d46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9267b751bc487e2c17f1025a46c8d46b">&#9670;&nbsp;</a></span>SelectRangeAuto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SelectRangeAuto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>panX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>panY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayUB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>rangeMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于输入的图像和给定的像素坐标，自动生成一个灰度值范围，可用于添加为前景或背景范围。通常在灰度模式下调用。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>返回生成的灰度值范围的下限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>返回生成的灰度值范围的上限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd>
+<dd>
+<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a00b28fcc0ce2b451bc446ff25079c043">SelectRangeAutoColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ac3e8a634acc3131a25ef9c8cf9de9610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e8a634acc3131a25ef9c8cf9de9610">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptGlobal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRangeThresholdAdaptGlobal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>blobPolarity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>使用全局自适应阈值用于分割。自动基于整幅图像上的像素灰度值分布计算一个合适的阈值。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a17a890d2df11a4c0e6bdfeec02d58e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a890d2df11a4c0e6bdfeec02d58e1e">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRangeThresholdAdaptLocal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>blobPolarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>使用局部自适应阈值用于分割。自动基于每个像素所在的 \( blockSize \times blockSize \) 范围内的像素灰度值分布 为每个位置计算一个合适的阈值，再减去 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>基于该位置的局部自适应阈值计算，用于生成阈值 \( t&#39; = t - bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>）， \( t&#39; = t + bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>）. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef671f7367adaf9fd523e108b1202523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef671f7367adaf9fd523e108b1202523">&#9670;&nbsp;</a></span>SetSoftThresholdRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetSoftThresholdRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>softRange</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置软阈值范围。默认值为 0，表示不开启软阈值功能。<br  />
+用于提高斑点定位的鲁棒性和精度。<br  />
+比如，若斑点的灰度值范围为 [100, 200]，软阈值范围为 5，则 [0, 95] 和 [205, 255] 为背景范围，[105, 195] 为前景斑点范围， [96, 104] 的范围按照 0.1 ~ 0.9 的权重属于前景斑点的范围，[196, 204] 的范围按照 0.9 ~ 0.1 的权重属于前景斑点的范围。 软阈值配置后，斑点分析得到斑点对象将使用软蒙版表示前景，软蒙版中的前景像素基于其权重值影响斑点的几何和图像属性计算，如重心等。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">softRange</td><td>软阈值范围，生成 [t - softRange, t + softRange] 范围。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc583ffbdc7101ddf7147f95bd7b5e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc583ffbdc7101ddf7147f95bd7b5e8d">&#9670;&nbsp;</a></span>AddBlobFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddBlobFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a> *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>新增一个可选的斑点过滤器，斑点结果需满足过滤器中的至少其中一个。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>新增的斑点过滤器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2cbc650cb0b35e55b803c08b0b2f365e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cbc650cb0b35e55b803c08b0b2f365e">&#9670;&nbsp;</a></span>CountBlobFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CountBlobFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取斑点过滤器的总数 </p>
+
+</div>
+</div>
+<a id="ab7f887c547d4dfa8476d16cd06980ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f887c547d4dfa8476d16cd06980ba4">&#9670;&nbsp;</a></span>ItemBlobFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a>* ItemBlobFilter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>重置斑点过滤器，清空所有设置 </p>
+
+</div>
+</div>
+<a id="aa2f1e028b5180c68b2b14fc91e036e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f1e028b5180c68b2b14fc91e036e82">&#9670;&nbsp;</a></span>ResetBlobFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResetBlobFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>清除所有斑点过滤器 </p>
+
+</div>
+</div>
+<a id="a3fa422a523020216c502e3c17a35118e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa422a523020216c502e3c17a35118e">&#9670;&nbsp;</a></span>Build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Build </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **&#160;</td>
+          <td class="paramname"><em>results</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在输入的图像和指定的区域中进行斑点分析 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像。图像类型需与当前斑点分析工具的模式匹配，即灰度斑点输入的图像需为灰度图。 若不匹配，我们将在算法内部基于当前模式，自动对图像进行转换。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>返回斑点分析结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29a96cd3e656608ae2fd27d2773ee9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a96cd3e656608ae2fd27d2773ee9b7">&#9670;&nbsp;</a></span>Preview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Preview </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>outputImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>预览输入图像在当前斑点分析配置下的二值化蒙版 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像。图像类型需与当前斑点分析工具的模式匹配，即灰度斑点输入的图像需为灰度图。 若不匹配，我们将在算法内部基于当前模式，自动对图像进行转换。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回预览蒙版图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7c4c4c30996f4c872b2cd6645e15d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c4c4c30996f4c872b2cd6645e15d55">&#9670;&nbsp;</a></span>AddBlobRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddBlobRangeColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>colorLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>colorUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>添加斑点对象的彩色值范围。若像素的彩色值在该范围内，将被视为前景像素，参与生成斑点连通域。<br  />
+这表示该斑点分析工具为彩色模式，在此之前设置的灰度斑点颜色范围将被清空。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorLB</td><td>彩色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorUB</td><td>彩色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a70381d428edc2af7ca1ddd352d21115c">AddBackgroundRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a00b28fcc0ce2b451bc446ff25079c043">SelectRangeAutoColor()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="af801147ac700a508d57a54c75e59baf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af801147ac700a508d57a54c75e59baf7">&#9670;&nbsp;</a></span>CountBlobRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CountBlobRangeColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取斑点对象彩色值范围设置的总数 </p>
+
+</div>
+</div>
+<a id="a5ab7b3b532dbaecb42972c0383edbd30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab7b3b532dbaecb42972c0383edbd30">&#9670;&nbsp;</a></span>ItemBlobRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ItemBlobRangeColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *&#160;</td>
+          <td class="paramname"><em>colorLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *&#160;</td>
+          <td class="paramname"><em>colorUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定索引对应的斑点对象彩色值范围设置 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>返回彩色值范围的下限 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>返回彩色值范围的上限 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a637443908dbedaf9ad472951a89ffc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637443908dbedaf9ad472951a89ffc35">&#9670;&nbsp;</a></span>ResetBlobRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResetBlobRangeColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>重置斑点对象彩色值范围设置，清空所有设置 </p>
+
+</div>
+</div>
+<a id="a70381d428edc2af7ca1ddd352d21115c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70381d428edc2af7ca1ddd352d21115c">&#9670;&nbsp;</a></span>AddBackgroundRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddBackgroundRangeColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>colorLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>colorUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>添加背景的彩色值范围。若像素的彩色值在该范围内，将被视为背景，其他像素则为前景。<br  />
+</p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorLB</td><td>彩色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorUB</td><td>彩色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a00b28fcc0ce2b451bc446ff25079c043">SelectRangeAutoColor()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aca8adf82b569f27bb5229c2182462b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8adf82b569f27bb5229c2182462b0e">&#9670;&nbsp;</a></span>CountBackgroundRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CountBackgroundRangeColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取背景的彩色值范围设置的总数 </p>
+
+</div>
+</div>
+<a id="a446136cd14d0c9064cfac738c2eeeb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446136cd14d0c9064cfac738c2eeeb72">&#9670;&nbsp;</a></span>ItemBackgroundRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ItemBackgroundRangeColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *&#160;</td>
+          <td class="paramname"><em>colorLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *&#160;</td>
+          <td class="paramname"><em>colorUB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定索引对应的背景彩色值范围设置 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>返回彩色值范围的下限 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>返回彩色值范围的上限 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1db37b8a8b5f01632670e744089cea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1db37b8a8b5f01632670e744089cea3">&#9670;&nbsp;</a></span>ResetBackgroundRangeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResetBackgroundRangeColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>重置背景彩色值范围设置，清空所有设置 </p>
+
+</div>
+</div>
+<a id="a00b28fcc0ce2b451bc446ff25079c043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b28fcc0ce2b451bc446ff25079c043">&#9670;&nbsp;</a></span>SelectRangeAutoColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SelectRangeAutoColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>panX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>panY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *&#160;</td>
+          <td class="paramname"><em>colorLB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> *&#160;</td>
+          <td class="paramname"><em>colorUB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>rangeMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于输入的图像和给定的像素坐标，自动生成一个彩色值范围，可用于添加为前景或背景范围。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>返回生成的彩色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>返回生成的彩色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd>
+<dd>
+<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a9267b751bc487e2c17f1025a46c8d46b">SelectRangeAuto()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a70381d428edc2af7ca1ddd352d21115c">AddBackgroundRangeColor()</a>. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="ad0af46e25eefcb153ca18c7f1d13a491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0af46e25eefcb153ca18c7f1d13a491">&#9670;&nbsp;</a></span>ContourType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">LPVBlobContourType</a> ContourType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>斑点外轮廓的类型，查看 LPVBlobContourType </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a759c03e2b252669aee63d2e178835685" title="斑点外轮廓的层级，从 0 开始。负值表示所有层级。">Hierarchy</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a759c03e2b252669aee63d2e178835685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759c03e2b252669aee63d2e178835685">&#9670;&nbsp;</a></span>Hierarchy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Hierarchy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>斑点外轮廓的层级，从 0 开始。负值表示所有层级。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ad0af46e25eefcb153ca18c7f1d13a491" title="斑点外轮廓的类型，查看 LPVBlobContourType">ContourType</a>. </dd></dl>
+
+</div>
+</div>
+<a id="af98b71a5ec504565e5456260acbd9ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98b71a5ec504565e5456260acbd9ee5">&#9670;&nbsp;</a></span>MaxCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MaxCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。">SortBy</a> </dd></dl>
+
+</div>
+</div>
+<a id="a848fb8adacf95a0394b3656bb53233b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848fb8adacf95a0394b3656bb53233b8">&#9670;&nbsp;</a></span>SortBy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> SortBy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5" title="设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。">MaxCount</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871" title="与 SortBy 一同起效。True 表示降序排序候选斑点（数值从大到小排序），False 表示升序。">SortByDescending</a> </dd></dl>
+
+</div>
+</div>
+<a id="a26bbdb0a7c27819253704905dfd3d871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26bbdb0a7c27819253704905dfd3d871">&#9670;&nbsp;</a></span>SortByDescending</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL SortByDescending</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>与 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。">SortBy</a> 一同起效。True 表示降序排序候选斑点（数值从大到小排序），False 表示升序。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。">SortBy</a> </dd></dl>
+
+</div>
+</div>
+<a id="a156c414aad3afe8be70b8192a41afd1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156c414aad3afe8be70b8192a41afd1c">&#9670;&nbsp;</a></span>ThresholdType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a> ThresholdType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>分割斑点时所使用的阈值类型 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a522729648745589adc38a155835514f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522729648745589adc38a155835514f4">&#9670;&nbsp;</a></span>AdaptBlobPolarity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> AdaptBlobPolarity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>局部或全局自适应阈值用于分割时所使用的斑点极性 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5cff8ca122008799c6417cd212772899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cff8ca122008799c6417cd212772899">&#9670;&nbsp;</a></span>LocalBlockSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LocalBlockSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>局部阈值所使用的局部区域尺寸 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab99d514297e576fa945c8ad5adc774b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99d514297e576fa945c8ad5adc774b9">&#9670;&nbsp;</a></span>LocalBias</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LocalBias</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>局部自适应阈值的修正值 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
+</body>
+</html>

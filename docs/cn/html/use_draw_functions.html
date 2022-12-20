@@ -1,0 +1,258 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: 绘制函数</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
+   <!--<div id="projectname">LPW-->
+   <!--</div>-->
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief"><a href="../../cn/html/index.html">中文</a> / <a href="../../en/html/index.html">English</a></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">绘制函数 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t05_use_draw_functions"></a> 对于 LPW 图像类以及其他实现了 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> 接口的类型，我们通常都会提供绘制函数，用于绘制对象的内容到指定的设备，也就是输出的 HDC 句柄。</p>
+<p>绘制函数相比于 <a class="el" href="use_display_control.html">LDisplay Control</a>，是一种更为灵活和轻量的 API，帮助用户完全控制应用程序的绘制行为和流程。</p>
+<p>以下为一些绘制函数的接口例子，包括图像、区域和检测结果等：</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> ILImage::Draw (HDC hdc, <span class="keywordtype">double</span> zoomX, <span class="keywordtype">double</span> zoomY, <span class="keywordtype">double</span> panX, <span class="keywordtype">double</span> panY); </div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> ILRegion::Draw (HDC hdc, BOOL bHandles, <span class="keywordtype">double</span> zoomX, <span class="keywordtype">double</span> zoomY, <span class="keywordtype">double</span> panX, <span class="keywordtype">double</span> panY);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> ILMatchResults::Draw (HDC hdc, <span class="keywordtype">int</span> index, LPVPatDrawFlags drawFlags, <span class="keywordtype">double</span> zoomX, <span class="keywordtype">double</span> zoomY, <span class="keywordtype">double</span> panX, <span class="keywordtype">double</span> panY)</div>
+<div class="line"><span class="keywordtype">void</span> ILMatchResults::DrawAll (HDC hdc, LPVPatDrawFlags drawFlags, <span class="keywordtype">double</span> zoomX, <span class="keywordtype">double</span> zoomY, <span class="keywordtype">double</span> panX, <span class="keywordtype">double</span> panY)</div>
+</div><!-- fragment --><p>每个绘制函数通常有以下通用参数，用于指定绘制的 HDC 句柄以及视窗。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认为真实尺寸 100。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">panX</td><td>x 方向的平移。最终的 x 坐标按照该公式计算: \( (x + panX) \times zoomX \) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">panY</td><td>y 方向的平移。最终的 y 坐标按照该公式计算: \( (y + panY) \times zoomY \)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>每个绘制函数可能有其他额外的参数，用于控制绘制内容和行为。</p>
+<h1><a class="anchor" id="autotoc_md25"></a>
+示例代码</h1>
+<h2><a class="anchor" id="autotoc_md26"></a>
+在 Bitmap 上绘制</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line"><span class="keywordtype">void</span> DrawImageAndResultsOnStatic(CStatic* pic_item, ILImagePtr img, ILRectRegionPtr roi, ILMatchResultsPtr matchResults)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 在绘制之前，需要先修改 Static 控件的风格以接受 Bitmap 内容</span></div>
+<div class="line">    <span class="comment">// 推荐在窗口的初始化方法 OnInitDialog() 中进行，如：</span></div>
+<div class="line">    <span class="comment">// ((CStatic*)GetDlgItem(IDC_IMG_PIC))-&gt;ModifyStyle(0xF, SS_BITMAP, SWP_NOSIZE);</span></div>
+<div class="line"> </div>
+<div class="line">    CRect picRect;</div>
+<div class="line">    pic_item-&gt;GetClientRect(picRect);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 适配窗口尺寸缩放</span></div>
+<div class="line">    <span class="keywordtype">double</span> zoomx = (double)picRect.Width() / img-&gt;Width;</div>
+<div class="line">    <span class="keywordtype">double</span> zoomy = (double)picRect.Height() / img-&gt;Height;</div>
+<div class="line"> </div>
+<div class="line">    CDC* picdc = pic_item-&gt;GetDC();</div>
+<div class="line">    <span class="keywordflow">if</span> (!picdc) <span class="keywordflow">return</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 创建用于绘制的内存 DC 和 Bitmap</span></div>
+<div class="line">    HDC pichdc = picdc-&gt;GetSafeHdc();</div>
+<div class="line">    HDC hdc = CreateCompatibleDC(pichdc);</div>
+<div class="line">    HBITMAP bitmap = CreateCompatibleBitmap(pichdc, picRect.Width(),</div>
+<div class="line">        picRect.Height());</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 替换 DC 中的 Bitmap 为新创建的 Bitmap</span></div>
+<div class="line">    HBITMAP prevBitmap = (HBITMAP)SelectObject(hdc, bitmap);</div>
+<div class="line">    <span class="keywordflow">if</span> (prevBitmap)</div>
+<div class="line">        DeleteObject(prevBitmap);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 刷新白色背景</span></div>
+<div class="line">    FillRect(hdc, &amp;picRect, (HBRUSH)GetStockObject(WHITE_BRUSH));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 调用绘制函数，在 Bitmap 上绘制图像、区域和匹配结果</span></div>
+<div class="line">    <span class="comment">// 使用 0, 0 位移</span></div>
+<div class="line">    img-&gt;Draw(hdc, zoomx, zoomy, 0, 0);</div>
+<div class="line">    roi-&gt;Draw(hdc, VARIANT_TRUE, zoomx, zoomy, 0, 0);</div>
+<div class="line">    matchResults-&gt;DrawAll(hdc, LPVPatDrawDefault, zoomx, zoomy, 0, 0);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 将 Bitmap 刷新到窗口</span></div>
+<div class="line">    BitBlt(pichdc, picRect.left, picRect.top, picRect.Width(), picRect.Height(),</div>
+<div class="line">        hdc, 0, 0, SRCCOPY);</div>
+<div class="line">    pic_item-&gt;ReleaseDC(picdc);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 释放内存 DC 和 Bitmap</span></div>
+<div class="line">    DeleteObject(hdc);</div>
+<div class="line">    DeleteObject(bitmap);</div>
+<div class="line">}</div>
+</div><!-- fragment -->  </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line"><span class="keywordtype">void</span> drawImageAndResultsOnStatic(PictureBox pic_item, LImage img, LRectRegion roi, LMatchResults match_results)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 适配窗口尺寸缩放</span></div>
+<div class="line">    <span class="keywordtype">double</span> zoomX = (double)pic_item.Width / img.Width;</div>
+<div class="line">    <span class="keywordtype">double</span> zoomY = (<span class="keywordtype">double</span>)pic_item.Height / img.Height;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 创建用于绘制的内存 DC 和 Bitmap</span></div>
+<div class="line">    Bitmap bmp = <span class="keyword">new</span> Bitmap(pic_item.Width, pic_item.Height);</div>
+<div class="line">    Graphics gfx = Graphics.FromImage(bmp);</div>
+<div class="line">    gfx.Clear(Color.White); <span class="comment">// 刷新白色背景</span></div>
+<div class="line">    IntPtr hdc = gfx.GetHdc(); <span class="comment">// 获取 HDC 句柄</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 调用绘制函数，在 Bitmap 上绘制图像、区域和匹配结果</span></div>
+<div class="line">    <span class="comment">// 使用 0, 0 位移</span></div>
+<div class="line">    img.Draw(hdc, zoomX, zoomY);</div>
+<div class="line">    roi.Draw(hdc, <span class="keyword">true</span>, zoomX, zoomY);</div>
+<div class="line">    match_results.DrawAll(hdc,</div>
+<div class="line">        <a class="code" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a>.LPVPatDrawDefault,</div>
+<div class="line">        zoomX, zoomY);</div>
+<div class="line"> </div>
+<div class="line">    gfx.ReleaseHdc(hdc);</div>
+<div class="line">    gfx.Dispose();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 将 Bitmap 设置到显示控件</span></div>
+<div class="line">    <span class="keywordflow">if</span> (pic_item.Image != <span class="keyword">null</span>)</div>
+<div class="line">        pic_item.Image.Dispose();</div>
+<div class="line">    pic_item.Image = bmp;</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespace_l_p_v_pat_lib_html_a38ed5c152c13123c0ab8728aa55efdf2"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatLib::LPVPatDrawFlags</a></div><div class="ttdeci">LPVPatDrawFlags</div><div class="ttdoc">该枚举用于控制模板匹配结果绘制的行为</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:84</div></div>
+</div><!-- fragment -->  </div> <h2><a class="anchor" id="autotoc_md27"></a>
+在 OnPaint 方法中绘制</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line"><span class="keywordtype">void</span> CMFCDlg::OnPaint()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 其他的一些绘制逻辑</span></div>
+<div class="line"> </div>
+<div class="line">    CPaintDC dc(<span class="keyword">this</span>); <span class="comment">// 获取绘制 DC</span></div>
+<div class="line">    HDC hdc = dc.GetSafeHdc();</div>
+<div class="line"> </div>
+<div class="line">    CRect picRect;</div>
+<div class="line">    GetClientRect(picRect);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 适配窗口尺寸缩放</span></div>
+<div class="line">    <span class="keywordtype">double</span> zoomx = (double)picRect.Width() / m_img-&gt;Width;</div>
+<div class="line">    <span class="keywordtype">double</span> zoomy = (double)picRect.Height() / m_img-&gt;Height;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 刷新白色背景</span></div>
+<div class="line">    FillRect(hdc, &amp;picRect, (HBRUSH)GetStockObject(WHITE_BRUSH));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 调用绘制函数，在 Bitmap 上绘制图像、区域和匹配结果</span></div>
+<div class="line">    <span class="comment">// 使用 0, 0 位移</span></div>
+<div class="line">    m_img-&gt;Draw(hdc, zoomx, zoomy, 0, 0);</div>
+<div class="line">    m_roi-&gt;Draw(hdc, VARIANT_TRUE, zoomx, zoomy, 0, 0);</div>
+<div class="line">    m_matchResults-&gt;DrawAll(hdc, LPVPatDrawDefault, zoomx, zoomy, 0, 0);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 其他的一些绘制逻辑</span></div>
+<div class="line">    CDialogEx::OnPaint();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 提示，当需要绘制的内容改变时：</span></div>
+<div class="line">    <span class="comment">// 调用 Invalidate() 请求一次重绘，这将有系统的消息循环处理，可能发生延时。单次循环内的多次请求也将被合并。</span></div>
+<div class="line">    <span class="comment">// 调用 UpdateWindow() 强制马上进行一次重绘。当你需要马上看到更新结果时使用。</span></div>
+<div class="line">    <span class="comment">// 你可以通过一些标志位来控制某些感兴趣的 @projectname 对象进行绘制，同时跳过一些。</span></div>
+<div class="line">    <span class="comment">// 你可能需要用到双缓存技术，以避免窗口刷新时发生的闪烁现象，方法是先建立一个内存中的 DC 并将结果绘制上去，而后将整个内存 DC 复制到目标 DC</span></div>
+<div class="line">}</div>
+</div><!-- fragment -->  </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> OnPaint(PaintEventArgs e)</div>
+<div class="line">{</div>
+<div class="line">    base.OnPaint(e);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 适配窗口尺寸缩放</span></div>
+<div class="line">    <span class="keywordtype">double</span> zoomX = (double)ClientRectangle.Width / m_img.Width;</div>
+<div class="line">    <span class="keywordtype">double</span> zoomY = (<span class="keywordtype">double</span>)ClientRectangle.Height / m_img.Height;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 获取绘制 DC</span></div>
+<div class="line">    IntPtr hdc = e.Graphics.GetHdc();</div>
+<div class="line"> </div>
+<div class="line">    e.Graphics.Clear(Color.White); <span class="comment">// 刷新白色背景</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 调用绘制函数，在 Bitmap 上绘制图像、区域和匹配结果</span></div>
+<div class="line">    <span class="comment">// 使用 0, 0 位移</span></div>
+<div class="line">    m_img.Draw(hdc, zoomX, zoomY);</div>
+<div class="line">    m_roi.Draw(hdc, <span class="keyword">true</span>, zoomX, zoomY);</div>
+<div class="line">    m_match_results.DrawAll(hdc,</div>
+<div class="line">        <a class="code" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a>.LPVPatDrawDefault,</div>
+<div class="line">        zoomX, zoomY);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 最后，释放 DC</span></div>
+<div class="line">    e.Graphics.ReleaseHdc(hdc);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 提示，当需要绘制的内容改变时：</span></div>
+<div class="line">    <span class="comment">// 调用 Invalidate() 请求一次重绘，这将有系统的消息循环处理，可能发生延时。单次循环内的多次请求也将被合并。</span></div>
+<div class="line">    <span class="comment">// 调用 Update() 强制马上进行一次重绘。当你需要马上看到更新结果时使用。</span></div>
+<div class="line">    <span class="comment">// 你可以通过一些标志位来控制某些感兴趣的 @projectname 对象进行绘制，同时跳过一些。</span></div>
+<div class="line">    <span class="comment">// 你可能需要开启窗口的双缓存功能，以避免窗口刷新时发生的闪烁现象</span></div>
+<div class="line">}</div>
+</div><!-- fragment -->  </div>  </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
+</body>
+</html>
