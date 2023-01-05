@@ -89,40 +89,46 @@ $(function() {
  <em>注意 3：安装后自带的 Qt DEMO 程序基于 Qt 5.9.4 版本编译，运行这些 Qt DEMO 的可执行文件需要从 Qt 官方网站下载并安装对应版本。或者，使用我们提供的只包含依赖项的精简压缩包，下载后（ <a href="http://fileserver.hzleaper.com:8086/f/d0bca96b69ea43bbba44/">x86</a> 或 <a href="http://fileserver.hzleaper.com:8086/f/265acd571340457fa0d1/">x64</a> ）解压到对应的 DEMO 可执行文件的同级目录下。</em></p>
 <p><b>GUI 演示程序</b></p>
 <table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadLeft">演示功能    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_sanity">基础功能</a>   </td><td class="markdownTableBodyLeft">演示典型的视觉检测任务流程，包括图像、Region、模板、标定等基础功能。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_region">Region 操作</a>   </td><td class="markdownTableBodyLeft">演示如何进行编辑 Region 及如何计算生成新的 Region。    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_hikcam">集成相机的采图回调</a>   </td><td class="markdownTableBodyLeft">演示如何集成相机到 LPW 程序，使用相机回调采集图像到 LImage 对象，以海康相机为例。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_pat">模板匹配</a>   </td><td class="markdownTableBodyLeft">演示高精度模板匹配。    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_blob">斑点分析</a>   </td><td class="markdownTableBodyLeft">演示斑点分析，支持灰度和彩色模式。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_imgproc">图像处理</a>   </td><td class="markdownTableBodyLeft">演示常见的图像处理算子。    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_line">直线定位</a>   </td><td class="markdownTableBodyLeft">演示亚像素直线定位。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_circle">圆定位</a>   </td><td class="markdownTableBodyLeft">演示亚像素圆定位。    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_path">路径定位</a>   </td><td class="markdownTableBodyLeft">演示路径定位。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_contour">轮廓定位</a>   </td><td class="markdownTableBodyLeft">演示亚像素轮廓定位。    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_calib">标定</a>   </td><td class="markdownTableBodyLeft">演示相机标定，包括多点、小孔、FFD等相机模型，支持不同类型的标定板。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_camarray">相机阵列和图像拼接</a>   </td><td class="markdownTableBodyLeft">演示相机阵列标定和图像拼接。    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_geom">几何计算和测量</a>   </td><td class="markdownTableBodyLeft">演示几何模块的常用功能，包括交点计算、距离测量、拟合等。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_barcode">条码检测</a>   </td><td class="markdownTableBodyLeft">演示一维码和二维码检测，以及条码质量评价。    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_display">显示控件</a>   </td><td class="markdownTableBodyLeft">演示如何使用显示控件。    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_ibservice">连接到灵闪服务</a>  </td><td class="markdownTableBodyLeft">演示如何与灵闪服务集成，并使用具有强大功能的灵闪作业。  </td></tr>
+<tr>
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadLeft">演示功能 </th></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_sanity">基础功能</a></td><td>演示典型的视觉检测任务流程，包括图像、Region、模板、标定等基础功能。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_region">Region 操作</a></td><td>演示如何进行编辑 Region 及如何计算生成新的 Region。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_hikcam">集成相机的采图回调</a></td><td>演示如何集成相机到 LPW 程序，使用相机回调采集图像到 LImage 对象，以海康相机为例。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_pat">模板匹配</a></td><td>演示高精度模板匹配。| </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_blob">斑点分析</a></td><td>演示斑点分析，支持灰度和彩色模式。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_imgproc">图像处理</a></td><td>演示常见的图像处理算子。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_line">直线定位</a></td><td>演示亚像素直线定位。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_circle">圆定位</a></td><td>演示亚像素圆定位。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_path">路径定位</a></td><td>演示路径定位。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_contour">轮廓定位</a></td><td>演示亚像素轮廓定位。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_calib">标定</a></td><td>演示相机标定，包括多点、小孔、FFD等相机模型，支持不同类型的标定板。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_camarray">相机阵列和图像拼接</a></td><td>演示相机阵列标定和图像拼接。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_geom">几何计算和测量</a></td><td>演示几何模块的常用功能，包括交点计算、距离测量、拟合等。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_barcode">条码检测</a></td><td>演示一维码和二维码检测，以及条码质量评价。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_display">显示控件</a></td><td>演示如何使用显示控件。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_ibservice">连接到灵闪服务</a></td><td>演示如何与灵闪服务集成，并使用具有强大功能的灵闪作业。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_kerf">刻线检测</a></td><td>演示高精度、高稳定性的刻线检测算法。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_wafer_editor">晶圆编辑器</a></td><td>演示晶圆图生成和编辑。 </td></tr>
+<tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_wafer_map">晶圆扫描和晶圆图生成</a></td><td>演示晶圆扫描过程，包括实时晶圆图生成、晶圆图排序等。 </td></tr>
 </table>
 <p><b>代码片段</b></p>
 <table class="markdownTable">
@@ -584,13 +590,85 @@ Region 操作</h1>
 <li>点击 <b>Apply</b> 按钮，应用改动后的参数到灵闪服务，再次执行该作业将看到参数变换的影响。</li>
 </ol>
 <p><br  />
+</p>
+<h1><a class="anchor" id="demo_kerf"></a>
+刻线检测</h1>
+<p>演示高精度、高稳定性的刻线检测算法。</p>
+<blockquote class="doxtable">
+<p><b>源代码 (C++):</b> mfcdemo/MFCKerf<br  />
+ <b>源代码 (C#):</b> csharpdemo/CSharpKerf<br  />
+ <b>图像文件夹:</b> kerfs</p>
+<p><b>相关类：</b> <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html">LKerfDetector</a> </p>
+</blockquote>
+<p><a href="t02_16_kerf.png"><img src="t02_16_kerf.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>点击 <b>Load Image</b> 按钮，加载图像。</li>
+<li>选择 <b>Mode</b> 切换 Wide(1) 或则 Narrow(2) 检测模式。</li>
+<li>修改检测阈值参数：<ul>
+<li><b>Luminance Threshold</b>: 用于检测防呆的亮度均值阈值。</li>
+<li><b>Contrast Threshold</b>: 用于筛选比刻线候选边缘的最小对比度数值。</li>
+<li><b>Glue Edge Threshold</b>: 用于确定涂胶区域的范围，帮助去除边缘检测过程中的涂胶噪声对定位的影响。</li>
+</ul>
+</li>
+<li>修改刻线的指导宽度和距离。</li>
+<li>修改 <b>MidLine Offset Tolerance</b>, 即刻线对的中线到检测区域中心的偏移范围。</li>
+<li>对于刻线边缘极性多变的情况，可勾选 <b>Ignore Polarity</b> 。</li>
+<li>修改 <b>Grow Stategy</b> 改变检测过程中使用的生长策略。</li>
+<li>点击 <b>Detect</b> 按钮进行刻线检测。若加载了多张图像，点击 <b>Back</b> 或者 <b>Next</b> 可切换图像并进行检测。</li>
+<li>右侧的图表展示沿着 Region 搜索方向的分数分布，用于方便地设置更佳的检测阈值。</li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_wafer_editor"></a>
+晶圆编辑器</h1>
+<p>演示晶圆图生成和编辑。</p>
+<blockquote class="doxtable">
+<p><b>源代码 (C++):</b> mfcdemo/MFCWaferEditor<br  />
+ <b>源代码 (C#):</b> csharpdemo/CSharpWaferEditor<br  />
+</p>
+<p><b>相关类：</b> <a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html">LWaferMap</a> LWaferDisplay </p>
+</blockquote>
+<p><a href="t02_17_wafer_editor.png"><img src="t02_17_wafer_editor.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>修改晶圆属性，包括直径、DIE 尺寸等。DEMO中提供了几种预设的晶圆属性样例。</li>
+<li>点击 <b>Synthesize</b> 生成晶圆图。</li>
+<li>修改 BIN 代号和颜色，点击 <b>Apply</b> 按钮，修改后的晶圆图即时显示在左侧的显示控件中。</li>
+<li>鼠标点击可选中 DIE，或者输入行列号，点击 <b>Go To</b> 按钮跳转到该 DIE。</li>
+<li>修改选中 DIE 的 BIN 类型，晶圆图即时更新其内容到显示控件中。</li>
+<li>点击 <b>Save</b> 按钮，保存当前的晶圆图到文件，可保存为 LWMP 或 SINF 格式。</li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_wafer_map"></a>
+晶圆扫描和晶圆图生成</h1>
+<p>演示晶圆扫描过程，包括实时晶圆图生成、晶圆图排序等。</p>
+<blockquote class="doxtable">
+<p><b>源代码 (C++):</b> mfcdemo/MFCWaferMap<br  />
+ <b>源代码 (C#):</b> csharpdemo/CSharpWaferMap<br  />
+ <b>图像文件夹:</b> wafer200</p>
+<p><b>相关类：</b> <a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html">LWaferMap</a> <a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_sorter.html">LWaferSorter</a> LWaferDisplay </p>
+</blockquote>
+<p><a href="t02_18_wafer_map.png"><img src="t02_18_wafer_map.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>点击 <b>Load Template Wafer Map</b> 按钮，选择文件夹中的 wafer200.lwmp/sinf 文件。该文件为 DEMO 程序所需的晶圆图模板，帮助 DEMO 程序获取晶圆的尺寸信息和 MARK 所在的位置。</li>
+<li>点击 <b>Load Images</b> 按钮，加载扫描图像。对于每一张扫描图像，其文件名记录了抓取该图像的顺序、缩放比例和物理坐标等。</li>
+<li>点击 <b>Load Die Template</b> 按钮，加载识别一般 DIE 的模板图像。</li>
+<li>点击 <b>Load Mark Template</b> 按钮，加载识别 MARK（参考 DIE）的模板图像。</li>
+<li>修改模板匹配的各项参数，然后点击 <b>Detect</b> 按钮在当前图像中检出 DIE 和 MARK 位置。检出结果显示在右侧的显示控件中。</li>
+<li>修改 <b>Pass Score</b> 数值，对于检出的 DIE，若其匹配分数高于该 PASS Score，则该 DIE 为 PASS，否则则为 FAIL。</li>
+<li>点击 <b>Add To Wafer Map</b> 按钮，添加检出的 DIE 和 MARK 到晶圆图，此时将生成实时晶圆图并显示在左侧的显示控件中。当前检出的 PASS 和 FAIL 总数，显示在下方的状态栏中。</li>
+<li>点击 <b>Run</b> 按钮，运行所有扫描图像。</li>
+<li>当扫描完成后，点击 <b>Sort Wafer Map</b> 按钮，进行全图排序生成排序后的晶圆图。</li>
+<li>点击 <b>Data Map</b> 显示扫描分数的数据热力图，点击 <b>Bin Map</b> 按钮可切换回到 BIN 图显示。</li>
+</ol>
+<p><br  />
  </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2023 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[
