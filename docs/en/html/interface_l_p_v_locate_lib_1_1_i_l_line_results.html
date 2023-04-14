@@ -114,21 +114,21 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>This interface holds a collection of line detection results. </p>
 <p>Usually you get the <a class="el" href="class_l_p_v_locate_lib_1_1_l_line_results.html">LLineResults</a> object from the <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#aa7258fe60f5492fcaeae95285ec077ab">ILLineDetector::Detect()</a> as detection result. You can then use this interface to access individual result and draw the results on graphics windows.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineResultsPtr m_line_results;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_line_detector.Detect(m_img, m_roi, &amp;m_line_results);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineResultsPtr line_results;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = line_detector.Detect(img, roi, &amp;line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="keywordtype">int</span> c = m_line_results-&gt;Count();</div>
+<div class="line"><span class="keywordtype">int</span> c = line_results-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
-<div class="line">    ILLineResultPtr result = m_line_results-&gt;Item(i);</div>
+<div class="line">    ILLineResultPtr result = line_results-&gt;Item(i);</div>
 <div class="line">    <span class="comment">// handle each line result</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineResults m_line_results;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_line_detector.Detect(m_img, (LRotRectRegion)m_roi, out m_line_results);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineResults line_results;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = line_detector.Detect(img, (LRotRectRegion)roi, out line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="keywordtype">int</span> c = m_line_results.Count();</div>
+<div class="line"><span class="keywordtype">int</span> c = line_results.Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
-<div class="line">    LLineResult result = m_line_results.Item(i);</div>
+<div class="line">    LLineResult result = line_results.Item(i);</div>
 <div class="line">    <span class="comment">// handle each line result</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>

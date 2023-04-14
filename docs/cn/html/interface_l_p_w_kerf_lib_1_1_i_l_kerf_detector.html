@@ -95,7 +95,7 @@ $(function() {
  <div class="center">
   <img src="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.png" usemap="#ILKerfDetector_map" alt=""/>
   <map id="ILKerfDetector_map" name="ILKerfDetector_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="0,56,94,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,56,94,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -147,7 +147,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="separator:a3ef38ae561bddc016984016210d818d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae776dafa8a125a25d32632da66416205"><td class="memItemLeft" align="right" valign="top"><a id="ae776dafa8a125a25d32632da66416205"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#ae776dafa8a125a25d32632da66416205">MidLineOffsetTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ae776dafa8a125a25d32632da66416205"><td class="mdescLeft">&#160;</td><td class="mdescRight">刻线对的中线到检测区域中心的偏移范围。仅在 <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#aa7aab3752f2470bbc423dd8ad1f4e20a">Detect2()</a> 使用。取值范围在 5 ~ 100, 间默认设置为 5. <br /></td></tr>
+<tr class="memdesc:ae776dafa8a125a25d32632da66416205"><td class="mdescLeft">&#160;</td><td class="mdescRight">刻线对的中线到检测区域中心的偏移范围。仅在 <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#aa7aab3752f2470bbc423dd8ad1f4e20a">Detect2()</a> 使用。取值范围在 5 ~ 100, 默认设置为 5. <br /></td></tr>
 <tr class="separator:ae776dafa8a125a25d32632da66416205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -163,7 +163,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">ILKerfResultPtr result1, result2;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_kerftool-&gt;Detect2(m_img, m_rotroi, &amp;result1, &amp;result2);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// no result or failed</span></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LKerfDetector m_kerftool = <span class="keyword">new</span> LKerfDetector();</div>
 <div class="line">m_kerftool.KerfWidth = 10;</div>
 <div class="line">m_kerftool.KerfDistance = 40;</div>

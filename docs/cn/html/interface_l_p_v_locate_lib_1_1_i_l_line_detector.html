@@ -95,7 +95,7 @@ $(function() {
  <div class="center">
   <img src="interface_l_p_v_locate_lib_1_1_i_l_line_detector.png" usemap="#ILLineDetector_map" alt=""/>
   <map id="ILLineDetector_map" name="ILLineDetector_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="0,56,94,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,56,94,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -114,7 +114,7 @@ Public 成员函数</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
 <tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:afad2aa7828e45b84ec1f3f80f3787305"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的极性。<br  />
+<tr class="memdesc:afad2aa7828e45b84ec1f3f80f3787305"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的<em>边缘极性</em>。<br  />
 极性指的是边缘相对于区域的扫描方向（旋转矩形的角度方向）的变换方式， 由白（亮）像素向黑（暗）像素转变，或由黑（暗）像素向白（亮）像素转变。<br  />
  <a href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#afad2aa7828e45b84ec1f3f80f3787305">更多...</a><br /></td></tr>
 <tr class="separator:afad2aa7828e45b84ec1f3f80f3787305"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,16 +144,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 该算法具有高实时性、高亚像素精度等特点，其局限性在于其定位直线的角度在给定区域的扫描方向的 (-10, +10) 范围内。 因此，使用该算法需要指定目标直线的大致方向。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_locate_lib_1_1_l_line_detector.html">LLineDetector</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineDetectorPtr m_line_detector(__uuidof(LLineDetector));</div>
-<div class="line">m_line_detector-&gt;Polarity = LPVPolarity::LPVPolarityEither;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_line_detector-&gt;Detect(m_img, m_roi, &amp;m_line_results);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineDetectorPtr line_detector(__uuidof(LLineDetector));</div>
+<div class="line">line_detector-&gt;Polarity = LPVPolarity::LPVPolarityEitherEdge;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = line_detector-&gt;Detect(img, roi, &amp;line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineDetector m_line_detector = <span class="keyword">new</span> LLineDetector();</div>
-<div class="line">m_line_detector.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVPolarityEither;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_line_detector.Detect(m_img, (LRotRectRegion)m_roi, out m_line_results);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineDetector line_detector = <span class="keyword">new</span> LLineDetector();</div>
+<div class="line">line_detector.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVPolarityEitherEdge;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = line_detector.Detect(img, (LRotRectRegion)roi, out line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:634</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:758</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="aa7258fe60f5492fcaeae95285ec077ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7258fe60f5492fcaeae95285ec077ab">&#9670;&nbsp;</a></span>Detect()</h2>
@@ -224,7 +224,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </table>
 </div><div class="memdoc">
 
-<p>检测的极性。<br  />
+<p>检测的<em>边缘极性</em>。<br  />
 极性指的是边缘相对于区域的扫描方向（旋转矩形的角度方向）的变换方式， 由白（亮）像素向黑（暗）像素转变，或由黑（暗）像素向白（亮）像素转变。<br  />
 </p>
 <p><img src="line_polarity.png" alt="" class="inline"/> </p>

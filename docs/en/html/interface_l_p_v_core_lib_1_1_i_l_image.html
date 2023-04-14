@@ -95,7 +95,7 @@ Inheritance diagram for ILImage:</div>
  <div class="center">
   <img src="interface_l_p_v_core_lib_1_1_i_l_image.png" usemap="#ILImage_map" alt=""/>
   <map id="ILImage_map" name="ILImage_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="0,56,64,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="This base interface for a serializable LPV object." alt="ILObject" shape="rect" coords="0,56,64,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -172,19 +172,19 @@ LPVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <h3><a class="anchor" id="autotoc_md0"></a>
 Example Code</h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// 1. load from file</span></div>
-<div class="line">m_img-&gt;Load(L<span class="stringliteral">&quot;img.bmp&quot;</span>);</div>
+<div class="line">img-&gt;Load(L<span class="stringliteral">&quot;img.bmp&quot;</span>);</div>
 <div class="line"><span class="comment">// 2. load from data pointer</span></div>
-<div class="line">m_img-&gt;SetImageData(width, height, dataPtr, bytesPerLine, <span class="keyword">true</span>);</div>
+<div class="line">img-&gt;SetImageData(width, height, dataPtr, bytesPerLine, <span class="keyword">true</span>);</div>
 <div class="line"><span class="comment">// 3. set pixels manually</span></div>
-<div class="line">m_img-&gt;SetSize(100, 100);</div>
-<div class="line">m_img-&gt;Pixel[10][20] = 255; <span class="comment">// set (10, 20) to be a white pixel</span></div>
+<div class="line">img-&gt;SetSize(100, 100);</div>
+<div class="line">img-&gt;Pixel[10][20] = 255; <span class="comment">// set (10, 20) to be a white pixel</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// 1. load from file</span></div>
-<div class="line">m_img.Load(<span class="stringliteral">&quot;img.bmp&quot;</span>);</div>
+<div class="line">img.Load(<span class="stringliteral">&quot;img.bmp&quot;</span>);</div>
 <div class="line"><span class="comment">// 2. load from data pointer</span></div>
-<div class="line">m_img.SetImageData(width, height, dataPtr, bytesPerLine, <span class="keyword">true</span>);</div>
+<div class="line">img.SetImageData(width, height, dataPtr, bytesPerLine, <span class="keyword">true</span>);</div>
 <div class="line"><span class="comment">// 3. set pixels manually</span></div>
-<div class="line">m_img.SetSize(100, 100);</div>
-<div class="line">m_img.Pixel[10, 20] = 255; <span class="comment">// set (10, 20) to be a white pixel</span></div>
+<div class="line">img.SetSize(100, 100);</div>
+<div class="line">img.Pixel[10, 20] = 255; <span class="comment">// set (10, 20) to be a white pixel</span></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2c2ed3482f17828158b0a681b4e613ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c2ed3482f17828158b0a681b4e613ae">&#9670;&nbsp;</a></span>SetSize()</h2>

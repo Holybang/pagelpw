@@ -109,19 +109,26 @@ Public Member Functions</h2></td></tr>
 Properties</h2></td></tr>
 <tr class="memitem:a3ebf67424198be278e1b93ba9db9a919"><td class="memItemLeft" align="right" valign="top"><a id="a3ebf67424198be278e1b93ba9db9a919"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a3ebf67424198be278e1b93ba9db9a919">HistoryMaxCount</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3ebf67424198be278e1b93ba9db9a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max count of the history images which affect the background model. The larger number result in the smaller default learning rate and the slower the background update. \nIt should be a positive integer. By default, it's set to 500. \nChange this value will reset the background model. <br /></td></tr>
+<tr class="memdesc:a3ebf67424198be278e1b93ba9db9a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max count of the history images which affect the background model. The larger number result in the smaller default learning rate and the slower the background update.<br  />
+It should be a positive integer. By default, it's set to 500.<br  />
+Change this value will reset the background model. <br /></td></tr>
 <tr class="separator:a3ebf67424198be278e1b93ba9db9a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="memItemLeft" align="right" valign="top"><a id="a2c02d2ec62ed763ddf16e11f72b97fac"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a2c02d2ec62ed763ddf16e11f72b97fac">VarianceThreshold</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The variance threshold used to determine whether the current pixel is foreground or background. If the background changes obviously, the threshold should be set higher, while the detection sensitivity decreases. \nIt should be a positive value. By default, it's set to 25. \nChange this value will reset the background model. <br /></td></tr>
+<tr class="memdesc:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The variance threshold used to determine whether the current pixel is foreground or background. If the background changes obviously, the threshold should be set higher, while the detection sensitivity decreases.<br  />
+It should be a positive value. By default, it's set to 25.<br  />
+Change this value will reset the background model. <br /></td></tr>
 <tr class="separator:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a066ff3d70e5a52a68c6a0b526e514269"><td class="memItemLeft" align="right" valign="top"><a id="a066ff3d70e5a52a68c6a0b526e514269"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a066ff3d70e5a52a68c6a0b526e514269">GenerateThreshold</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a066ff3d70e5a52a68c6a0b526e514269"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generation threshold used to determine the complexity of the background model. If the foreground and the background is very different, you should use a larger threshold which result in more robust background model; otherwise if they are very similar, you should use a smaller threshold to generate a more sensitive background model. \nIt should be a positive value. By default, it's set to 3. \nChange this value will reset the background model. <br /></td></tr>
+<tr class="memdesc:a066ff3d70e5a52a68c6a0b526e514269"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generation threshold used to determine the complexity of the background model. If the foreground and the background is very different, you should use a larger threshold which result in more robust background model; otherwise if they are very similar, you should use a smaller threshold to generate a more sensitive background model.<br  />
+It should be a positive value. By default, it's set to 3.<br  />
+Change this value will reset the background model. <br /></td></tr>
 <tr class="separator:a066ff3d70e5a52a68c6a0b526e514269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ebbedafd2f6a6f082fa012581a149d3"><td class="memItemLeft" align="right" valign="top"><a id="a5ebbedafd2f6a6f082fa012581a149d3"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a5ebbedafd2f6a6f082fa012581a149d3">LearningRate</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a5ebbedafd2f6a6f082fa012581a149d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The learning rate is used to control how much the background model should learn from the new coming frame. \nIt's in range 0 ~ 1, bigger value means faster learning. 0 means not learning at all, 1 means completely reinitialized. By default, it's set to -1 to let the algorithm to automatically chose the rate, based on the historical data and current model. <br /></td></tr>
+<tr class="memdesc:a5ebbedafd2f6a6f082fa012581a149d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The learning rate is used to control how much the background model should learn from the new coming frame.<br  />
+It's in range 0 ~ 1, bigger value means faster learning. 0 means not learning at all, 1 means completely reinitialized. By default, it's set to -1 to let the algorithm to automatically chose the rate, based on the historical data and current model. <br /></td></tr>
 <tr class="separator:a5ebbedafd2f6a6f082fa012581a149d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -137,7 +144,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line"><span class="comment">// subsequently processing on the foreground mask, say, count the pixels:</span></div>
 <div class="line"><span class="keywordtype">int</span> fgPixelCount = 0;</div>
 <div class="line">m_img_stats-&gt;CountPixel(fg_mask, NULL, 128, 255, NULL, &amp;fgPixelCount, NULL);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/BackgroudSubtract.cs </p><div class="fragment"><div class="line">LBGSubtract m_bg_sub = <span class="keyword">new</span> LBGSubtract();</div>
 <div class="line">m_bg_sub.HistoryMaxCount = 1000;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_bg_sub.Apply(cur_img, cur_fg_mask, <span class="keyword">true</span>);</div>

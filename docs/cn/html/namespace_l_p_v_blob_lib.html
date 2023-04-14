@@ -154,6 +154,17 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:ae4c9f4d88a1bb01d41c2fb7e721d77ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示斑点轮廓的类型  <a href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">更多...</a><br /></td></tr>
 <tr class="separator:ae4c9f4d88a1bb01d41c2fb7e721d77ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ee9496598a627feb086fe87c0732ae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732ae">LPVBlobMergeType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732aeabff36119e59100ee2cf1fa0c0df8f492">LPVBlobMergeFromCenter</a> = 0
+, <a class="el" href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732aea83b4d07fbfcdd2c90c375df9efb93a4d">LPVBlobMergeFromLargest</a> = 1
+, <a class="el" href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732aea7ba80359964cd9ef6470f80a9784b3ef">LPVBlobMergeFromSmallest</a> = 2
+, <a class="el" href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732aea4db8270980662707303ed0ae34793681">LPVBlobMergeFromBrightest</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732aeabd010e77766a2a996216f7345cb9d132">LPVBlobMergeFromDarkest</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ad2ee9496598a627feb086fe87c0732ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示用于斑点合并的方法，尤其是指定起点的方法  <a href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732ae">更多...</a><br /></td></tr>
+<tr class="separator:ad2ee9496598a627feb086fe87c0732ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>LPV 斑点分析模块，用于提供斑点分析相关功能。 </p>
@@ -272,6 +283,34 @@ $(function() {
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae4c9f4d88a1bb01d41c2fb7e721d77ecaefdede76d5b70a132e107d3ce8520c3b"></a>LPVBlobContourExternal&#160;</td><td class="fielddoc"><p>使用图像中的外级轮廓作为斑点的外轮廓，内嵌轮廓为孔洞轮廓 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae4c9f4d88a1bb01d41c2fb7e721d77eca36b5ded68515097342703bf70a165697"></a>LPVBlobContourHole&#160;</td><td class="fielddoc"><p>使用图像中的内嵌轮廓作为斑点的外轮廓，外轮廓为孔洞轮廓，忽略最外层轮廓 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad2ee9496598a627feb086fe87c0732ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ee9496598a627feb086fe87c0732ae">&#9670;&nbsp;</a></span>LPVBlobMergeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_blob_lib.html#ad2ee9496598a627feb086fe87c0732ae">LPVBlobMergeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示用于斑点合并的方法，尤其是指定起点的方法 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad2ee9496598a627feb086fe87c0732aeabff36119e59100ee2cf1fa0c0df8f492"></a>LPVBlobMergeFromCenter&#160;</td><td class="fielddoc"><p>从检测区域的中心开始 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2ee9496598a627feb086fe87c0732aea83b4d07fbfcdd2c90c375df9efb93a4d"></a>LPVBlobMergeFromLargest&#160;</td><td class="fielddoc"><p>从面积最大的斑点开始 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2ee9496598a627feb086fe87c0732aea7ba80359964cd9ef6470f80a9784b3ef"></a>LPVBlobMergeFromSmallest&#160;</td><td class="fielddoc"><p>从面积最小的斑点开始 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2ee9496598a627feb086fe87c0732aea4db8270980662707303ed0ae34793681"></a>LPVBlobMergeFromBrightest&#160;</td><td class="fielddoc"><p>从最亮的斑点开始，其平均亮度数值最大 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2ee9496598a627feb086fe87c0732aeabd010e77766a2a996216f7345cb9d132"></a>LPVBlobMergeFromDarkest&#160;</td><td class="fielddoc"><p>从最暗的斑点开始，其平均亮度数值最小 </p>
 </td></tr>
 </table>
 

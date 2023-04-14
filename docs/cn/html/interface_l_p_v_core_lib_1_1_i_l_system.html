@@ -131,8 +131,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ab950f34906bd4be377a58d3893d4c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22cb756639bb2f4a607b455f0e3ccca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a22cb756639bb2f4a607b455f0e3ccca7">DrawPolygon</a> (SAFEARRAY *xs, SAFEARRAY *ys, BOOL bClosed, BOOL bFill, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a22cb756639bb2f4a607b455f0e3ccca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92045160180ad2673a76b2b626c70e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#aa92045160180ad2673a76b2b626c70e3">DrawText</a> (BSTR text, int tlx, int tly, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
-<tr class="separator:aa92045160180ad2673a76b2b626c70e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9ef70750fdac83ff671471606ae1fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a8e9ef70750fdac83ff671471606ae1fb">DrawString</a> (BSTR text, int tlx, int tly, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:a8e9ef70750fdac83ff671471606ae1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#ab556fe7e6e867c71d1953b8e291d91b5">GetRGBFromColorRef</a> (COLORREF colorRef, int *red, int *green, int *blue)</td></tr>
 <tr class="separator:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32a6351b6d670be9a7f823a1d6f7dd94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a32a6351b6d670be9a7f823a1d6f7dd94">SetRegionHandleSize</a> (int size)</td></tr>
@@ -142,10 +142,10 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><p>该接口类提供了修改 LPV 系统全局参数的功能和一些杂项帮助函数。 </p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_core_lib_1_1_l_system.html">LSystem</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILSystemPtr m_sys;</div>
-<div class="line">m_sys-&gt;SetDrawPointSize(20);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSystem m_sys = <span class="keyword">new</span> LSystem();</div>
-<div class="line">m_sys.SetDrawPointSize(20);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILSystemPtr sys(__uuidof(LSystem));</div>
+<div class="line">sys-&gt;SetDrawPointSize(20);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSystem sys = <span class="keyword">new</span> LSystem();</div>
+<div class="line">sys.SetDrawPointSize(20);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="abe1b71ed02f499e949fdcd94b7ac1c79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe1b71ed02f499e949fdcd94b7ac1c79">&#9670;&nbsp;</a></span>CheckVersion()</h2>
@@ -178,8 +178,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>检查编译时和运行时所使用的 LPW 版本兼容性。通常按照如下方式调用： </p><div class="fragment"><div class="line">sys-&gt;CheckVersion(LPVMajorVersion, LPVMinorVersion, LPVMicroVersion);</div>
-</div><!-- fragment --><p> 若检查失败，用户需要重新安装正确的运行版本，或重新基于更新的版本编译。推荐在编译和运行时使用相同版本。 </p><dl class="params"><dt>参数</dt><dd>
+<p>检查编译时和运行时所使用的 LPW 版本兼容性。通常按照如下方式调用： </p> <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">sys-&gt;CheckVersion(1, 13, 1); <span class="comment">// the required version is 1.13.1</span></div>
+<div class="line">sys-&gt;CheckVersion(LPVMajorVersion, LPVMinorVersion, LPVMicroVersion); <span class="comment">// use the built-in constants</span></div>
+</div><!-- fragment --> </div>   <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">sys.CheckVersion(1, 13, 1); <span class="comment">// the required version is 1.13.1</span></div>
+<div class="line">sys.CheckVersion(LPVMajorVersion, LPVMinorVersion, LPVMicroVersion); <span class="comment">// use the built-in constants</span></div>
+</div><!-- fragment --> </div> <p> 若检查失败，用户需要重新安装正确的运行版本，或重新基于更新的版本编译。推荐在编译和运行时使用相同版本。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">majorVersion</td><td>编译时的版本号第一位 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minorVersion</td><td>编译时的版本号第二位 </td></tr>
@@ -627,6 +630,7 @@ Public 成员函数</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>点的 x 坐标。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>点的形状 </td></tr>
   </table>
   </dd>
 </dl>
@@ -785,6 +789,7 @@ Public 成员函数</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>圆心的 x 坐标。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>圆心的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>圆的半径 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>是否使用当前笔刷填充图形。 </td></tr>
   </table>
   </dd>
@@ -967,14 +972,14 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="aa92045160180ad2673a76b2b626c70e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa92045160180ad2673a76b2b626c70e3">&#9670;&nbsp;</a></span>DrawText()</h2>
+<a id="a8e9ef70750fdac83ff671471606ae1fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9ef70750fdac83ff671471606ae1fb">&#9670;&nbsp;</a></span>DrawString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DrawText </td>
+          <td class="memname">void DrawString </td>
           <td>(</td>
           <td class="paramtype">BSTR&#160;</td>
           <td class="paramname"><em>text</em>, </td>

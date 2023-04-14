@@ -86,7 +86,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>该接口类用于对一个可排序对象进行排序或重整为给定的顺序。  
+<p>该接口类用于对一个可排序对象集合进行排序或重整为给定的顺序。  
  <a href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#details">更多...</a></p>
 <div class="dynheader">
 类 ILSortables 继承关系图:</div>
@@ -109,27 +109,33 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a657069d22bed360a13c157d2ac04a06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>该接口类用于对一个可排序对象进行排序或重整为给定的顺序。 </p>
-<p>所有提供了排序功能的 LPV 类都实现这个类定义的所有接口。使用这个接口类需将 LPV 的类转换成 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html" title="该接口类用于对一个可排序对象进行排序或重整为给定的顺序。">ILSortables</a> 接口类。</p>
-<p>以下列出了所有实现该接口的可排序 LPV 类。</p>
-<table class="doxtable">
+<div class="textblock"><p>该接口类用于对一个可排序对象集合进行排序或重整为给定的顺序。 </p>
+<p>所有提供了排序功能的 LPV 类都实现这个类定义的所有接口。使用这个接口类需将 LPV 的类转换成 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html" title="该接口类用于对一个可排序对象集合进行排序或重整为给定的顺序。">ILSortables</a> 接口类。</p>
+<p>以下列出了所有实现该接口的可排序集合 LPV 类。</p>
+<table class="markdownTable">
 <tr>
-<td><a class="el" href="class_l_p_v_geom_lib_1_1_l_points.html">LPoints</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_geom_lib.html" title="LPV 几何库，提供几何形状相关的数据定义、计算和测量功能。">LPVGeomLib</a></td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">LPoints</a> </td></tr>
 <tr>
-<td><a class="el" href="class_l_p_v_pat_lib_1_1_l_match_results.html">LMatchResults</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_geom_x_lib.html" title="LPV 高级几何库，提供几何形状相关的高级计算功能。">LPVGeomXLib</a></td><td><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_sorter.html">LSorter</a> </td></tr>
 <tr>
-<td><a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_results.html">LBlobResults</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_pat_lib.html" title="LPV 模板匹配模块，用于提供模板匹配功能。">LPVPatLib</a></td><td><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">LMatchResults</a> </td></tr>
 <tr>
-<td><a class="el" href="class_l_p_v_locate_lib_1_1_l_line_results.html">LLineResults</a>, <a class="el" href="class_l_p_v_locate_lib_1_1_l_circle_results.html">LCircleResults</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_blob_lib.html" title="LPV 斑点分析模块，用于提供斑点分析相关功能。">LPVBlobLib</a></td><td><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">LBlobResults</a> </td></tr>
+<tr>
+<td><a class="el" href="namespace_l_p_v_locate_lib.html" title="LPV 定位模块，提供经典的目标或边缘的定位算法。">LPVLocateLib</a></td><td><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">LLineResults</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html">LCircleResults</a> </td></tr>
+<tr>
+<td><a class="el" href="namespace_l_p_v_locate_x_lib.html" title="LPV 高级定位模块，提供用于复杂目标或边缘的定位算法。">LPVLocateXLib</a></td><td><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html">LPathResults</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_results.html">LContourResults</a> </td></tr>
+<tr>
+<td><a class="el" href="namespace_l_p_v_barcode_lib.html" title="LPV 条码库，提供一维和二维条码的检测功能。">LPVBarcodeLib</a></td><td><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_results.html">LBarcodeResults</a> </td></tr>
 </table>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">((ILSortablesPtr)points)-&gt;Sort(LPVSortBy::LPVSortArrayByX,</div>
 <div class="line">    LPVSortOrder::LPVSortOrderAscending, LPVPositionMode::LPVPosModeCenter);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">((ILSortables)points).Sort(<a class="code" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVSortBy</a>.LPVSortArrayByX,</div>
 <div class="line">    <a class="code" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVSortOrder</a>.LPVSortOrderAscending, <a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">该枚举类型表示排序的类型</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:692</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">该枚举类型表示排序的顺序</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:731</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:789</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">该枚举类型表示排序的类型</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:826</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">该枚举类型表示排序的顺序</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:865</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:923</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="aa10c0127d00021ad94aaf71c23588a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10c0127d00021ad94aaf71c23588a26">&#9670;&nbsp;</a></span>Sort()</h2>

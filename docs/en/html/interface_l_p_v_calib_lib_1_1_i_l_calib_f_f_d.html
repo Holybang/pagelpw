@@ -95,7 +95,7 @@ Inheritance diagram for ILCalibFFD:</div>
   <img src="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.png" usemap="#ILCalibFFD_map" alt=""/>
   <map id="ILCalibFFD_map" name="ILCalibFFD_map">
 <area href="interface_l_p_v_calib_lib_1_1_i_l_calib.html" title="This interface provide basic functionalities of the calibration object." alt="ILCalib" shape="rect" coords="0,112,76,136"/>
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="0,56,76,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="This base interface for a serializable LPV object." alt="ILObject" shape="rect" coords="0,56,76,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -189,7 +189,7 @@ This model support all kinds of distortion.</p>
 <div class="line">m_calib-&gt;SetFFDGrid(4, 4); <span class="comment">// use 4x4 FFD grid</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib-&gt;Calibrate();</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_calib-&gt;IsCalibrated()) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibFFD m_calib = <span class="keyword">new</span> LCalibFFD();</div>
 <div class="line">LCalibPointPairs pnt_pairs = m_calib_board.Detect(m_img);</div>
 <div class="line">m_calib.AddPoints(pnt_pairs);</div>
@@ -224,8 +224,8 @@ This model support all kinds of distortion.</p>
 </div><div class="memdoc">
 <p>Set the size of FFD grid. By default, it's a \( 16 \times 16 \) grid. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cols</td><td>The width of the FFD grid </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>The height of the FFD grid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cols</td><td>The width of the FFD grid, in 2 ~ 64 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>The height of the FFD grid, in 2 ~ 64 </td></tr>
   </table>
   </dd>
 </dl>

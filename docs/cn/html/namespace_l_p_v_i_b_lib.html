@@ -146,6 +146,13 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:a1bc97baa07160afa2699d8c58e095263"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示灵闪数据的类型，查看 ILIBData。  <a href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263">更多...</a><br /></td></tr>
 <tr class="separator:a1bc97baa07160afa2699d8c58e095263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84279e3fef604bccf4cb7af1dc0ce8ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">LPVIBEventCode</a> { <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8edadf0b74b6c68d7bed62a6d57f75e208b4">LPVIBEventReset</a> = 0
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8edae2842612c899ce96e62daa8941e6cde5">LPVIBEventReExecute</a> = 2
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8eda1bbd667edc82cfbd9025a62e63441990">LPVIBEventImport</a> = 3
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8eda0d002330317ee36f527829219d25e2d0">LPVIBEventExport</a> = 4
+ }</td></tr>
+<tr class="memdesc:a84279e3fef604bccf4cb7af1dc0ce8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示灵闪事件的事件代码，查看 ILIBTaskConfig::HandleEvent().  <a href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">更多...</a><br /></td></tr>
+<tr class="separator:a84279e3fef604bccf4cb7af1dc0ce8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>LPV IB 服务模块，提供连接到灵闪服务的功能。</p>
@@ -210,6 +217,32 @@ $(function() {
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a226e7b5843c3a5d6d9cbdcdf7771bf27"></a>LPVIBDataTypePolygonList&#160;</td><td class="fielddoc"><p>多边形的列表，由 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aaeb422652d8a9cd7cf17fbf6923fd6a6">ILIBData::FromPolygonList</a> 设置，由 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a04f93abc419cc391d0b97c3026ff65d5">ILIBData::ToPolygonList</a> 获取。 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a8712467c7deb983a99e5603c58ab9638"></a>LPVIBDataTypeRegion&#160;</td><td class="fielddoc"><p>区域数据类型，由 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#abb51fa04c299f6a654aa4cce591bd656">ILIBData::FromRegion</a> 设置，由 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a2bedd8eab75488f3be5abe93187ce028">ILIBData::ToRegion</a> 获取。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a84279e3fef604bccf4cb7af1dc0ce8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84279e3fef604bccf4cb7af1dc0ce8ed">&#9670;&nbsp;</a></span>LPVIBEventCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">LPVIBEventCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示灵闪事件的事件代码，查看 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">ILIBTaskConfig::HandleEvent()</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8edadf0b74b6c68d7bed62a6d57f75e208b4"></a>LPVIBEventReset&#160;</td><td class="fielddoc"><p>重置事件，用于清空对应算法工具中的数据和内部存储 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8edae2842612c899ce96e62daa8941e6cde5"></a>LPVIBEventReExecute&#160;</td><td class="fielddoc"><p>执行事件，用于调用算法工具的执行事件（如事件代理的执行动作） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8eda1bbd667edc82cfbd9025a62e63441990"></a>LPVIBEventImport&#160;</td><td class="fielddoc"><p>导入事件，用于从指定文件导入数据或配置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8eda0d002330317ee36f527829219d25e2d0"></a>LPVIBEventExport&#160;</td><td class="fielddoc"><p>导出事件，用于导出数据或配置到指定文件 </p>
 </td></tr>
 </table>
 

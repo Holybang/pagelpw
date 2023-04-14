@@ -123,18 +123,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>维护了一个预设长度的缓存池用于存储相机拍摄的多帧图像，后续可用于多帧融合、HDR或图像拼接等任务。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_core_lib_1_1_l_image_list.html">LImageList</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr m_img_list(__uuidof(LImageList));</div>
-<div class="line">m_img_list-&gt;MaxCount = 3;</div>
-<div class="line">m_img_list-&gt;Add(m_frame1);</div>
-<div class="line">m_img_list-&gt;Add(m_frame2);</div>
-<div class="line">m_img_list-&gt;Add(m_frame3);</div>
-<div class="line">m_img_list-&gt;Add(m_frame4); <span class="comment">// frame 1 is popped</span></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageList m_img_list = <span class="keyword">new</span> LImageList();</div>
-<div class="line">m_img_list.MaxCount = 3;</div>
-<div class="line">m_img_list.Add(m_frame1);</div>
-<div class="line">m_img_list.Add(m_frame2);</div>
-<div class="line">m_img_list.Add(m_frame3);</div>
-<div class="line">m_img_list.Add(m_frame4); <span class="comment">// frame 1 is popped</span></div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr img_list(__uuidof(LImageList));</div>
+<div class="line">img_list-&gt;MaxCount = 3;</div>
+<div class="line">img_list-&gt;Add(frame1);</div>
+<div class="line">img_list-&gt;Add(frame2);</div>
+<div class="line">img_list-&gt;Add(frame3);</div>
+<div class="line">img_list-&gt;Add(frame4); <span class="comment">// frame 1 is popped</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageList img_list = <span class="keyword">new</span> LImageList();</div>
+<div class="line">img_list.MaxCount = 3;</div>
+<div class="line">img_list.Add(frame1);</div>
+<div class="line">img_list.Add(frame2);</div>
+<div class="line">img_list.Add(frame3);</div>
+<div class="line">img_list.Add(frame4); <span class="comment">// frame 1 is popped</span></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>

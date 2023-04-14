@@ -112,6 +112,8 @@ $(function() {
 <tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_contour">Contour Detection</a></td><td>Demonstrate contour detection with sub-pixel precision. </td></tr>
 <tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_gauge">Gauging</a></td><td>Demonstrate the inspection using gauge tools for various shapes. </td></tr>
+<tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_calib">Calibration</a></td><td>Demonstrate the camera calibration, including n-points, pin-hole, FFD camera models using different types of calibration boards. </td></tr>
 <tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_camarray">Camera Array and Image Stitching</a></td><td>Demonstrate the camera array calibration and image stitching. </td></tr>
@@ -141,11 +143,11 @@ $(function() {
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><b>Min-max Distance</b>   </td><td class="markdownTableBodyLeft">MinMaxDistance.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate how to measure the distance between polygons.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><b>Projection and analysis</b>   </td><td class="markdownTableBodyLeft">ProjectionAndAnalysis.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the image projection, and data analysis on the projection result, such as filtering, local extrema detection, etc.    </td></tr>
+<td class="markdownTableBodyLeft"><b>Projection and Analysis</b>   </td><td class="markdownTableBodyLeft">ProjectionAndAnalysis.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the image projection, and data analysis on the projection result, such as filtering, local extrema detection, etc.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><b>Sort</b>   </td><td class="markdownTableBodyLeft">Sort.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the sorting algorithms, especially the array sorter.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><b>Color space conversion</b>   </td><td class="markdownTableBodyLeft">ColorSpace.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the conversion of the color images between common color spaces.    </td></tr>
+<td class="markdownTableBodyLeft"><b>Color Space Conversion</b>   </td><td class="markdownTableBodyLeft">ColorSpace.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the conversion of the color images between common color spaces.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><b>Template Matching with Customized Shape</b>   </td><td class="markdownTableBodyLeft">LearnWithShape.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate how to train the template using customized shape generated via region objects.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -153,7 +155,11 @@ $(function() {
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><b>Background Subtract</b>   </td><td class="markdownTableBodyLeft">BackgroudSubtract.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the detection of moving or pop-up objects in the static scene.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><b>Data Blob Analysis</b>   </td><td class="markdownTableBodyLeft">DataBlob.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the defect inspection on the cutting kerf, using data blob analysis.   </td></tr>
+<td class="markdownTableBodyLeft"><b>Data Blob Analysis</b>   </td><td class="markdownTableBodyLeft">DataBlob.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the defect inspection on the cutting kerf, using data blob analysis.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Free Transformation of Image and Shapes</b>   </td><td class="markdownTableBodyLeft">FreeTransform.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the generation of transform using point pairs and the transformation of the image and shape objects.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>Classification using Machine Learning</b>   </td><td class="markdownTableBodyLeft">MLClassification.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the image classification application using machine learning based approach.   </td></tr>
 </table>
 <p><br  />
 </p>
@@ -387,7 +393,7 @@ Path Detection</h1>
  <b>Source code (Qt):</b> qtdemo/QtPath<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpPath<br  />
  <b>Image files:</b> nline_many.png, leadcut.png</p>
-<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LPathDetector, LPathResults </p>
+<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html">LPathDetector</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html">LPathResults</a> </p>
 </blockquote>
 <p><a href="t02_14_path.png"><img src="t02_14_path.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
 <ol type="1">
@@ -420,7 +426,7 @@ Contour Detection</h1>
  <b>Source code (Qt):</b> qtdemo/QtContour<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpContour<br  />
  <b>Image files:</b> rectwithhole.png</p>
-<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LContourDetector, LContourResults </p>
+<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html">LContourDetector</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_results.html">LContourResults</a> </p>
 </blockquote>
 <p><a href="t02_15_contour.png"><img src="t02_15_contour.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
 <ol type="1">
@@ -441,6 +447,36 @@ Contour Detection</h1>
 <li><b>2 Either</b>: Either polarity is acceptable.</li>
 </ul>
 </li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_gauge"></a>
+Gauging</h1>
+<p>Demonstrate the inspection using gauge tools for various shapes.</p>
+<blockquote class="doxtable">
+<p><b>Source code (C++):</b> mfcdemo/MFCGauge<br  />
+ <b>Source code (C#):</b> csharpdemo/CSharpGauge<br  />
+ <b>Image files:</b> cutkerf.png, leadcut.png</p>
+<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html">LCircleGauge</a> <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html">LArcGauge</a> </p>
+</blockquote>
+<p><a href="t02_19_gauge.png"><img src="t02_19_gauge.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>Click <b>Load Image</b> button, load image from file.</li>
+<li>Click <b>Reset ROI</b> button, reset region's placement according to current image size.</li>
+<li>Select the required gauge type, for example, line gauge.</li>
+<li>Select <b>Polarity</b> to use the proper polarity of the line edge:<ul>
+<li><b>0 Dark to Light</b>: The edge is from black(dark) pixels to white(light).</li>
+<li><b>1 Light to Dark</b>: The edge is from white(light) pixels to black(dark).</li>
+<li><b>2 Either Edge</b>: Either edge polarity is acceptable.</li>
+<li><b>3 Black on White</b>: This is a black(dark) object on white(light) background.</li>
+<li><b>4 White on Black</b>: This is a white(light) object on black(dark) background.</li>
+<li><b>5 Either Object</b>: Either object polarity is acceptable.</li>
+</ul>
+</li>
+<li>Change the size and interval of the sample regions.</li>
+<li>Click <b>Detect</b> button to do gauge inspection.</li>
+<li>The result is shown in the result panel as text, for lines, it shows the position of its middle point and the angle.</li>
+<li>The chart shows the score distribution along the region's direction. It's useful for determining a proper accept score.</li>
 </ol>
 <p><br  />
 </p>

@@ -149,6 +149,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a1bc97baa07160afa2699d8c58e095263"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the data type of the IntelliBlink data, see ILIBData.  <a href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263">More...</a><br /></td></tr>
 <tr class="separator:a1bc97baa07160afa2699d8c58e095263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84279e3fef604bccf4cb7af1dc0ce8ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">LPVIBEventCode</a> { <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8edadf0b74b6c68d7bed62a6d57f75e208b4">LPVIBEventReset</a> = 0
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8edae2842612c899ce96e62daa8941e6cde5">LPVIBEventReExecute</a> = 2
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8eda1bbd667edc82cfbd9025a62e63441990">LPVIBEventImport</a> = 3
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8eda0d002330317ee36f527829219d25e2d0">LPVIBEventExport</a> = 4
+ }</td></tr>
+<tr class="memdesc:a84279e3fef604bccf4cb7af1dc0ce8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the event code of the handle event, see ILIBTaskConfig::HandleEvent().  <a href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">More...</a><br /></td></tr>
+<tr class="separator:a84279e3fef604bccf4cb7af1dc0ce8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV IB Service Library, provides functionality for connection to IntelliBlink services. </p>
@@ -213,6 +220,32 @@ It can be converted to be a polygon(see ILIBData::ToPolygon), or a point collect
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a226e7b5843c3a5d6d9cbdcdf7771bf27"></a>LPVIBDataTypePolygonList&#160;</td><td class="fielddoc"><p>A list of polygon data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aaeb422652d8a9cd7cf17fbf6923fd6a6">ILIBData::FromPolygonList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a04f93abc419cc391d0b97c3026ff65d5">ILIBData::ToPolygonList</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a8712467c7deb983a99e5603c58ab9638"></a>LPVIBDataTypeRegion&#160;</td><td class="fielddoc"><p>A region data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#abb51fa04c299f6a654aa4cce591bd656">ILIBData::FromRegion</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a2bedd8eab75488f3be5abe93187ce028">ILIBData::ToRegion</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a84279e3fef604bccf4cb7af1dc0ce8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84279e3fef604bccf4cb7af1dc0ce8ed">&#9670;&nbsp;</a></span>LPVIBEventCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">LPVIBEventCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the event code of the handle event, see <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">ILIBTaskConfig::HandleEvent()</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8edadf0b74b6c68d7bed62a6d57f75e208b4"></a>LPVIBEventReset&#160;</td><td class="fielddoc"><p>Reset event, to clean up the data and internal storage in the specified algorithm tool. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8edae2842612c899ce96e62daa8941e6cde5"></a>LPVIBEventReExecute&#160;</td><td class="fielddoc"><p>Execute event, to trigger the re-execution event of the algorithm tool. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8eda1bbd667edc82cfbd9025a62e63441990"></a>LPVIBEventImport&#160;</td><td class="fielddoc"><p>Import event, to import the data or configuration from the given file </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a84279e3fef604bccf4cb7af1dc0ce8eda0d002330317ee36f527829219d25e2d0"></a>LPVIBEventExport&#160;</td><td class="fielddoc"><p>Export event, to export the data or configuration to the given file </p>
 </td></tr>
 </table>
 

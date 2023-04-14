@@ -109,25 +109,25 @@ Public 成员函数</h2></td></tr>
 属性</h2></td></tr>
 <tr class="memitem:a3ebf67424198be278e1b93ba9db9a919"><td class="memItemLeft" align="right" valign="top"><a id="a3ebf67424198be278e1b93ba9db9a919"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a3ebf67424198be278e1b93ba9db9a919">HistoryMaxCount</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3ebf67424198be278e1b93ba9db9a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">历史数据的最大帧数。这些数据用于构建背景模型。 <br  />
+<tr class="memdesc:a3ebf67424198be278e1b93ba9db9a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">历史数据的最大帧数。这些数据用于构建背景模型。<br  />
 取值范围为正整数，默认设置为 500. <br  />
 修改该数值将重置背景模型。 <br /></td></tr>
 <tr class="separator:a3ebf67424198be278e1b93ba9db9a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="memItemLeft" align="right" valign="top"><a id="a2c02d2ec62ed763ddf16e11f72b97fac"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a2c02d2ec62ed763ddf16e11f72b97fac">VarianceThreshold</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">方差阈值，用于判断当前像素是前景还是背景。当背景变化明显，可将该阈值设高，以降低检测灵敏度，减少误报。、 <br  />
-取值范围为正数，默认设置为 25. <br  />
+<tr class="memdesc:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">方差阈值，用于判断当前像素是前景还是背景。当背景变化明显，可将该阈值设高，以降低检测灵敏度，减少误报。<br  />
+取值范围为正数，默认设置为 25.<br  />
 修改该数值将重置背景模型。 <br /></td></tr>
 <tr class="separator:a2c02d2ec62ed763ddf16e11f72b97fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a066ff3d70e5a52a68c6a0b526e514269"><td class="memItemLeft" align="right" valign="top"><a id="a066ff3d70e5a52a68c6a0b526e514269"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a066ff3d70e5a52a68c6a0b526e514269">GenerateThreshold</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a066ff3d70e5a52a68c6a0b526e514269"><td class="mdescLeft">&#160;</td><td class="mdescRight">模型生成阈值，用于控制背景模型生成的复杂度。 若前背景图像的差异较大，需要设置一个比较大的生成阈值，获得更为鲁棒的背景模型； 相反若是前背景图像的差异很小，则需要调整为一个比较小的生成阈值，使得背景模型更为敏感。 <br  />
-取值范围为正数，默认设置为 3. <br  />
+<tr class="memdesc:a066ff3d70e5a52a68c6a0b526e514269"><td class="mdescLeft">&#160;</td><td class="mdescRight">模型生成阈值，用于控制背景模型生成的复杂度。 若前背景图像的差异较大，需要设置一个比较大的生成阈值，获得更为鲁棒的背景模型； 相反若是前背景图像的差异很小，则需要调整为一个比较小的生成阈值，使得背景模型更为敏感。<br  />
+取值范围为正数，默认设置为 3.<br  />
 修改该数值将重置背景模型。 <br /></td></tr>
 <tr class="separator:a066ff3d70e5a52a68c6a0b526e514269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ebbedafd2f6a6f082fa012581a149d3"><td class="memItemLeft" align="right" valign="top"><a id="a5ebbedafd2f6a6f082fa012581a149d3"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_b_g_subtract.html#a5ebbedafd2f6a6f082fa012581a149d3">LearningRate</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a5ebbedafd2f6a6f082fa012581a149d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">学习率，用于控制背景模型从新一帧图像中学习背景变化的速度。 <br  />
+<tr class="memdesc:a5ebbedafd2f6a6f082fa012581a149d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">学习率，用于控制背景模型从新一帧图像中学习背景变化的速度。<br  />
 取值范围为 0 ~ 1，数值越大表示学习速度越快。0 表示不更新背景模型，1 表示按最新一帧图像完全更新背景模型。 默认设置为 -1，算法将在运行过程成基于历史数据和当前模型，自动确定一个合适的学习率。 <br /></td></tr>
 <tr class="separator:a5ebbedafd2f6a6f082fa012581a149d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -144,7 +144,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line"><span class="comment">// subsequently processing on the foreground mask, say, count the pixels:</span></div>
 <div class="line"><span class="keywordtype">int</span> fgPixelCount = 0;</div>
 <div class="line">m_img_stats-&gt;CountPixel(fg_mask, NULL, 128, 255, NULL, &amp;fgPixelCount, NULL);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/BackgroudSubtract.cs </p><div class="fragment"><div class="line">LBGSubtract m_bg_sub = <span class="keyword">new</span> LBGSubtract();</div>
 <div class="line">m_bg_sub.HistoryMaxCount = 1000;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_bg_sub.Apply(cur_img, cur_fg_mask, <span class="keyword">true</span>);</div>

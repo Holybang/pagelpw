@@ -95,7 +95,7 @@ $(function() {
  <div class="center">
   <img src="interface_l_p_v_calib_lib_1_1_i_l_calib.png" usemap="#ILCalib_map" alt=""/>
   <map id="ILCalib_map" name="ILCalib_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="157,56,252,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="157,56,252,80"/>
 <area href="interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html" title="该接口对应一个自定义标定模型。" alt="ILCalibCustom" shape="rect" coords="0,168,95,192"/>
 <area href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html" title="该接口对应一个 FFD 相机标定模型。" alt="ILCalibFFD" shape="rect" coords="105,168,200,192"/>
 <area href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html" title="该接口对应一个多点变换相机标定模型。" alt="ILCalibNPoints" shape="rect" coords="210,168,305,192"/>
@@ -676,9 +676,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>修正模式也会影响图像物理坐标的映射逻辑。<br  />
 <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa8333f5d1b1274bef506a325c1e61e411">LPVFixImageNone </a>（默认）表示用户使用相机采集的原始图像用于后续的定位和检测任务，因此其图像物理坐标的映射逻辑中的图像点指定是其在<b>原始图像</b>上的坐标。 相对应地，<a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaab476028fd5631d6ea1d07493c65d9178">LPVFixImageUndistort </a> 模式中，图像点指的是其在<b>修正镜头畸变后的图像</b>上的坐标。 <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa62452e7390a6d1be2716174c7bf2495b">LPVFixImageUndistortAndUntilt </a> 模式中，图像点指的是其在<b>修正镜头畸变和相机倾斜后的图像</b>上的坐标。</p>
 <p>不同的相机标定模型，支持不同的修正模式，如下表所示。</p>
-<table class="doxtable">
+<table class="markdownTable">
 <tr>
-<th>Calibration model</th><th>Original</th><th>Undistort</th><th>Undistort and Untilt </th></tr>
+<th class="markdownTableHeadLeft">Calibration model</th><th class="markdownTableHeadLeft">Original</th><th class="markdownTableHeadLeft">Undistort</th><th class="markdownTableHeadLeft">Undistort and Untilt </th></tr>
 <tr>
 <td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">N-Points</a></td><td>Support</td><td>-</td><td>Only untilt </td></tr>
 <tr>

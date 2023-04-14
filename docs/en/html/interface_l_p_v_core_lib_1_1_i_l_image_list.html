@@ -124,18 +124,18 @@ By default, it's 0, means no limitation. <br /></td></tr>
 <p>It maintains a cache of a pre-defined size to store grabbed frames, then used in multi-frame blending, HRD or image stitching tasks.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_core_lib_1_1_l_image_list.html">LImageList</a> object.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr m_img_list(__uuidof(LImageList));</div>
-<div class="line">m_img_list-&gt;MaxCount = 3;</div>
-<div class="line">m_img_list-&gt;Add(m_frame1);</div>
-<div class="line">m_img_list-&gt;Add(m_frame2);</div>
-<div class="line">m_img_list-&gt;Add(m_frame3);</div>
-<div class="line">m_img_list-&gt;Add(m_frame4); <span class="comment">// frame 1 is popped</span></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageList m_img_list = <span class="keyword">new</span> LImageList();</div>
-<div class="line">m_img_list.MaxCount = 3;</div>
-<div class="line">m_img_list.Add(m_frame1);</div>
-<div class="line">m_img_list.Add(m_frame2);</div>
-<div class="line">m_img_list.Add(m_frame3);</div>
-<div class="line">m_img_list.Add(m_frame4); <span class="comment">// frame 1 is popped</span></div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr img_list(__uuidof(LImageList));</div>
+<div class="line">img_list-&gt;MaxCount = 3;</div>
+<div class="line">img_list-&gt;Add(frame1);</div>
+<div class="line">img_list-&gt;Add(frame2);</div>
+<div class="line">img_list-&gt;Add(frame3);</div>
+<div class="line">img_list-&gt;Add(frame4); <span class="comment">// frame 1 is popped</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageList img_list = <span class="keyword">new</span> LImageList();</div>
+<div class="line">img_list.MaxCount = 3;</div>
+<div class="line">img_list.Add(frame1);</div>
+<div class="line">img_list.Add(frame2);</div>
+<div class="line">img_list.Add(frame3);</div>
+<div class="line">img_list.Add(frame4); <span class="comment">// frame 1 is popped</span></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>

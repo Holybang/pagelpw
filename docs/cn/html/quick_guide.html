@@ -103,15 +103,15 @@ $(function() {
 试用版：使用 License 文件进行授权</h3>
 <ol type="1">
 <li>运行 LPW 运行目录下的 <b>lpvKeyTool.exe</b> ，生成 <b>lpv.key</b> 文件。</li>
-<li>将生成的 lpv.key 文件放给我们或者您的 LPW SDK 技术支持，我们将为您的机器进行授权，并发回 <b>lpv.lic</b> 文件。</li>
+<li>将生成的 lpv.key 文件发给我们或者您的 LPW SDK 技术支持，我们将为您的机器进行授权，并发回 **.lic** 授权文件。</li>
 <li>您可按照以下任一方式部署授权文件：</li>
 </ol>
 <ul>
-<li>将 lpv.lic 文件放在安装后的运行根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
-<li>将 lpv.lic 文件放在用户目录下 (AppData%/LPV)，保证名称与 “lpv.lic” 完全一致。</li>
-<li>打开任意一个 demo 程序，弹出未授权提示，选择是并上传 lpv.lic 文件，我们将自动复制该文件到可授权的目录。</li>
+<li>将授权文件放在安装后的运行根目录下 (./runner)。</li>
+<li>将授权文件放在用户目录下 (AppData%/LPV)。</li>
+<li>打开任意一个 demo 程序，弹出未授权提示，选择 <b>RETRY</b> 并选择上传授权文件，我们将自动复制该文件到可授权的目录。</li>
 </ul>
-<p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，请联系我们或者您的 LPW SDK 技术支持。</em></p>
+<p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，届时请联系我们或者您的 LPW SDK 技术支持。</em></p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 正式版：使用圣天诺加密狗进行授权</h3>
 <ol type="1">
@@ -121,7 +121,7 @@ $(function() {
 <h3><a class="anchor" id="autotoc_md10"></a>
 正式版：使用深思加密狗进行授权</h3>
 <ol type="1">
-<li>下载并安装深思驱动，可从 <a href="https://lm.virbox.com/tools.html">官网</a> 或我们提供的 <a href="http://fileserver.hzleaper.com:8086/f/210d89dee4674fb98469/">链接</a> 下载。</li>
+<li>下载并安装深思驱动，可从 <a href="https://lm.virbox.com/tools.html">官网</a> 或我们提供的 <a href="http://fileserver.hzleaper.com:8086/f/4f4279fb56f9422db14b/">链接</a> 下载。</li>
 <li>插入 LPW 加密狗，检查加密狗是否亮灯并常亮。</li>
 <li>打开任意一个 demo 程序，检测授权是否正常。</li>
 </ol>
@@ -149,14 +149,14 @@ $(function() {
 <div class="line"><span class="comment">// 调用接口，处理返回错误码，如下，进行模板匹配</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) {}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、region、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:106</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、region、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:102</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 <div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV 几何库，提供几何形状相关的数据定义、计算和测量功能。</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:50</div></div>
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV 模板匹配模块，用于提供模板匹配功能。</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:50</div></div>
 </div><!-- fragment --></li>
 </ol>
  </div>  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>我们推荐使用基于 <a href="https://docs.microsoft.com/zh-cn/cpp/cpp/compiler-com-support"><b>编译器 COM 支持</b></a> 的方式，将 LPW 模块编译转换为 C++ 头文件并调用。</p><ol type="1">
-<li>在程序开始处调用 <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex">CoInitializeEx</a>，结束处调用 <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize">CoUnitialize</a>。如果你希望在子线程中创建和保管 LPW 实例，那么就需要在线程开始和结束时也调用这两个函数。需要在使用 LPW 模块前调用初始化。<br  />
+<li>在程序开始处调用 <a href="https://docs.microsoft.com/zh-cn/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex">CoInitializeEx</a>，结束处调用 <a href="https://docs.microsoft.com/zh-cn/windows/win32/api/combaseapi/nf-combaseapi-couninitialize">CoUnitialize</a>。如果你希望在子线程中创建和保管 LPW 实例，那么就需要在线程开始和结束时也调用这两个函数。需要在使用 LPW 模块前调用初始化。<br  />
 以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中，如： <div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// 你需要根据应用程序的实际情况选择 COINIT_MULTITHREADED 或 COINIT_APARTMENTTHREADED</span></div>
@@ -171,7 +171,7 @@ $(function() {
 <div class="line">    CoUninitialize();</div>
 <div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
 <div class="line">}</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --> 对于 QT 程序，若使用 QApplication 或 QGuiApplication 可省略 CoInitializeEx 的调用，因为它们会在其构造函数中以 <a href="https://learn.microsoft.com/zh-cn/windows/win32/com/single-threaded-apartments">STA</a> 初始化 COM。但若使用 QCoreApplication，则仍需调用 CoInitializeEx。</li>
 <li>使用 <a href="https://docs.microsoft.com/zh-cn/cpp/preprocessor/hash-import-directive-cpp">#import 指令</a> 导入 LPW 类型库，包括 LPVCoreLib（必须）、LPVGeomLib（必须）及其他希望加入的 LPVXXXLib 算法库。<br  />
 以 LPVCore 模块为例，在代码中添加以下导入命令： <div class="fragment"><div class="line"><span class="comment">// 使用 demo/include 文件夹中我们为各个模块准备的 #import 用的头文件</span></div>
 <div class="line"><span class="comment">// 需先拷贝 demo/include 文件夹到工程目录，或添加该目录到工程配置中</span></div>

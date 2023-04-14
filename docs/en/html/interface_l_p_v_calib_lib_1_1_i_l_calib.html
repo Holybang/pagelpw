@@ -95,7 +95,7 @@ Inheritance diagram for ILCalib:</div>
  <div class="center">
   <img src="interface_l_p_v_calib_lib_1_1_i_l_calib.png" usemap="#ILCalib_map" alt=""/>
   <map id="ILCalib_map" name="ILCalib_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="157,56,252,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="This base interface for a serializable LPV object." alt="ILObject" shape="rect" coords="157,56,252,80"/>
 <area href="interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html" title="This interface provide functionalities of the custom camera model." alt="ILCalibCustom" shape="rect" coords="0,168,95,192"/>
 <area href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html" title="This interface provide functionalities of the FFD camera model." alt="ILCalibFFD" shape="rect" coords="105,168,200,192"/>
 <area href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html" title="This interface provide functionalities of the n-points camera model." alt="ILCalibNPoints" shape="rect" coords="210,168,305,192"/>
@@ -678,9 +678,9 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
 <p>Change the mode will also affect the image-world mapping logic. <br  />
 <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa8333f5d1b1274bef506a325c1e61e411">LPVFixImageNone </a> (Default) indicate user is using the original image captured by the camera for the subsequent detection or inspection tasks, so the image point in the image-world mapping logic is in the coordinates of the <b>original</b> image. Correspondingly, for <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaab476028fd5631d6ea1d07493c65d9178">LPVFixImageUndistort </a> mode, the image point is in the coordinates of the <b>undistorted</b> image. For <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa62452e7390a6d1be2716174c7bf2495b">LPVFixImageUndistortAndUntilt </a> mode, it's in the coordinates of the <b> undistorted and untilt </b> image. If you want to use different mapping logic at the same time, you may have to duplicate the calibration object via Copy() and set different <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31" title="The mode to fix image used in FixImage().">FixImageMode</a> for them.</p>
 <p>Different calibration model support different fix mode, as the table below.</p>
-<table class="doxtable">
+<table class="markdownTable">
 <tr>
-<th>Calibration model</th><th>Original</th><th>Undistort</th><th>Undistort and Untilt </th></tr>
+<th class="markdownTableHeadLeft">Calibration model</th><th class="markdownTableHeadLeft">Original</th><th class="markdownTableHeadLeft">Undistort</th><th class="markdownTableHeadLeft">Undistort and Untilt </th></tr>
 <tr>
 <td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">N-Points</a></td><td>Support</td><td>-</td><td>Only untilt </td></tr>
 <tr>

@@ -103,13 +103,13 @@ Licensing</h1>
 Trial Version: Use License File</h3>
 <ol type="1">
 <li>Run <b>lpvKeyTool.exe</b> under the installed runner folder(either runner/x64 or runner/86). It generates a <b>lpv.key</b> file.</li>
-<li>Send the generated lpv.key file to us or your LPW SDK Tech Support. We will send you back a <b>lpv.lic</b> file.</li>
+<li>Send the generated lpv.key file to us or your LPW SDK Tech Support. We will send you back a **.lic** license file.</li>
 <li>You may use any of the following approach to deploy the license file:</li>
 </ol>
 <ul>
-<li>Put the license file under the root runner folder(./runner), and with the exactly name "lpv.lic".</li>
-<li>Put the license file under the user folder(AppData%/LPV), and with the exactly name "lpv.lic".</li>
-<li>Open any demo application, it will pop up the unlicensed warning dialog, click YES and upload the lpv.lic file, we will copy it for you to the right folder.</li>
+<li>Put the license file under the root runner folder(./runner).</li>
+<li>Put the license file under the user folder(AppData%/LPV).</li>
+<li>Open any demo application, it will pop up the unlicensed warning dialog, click <b>RETRY</b> and upload the license file, we will copy it for you to the right folder.</li>
 </ul>
 <p><em>Note: This approach is only for short-term evaluation, you'll be notified when the trial period expired, please contact us or your LPW SDK Tech Support.</em></p>
 <h3><a class="anchor" id="autotoc_md9"></a>
@@ -121,7 +121,7 @@ Full Version: Use Sentinel Protection Key</h3>
 <h3><a class="anchor" id="autotoc_md10"></a>
 Full Version: Use Sense Protection Key</h3>
 <ol type="1">
-<li>Download then install the Sense driver from the <a href="https://lm.virbox.com/tools.html">official site</a> or our download link <a href="http://fileserver.hzleaper.com:8086/f/210d89dee4674fb98469/">here</a>.</li>
+<li>Download then install the Sense driver from the <a href="https://lm.virbox.com/tools.html">official site</a> or our download link <a href="http://fileserver.hzleaper.com:8086/f/4f4279fb56f9422db14b/">here</a>.</li>
 <li>Plug in the Sense Protection Key of LPW. Make sure the key lights up.</li>
 <li>Open any demo application to see it if it works as expected.</li>
 </ol>
@@ -150,8 +150,8 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line"><span class="comment">// call @projectname functions and handle the returned error code, such as do pattern matching.</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) {}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:106</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:102</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 <div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV Geometry Library, provide geometric functionalities.</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:50</div></div>
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV Pattern Library, provides functionality for pattern matching.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:50</div></div>
 </div><!-- fragment --></li>
@@ -172,7 +172,7 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line">    CoUninitialize();</div>
 <div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
 <div class="line">}</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --> Note: For Qt applications which uses QApplication or QGuiApplication, you may omit the CoInitializeEx call since they will initialize COM as STA in their constructor. But for QCoreApplication, it's still required.</li>
 <li>Use <a href="@https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp">#import directive</a> to incorporate information from LPW libraries, including <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have), <a class="el" href="namespace_l_p_v_geom_lib.html" title="LPV Geometry Library, provide geometric functionalities.">LPVGeomLib</a> (must-have) and other required LPVXXXLibs.<br  />
 For example, to import LPVCore library: <div class="fragment"><div class="line"><span class="comment">// use the include file under &quot;demo/include&quot; folder</span></div>
 <div class="line"><span class="comment">// You may firstly copy &quot;demo/include&quot; folder to your project folder, or add the folder to your project&#39;s include path</span></div>

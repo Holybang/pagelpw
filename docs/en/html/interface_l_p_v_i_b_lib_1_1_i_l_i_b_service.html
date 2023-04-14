@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="comment">// do other stuff, like parse and display task result, change task configuration...</span></div>
 <div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
 <div class="line">m_ib_service.TearDown();</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:194</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06d21a51a97e29d464e5690452fe7565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06d21a51a97e29d464e5690452fe7565">&#9670;&nbsp;</a></span>IsReady()</h2>
@@ -300,19 +300,14 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </div><div class="memdoc">
 <p>Load the IntelliBlink task from a specified file. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the task file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">taskId</td><td>Output the unique task ID. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">taskId</td><td>Output the unique task ID. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -360,7 +355,7 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -432,7 +427,7 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -525,7 +520,7 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return LPVNoError if succeed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -556,7 +551,7 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return LPVNoError if succeed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -598,7 +593,7 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return LPVNoError if succeed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -640,7 +635,7 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return LPVNoError if succeed. </td></tr>
   </table>
   </dd>
 </dl>

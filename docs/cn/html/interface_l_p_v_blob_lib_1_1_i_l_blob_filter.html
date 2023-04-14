@@ -118,12 +118,12 @@ Public 成员函数</h2></td></tr>
 支持在单个斑点过滤器中定义多个属性过滤，对于每一个候选斑点，若满足所有属性过滤设置，则是为满足该过滤器。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_filter.html">LBlobFilter</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBlobFilterPtr m_blob_filter(__uuidof(LBlobFilter));</div>
-<div class="line">m_blob_filter-&gt;SetFilterFeature(LPVBlobFeatures::LPVBlobArea, 1000, -1);</div>
-<div class="line">m_blob_result2 = m_blob_filter-&gt;FilterResults(m_blob_result);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlobFilter m_blob_filter = <span class="keyword">new</span> LBlobFilter();</div>
-<div class="line">m_blob_filter.SetFilterFeature(<a class="code" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>.LPVBlobArea, 1000, -1);</div>
-<div class="line">m_blob_result2 = m_blob_filter.FilterResults(m_blob_result);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBlobFilterPtr blob_filter(__uuidof(LBlobFilter));</div>
+<div class="line">blob_filter-&gt;SetFilterFeature(LPVBlobFeatures::LPVBlobArea, 1000, -1);</div>
+<div class="line">blob_result2 = blob_filter-&gt;FilterResults(blob_result);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlobFilter blob_filter = <span class="keyword">new</span> LBlobFilter();</div>
+<div class="line">blob_filter.SetFilterFeature(<a class="code" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>.LPVBlobArea, 1000, -1);</div>
+<div class="line">blob_result2 = blob_filter.FilterResults(blob_result);</div>
 <div class="ttc" id="anamespace_l_p_v_blob_lib_html_a45c2c9b22e80b8f2439fcdbcf94cec50"><div class="ttname"><a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobLib::LPVBlobFeatures</a></div><div class="ttdeci">LPVBlobFeatures</div><div class="ttdoc">该枚举表示斑点的数值类型的属性特征</div><div class="ttdef"><b>Definition:</b> LPVBlob.idl:59</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a372de693ad40b3f42839c8ec6ac845f4"></a>

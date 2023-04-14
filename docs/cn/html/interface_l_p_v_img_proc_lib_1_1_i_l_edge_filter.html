@@ -95,13 +95,13 @@ $(function() {
  <div class="center">
   <img src="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.png" usemap="#ILEdgeFilter_map" alt=""/>
   <map id="ILEdgeFilter_map" name="ILEdgeFilter_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="0,56,80,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,56,80,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a99c6c95dff350aa072386e0de834c130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a99c6c95dff350aa072386e0de834c130">SetEdgeKernel</a> (<a class="el" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a> kType, int kWidth, int kHeight)</td></tr>
+<tr class="memitem:a99c6c95dff350aa072386e0de834c130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a99c6c95dff350aa072386e0de834c130">SetEdgeKernel</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a> kType, int kWidth, int kHeight)</td></tr>
 <tr class="separator:a99c6c95dff350aa072386e0de834c130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae57e34cd21b21266889d23b81bb50d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#ae57e34cd21b21266889d23b81bb50d28">SetEdgePolarity</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> xPolarity, enum <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> yPolarity)</td></tr>
 <tr class="separator:ae57e34cd21b21266889d23b81bb50d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,7 +121,7 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
-<tr class="memitem:a56c19d36c87be2abc23c15d8bb696646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a56c19d36c87be2abc23c15d8bb696646">KernelType</a><code> [get]</code></td></tr>
+<tr class="memitem:a56c19d36c87be2abc23c15d8bb696646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a56c19d36c87be2abc23c15d8bb696646">KernelType</a><code> [get]</code></td></tr>
 <tr class="memdesc:a56c19d36c87be2abc23c15d8bb696646"><td class="mdescLeft">&#160;</td><td class="mdescRight">核类型  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a56c19d36c87be2abc23c15d8bb696646">更多...</a><br /></td></tr>
 <tr class="separator:a56c19d36c87be2abc23c15d8bb696646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe1c67e11510263d518d0ef583c0c96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#acbe1c67e11510263d518d0ef583c0c96">KernelWidth</a><code> [get]</code></td></tr>
@@ -142,13 +142,12 @@ Public 成员函数</h2></td></tr>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_edge_filter.html">LEdgeFilter</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILEdgeFilterPtr m_edge_filter_op(__uuidof(LEdgeFilter));</div>
-<div class="line">m_edge_filter_op-&gt;SetEdgeKernel(<a class="code" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVSobel</a>, 5, 5);</div>
+<div class="line">m_edge_filter_op-&gt;SetEdgeKernel(LPVSobel, 5, 5);</div>
 <div class="line">m_edge_filter_op-&gt;GradientFull(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVImgProcLib::LPVSobel</a></div><div class="ttdeci">@ LPVSobel</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:99</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LEdgeFilter m_edge_filter_op = <span class="keyword">new</span> LEdgeFilter();</div>
-<div class="line">m_edge_filter_op.SetEdgeKernel(<a class="code" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>.LPVSobel, 5, 5);</div>
+<div class="line">m_edge_filter_op.SetEdgeKernel(<a class="code" href="namespace_l_p_v_core_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>.LPVSobel, 5, 5);</div>
 <div class="line">m_edge_filter_op.GradientFull(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0d"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVImgProcLib::LPVEdgeKernel</a></div><div class="ttdeci">LPVEdgeKernel</div><div class="ttdoc">描述边缘滤波工具中所使用的核的类型</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:89</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ae9fce5290064b3ab00a2b0c192245c0d"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVCoreLib::LPVEdgeKernel</a></div><div class="ttdeci">LPVEdgeKernel</div><div class="ttdoc">描述边缘滤波工具中所使用的核的类型</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1126</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a99c6c95dff350aa072386e0de834c130"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99c6c95dff350aa072386e0de834c130">&#9670;&nbsp;</a></span>SetEdgeKernel()</h2>
@@ -159,7 +158,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void SetEdgeKernel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>&#160;</td>
           <td class="paramname"><em>kType</em>, </td>
         </tr>
         <tr>
@@ -217,7 +216,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>设置边缘滤波器的极性，以获得感兴趣极性的边缘 </p><dl class="params"><dt>参数</dt><dd>
+<p>设置滤波器的<em>边缘极性</em>，以获得感兴趣极性的边缘 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">xPolarity</td><td>水平方向边缘的极性（以从左到右为方向）。默认设置为任意极性。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">yPolarity</td><td>垂直方向边缘的极性（以从上到下为方向）。默认设置为任意极性。 </td></tr>
@@ -343,7 +342,7 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a> KernelType</td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a> KernelType</td>
         </tr>
       </table>
   </td>

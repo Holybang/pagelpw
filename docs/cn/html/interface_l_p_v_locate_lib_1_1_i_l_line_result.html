@@ -116,9 +116,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="textblock"><p>该接口表示单个直线检测结果，可获取其具体属性。 </p>
 <p>通常通过 <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a9d9430fe5b4166452cebece6fb3846b4">ILLineResults::Item()</a> 函数获得 <a class="el" href="class_l_p_v_locate_lib_1_1_l_line_result.html">LLineResult</a> 对象。可以使用该接口访问单个直线对象的具体信息，如直线位置、分数等， 还可以调用绘制函数将单个直线对象绘制在界面上。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineResultPtr result = m_line_results-&gt;Item(i);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineResultPtr result = line_results-&gt;Item(i);</div>
 <div class="line">ILLinePtr line = result-&gt;Line;</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineResult result = m_line_results.Item(i);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineResult result = line_results.Item(i);</div>
 <div class="line">LLine line = result.Line;</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="aa3095e265ff6403ffaa93103521b278a"></a>
