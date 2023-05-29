@@ -97,26 +97,21 @@ Inheritance diagram for ILWaferMapDisplay:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56cbab589ba771bb98fed3127c5848e6"><td class="memItemLeft" align="right" valign="top"><a id="a56cbab589ba771bb98fed3127c5848e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWaferMap</b> (IDispatch *wafermap, int drawFlags)</td></tr>
+<tr class="memitem:a56cbab589ba771bb98fed3127c5848e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_display_lib_1_1_i_l_wafer_map_display.html#a56cbab589ba771bb98fed3127c5848e6">SetWaferMap</a> (IDispatch *wafermap, int drawFlags)</td></tr>
 <tr class="separator:a56cbab589ba771bb98fed3127c5848e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c1c51566a237069b9a34f616601880"><td class="memItemLeft" align="right" valign="top"><a id="ab5c1c51566a237069b9a34f616601880"></a>
-IDispatch *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWaferMap</b> ()</td></tr>
+<tr class="memitem:ab5c1c51566a237069b9a34f616601880"><td class="memItemLeft" align="right" valign="top">IDispatch *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_display_lib_1_1_i_l_wafer_map_display.html#ab5c1c51566a237069b9a34f616601880">GetWaferMap</a> ()</td></tr>
 <tr class="separator:ab5c1c51566a237069b9a34f616601880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed43d98243c27cf556fd6ac422d8ee80"><td class="memItemLeft" align="right" valign="top"><a id="aed43d98243c27cf556fd6ac422d8ee80"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveWaferMap</b> ()</td></tr>
+<tr class="memitem:aed43d98243c27cf556fd6ac422d8ee80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_display_lib_1_1_i_l_wafer_map_display.html#aed43d98243c27cf556fd6ac422d8ee80">RemoveWaferMap</a> ()</td></tr>
 <tr class="separator:aed43d98243c27cf556fd6ac422d8ee80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8f442fce52206cc5e021da72ed24165"><td class="memItemLeft" align="right" valign="top"><a id="ab8f442fce52206cc5e021da72ed24165"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClientToWafer</b> (int x, int y, double *waferX, double *waferY)</td></tr>
+<tr class="memitem:ab8f442fce52206cc5e021da72ed24165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_display_lib_1_1_i_l_wafer_map_display.html#ab8f442fce52206cc5e021da72ed24165">ClientToWafer</a> (int x, int y, double *waferX, double *waferY)</td></tr>
 <tr class="separator:ab8f442fce52206cc5e021da72ed24165"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8a2a8ba28b267dea556e5b72ace60a"><td class="memItemLeft" align="right" valign="top"><a id="a5d8a2a8ba28b267dea556e5b72ace60a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WaferToClient</b> (double waferX, double waferY, int *x, int *y)</td></tr>
+<tr class="memitem:a5d8a2a8ba28b267dea556e5b72ace60a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_wafer_display_lib_1_1_i_l_wafer_map_display.html#a5d8a2a8ba28b267dea556e5b72ace60a">WaferToClient</a> (double waferX, double waferY, int *x, int *y)</td></tr>
 <tr class="separator:a5d8a2a8ba28b267dea556e5b72ace60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of the display control. </p>
 <p>Usually you add the display control via the Toolbox in Visual Studio. This interface helps you to manage the scene in the display control, for the image, regions, geometric shapes and algorithms' results to shown in the control.</p>
-<p>See <a class="el" href="interface_l_p_w_wafer_display_lib_1_1_i_l_wafer_map_display_events.html">ILWaferMapDisplayEvents</a> for the control's event.</p>
+<p>See <a class="el" href="interface_l_p_w_wafer_display_lib_1_1_i_l_wafer_map_display_events.html" title="The events for LWaferMapDisplay control.">ILWaferMapDisplayEvents</a> for the control's event.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// set image to the control</span></div>
 <div class="line">m_displayCtrl-&gt;SetImage(img);</div>
@@ -149,7 +144,182 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WaferToClient</b> (do
 <div class="line"><span class="comment">// add the pattern matching result to the control</span></div>
 <div class="line">m_displayCtrl.AddObject(match_results, <a class="code" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a>.LPVPatDrawBoundingRect | <a class="code" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a>.LPVPatDrawCenter);</div>
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html_a38ed5c152c13123c0ab8728aa55efdf2"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatLib::LPVPatDrawFlags</a></div><div class="ttdeci">LPVPatDrawFlags</div><div class="ttdoc">This enumeration represents the flags to control the pattern drawing behavior.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:84</div></div>
-</div><!-- fragment --> </div>  </div></div><!-- contents -->
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a56cbab589ba771bb98fed3127c5848e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56cbab589ba771bb98fed3127c5848e6">&#9670;&nbsp;</a></span>SetWaferMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetWaferMap </td>
+          <td>(</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>wafermap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>drawFlags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the wafer map of the scene and the drawing flags. The size of the scene is extended to the map size. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wafermap</td><td>The wafer map item, it should be a <a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html">LWaferMap </a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>The flags to control the display contents, see <a class="el" href="namespace_l_p_w_wafer_map_lib.html#ae3dc5b70c7c0233f5a69edfe67cfa939">LPWWaferMapDrawFlags </a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab5c1c51566a237069b9a34f616601880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c1c51566a237069b9a34f616601880">&#9670;&nbsp;</a></span>GetWaferMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDispatch* GetWaferMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the current displaying wafer map item. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">wafermap</td><td>Return the wafer map object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed43d98243c27cf556fd6ac422d8ee80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed43d98243c27cf556fd6ac422d8ee80">&#9670;&nbsp;</a></span>RemoveWaferMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveWaferMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the wafer map from the scene. The current scene size is retained. </p>
+
+</div>
+</div>
+<a id="ab8f442fce52206cc5e021da72ed24165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f442fce52206cc5e021da72ed24165">&#9670;&nbsp;</a></span>ClientToWafer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientToWafer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>waferX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>waferY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Map the position from the display control's client coordinates to the wafer map's coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the position, relative to the upper-left corner of the display control's client area. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the position, relative to the upper-left corner of the display control's client area. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">waferX</td><td>Output the x-coordinate of the transformed position. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">waferY</td><td>Output the y-coordinate of the transformed position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d8a2a8ba28b267dea556e5b72ace60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8a2a8ba28b267dea556e5b72ace60a">&#9670;&nbsp;</a></span>WaferToClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaferToClient </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>waferX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>waferY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Map the position from the wafer map's coordinates to the display control's client coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">waferX</td><td>The x-coordinate of the position in the wafer map. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">waferY</td><td>The y-coordinate of the position in the wafer map. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>Output the x-coordinate of the transformed position, relative to the upper-left corner of the display control's client area </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>Output the y-coordinate of the transformed position, relative to the upper-left corner of the display control's client area </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

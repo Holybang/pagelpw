@@ -100,10 +100,28 @@ Use the Installer</h1>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Licensing</h1>
 <h3><a class="anchor" id="autotoc_md8"></a>
-Trial Version: Use License File</h3>
+Full Version: Use Dongle</h3>
 <ol type="1">
-<li>Run <b>lpvKeyTool.exe</b> under the installed runner folder(either runner/x64 or runner/86). It generates a <b>lpv.key</b> file.</li>
-<li>Send the generated lpv.key file to us or your LPW SDK Tech Support. We will send you back a **.lic** license file.</li>
+<li>For Sense dongle, download then install the driver software from the <a href="https://lm.virbox.com/tools.html">official site</a> or our download link <a href="http://fileserver.hzleaper.com:8086/f/4f4279fb56f9422db14b/">here</a>.</li>
+<li>Plug in the dongle of LPW. Make sure the key lights up.</li>
+<li>Open <b>lpvAssistant</b> application under the installed folder or from the start menu shortcut.</li>
+<li>In <b>Dongles</b> group, switch to <b>View Licenses</b> panel, review license status of all modules.</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Trial Version: Use License File</h3>
+<p><em>Note: This approach is only for short-term evaluation, you'll be notified when the trial period expired, please contact us or your LPW SDK Tech Support.</em></p>
+<ol type="1">
+<li>Open <b>lpvAssistant</b> application under the installed folder or from the start menu shortcut.</li>
+<li>In <b>Licenses Files</b> group, switch to <b>Activate Licenses</b> panel then click <b>Generate Key File</b> button. It generates a <b>lpv.key</b> file under your selected directory.</li>
+<li>Send the generated lpv.key file to us or your LPW SDK Tech Support. We will send you back a <b>.lic</b> license file.</li>
+<li>Click <b>Activate</b> button in the same panel and choose the correct license file.</li>
+<li>The assistant will test the licenses and pop up <em>"Successfully licensed!"</em> message box if everything works fine.</li>
+<li>You may review license status of all modules in <b>View Licenses</b> panel.</li>
+</ol>
+<p><em>Legacy</em></p>
+<ol type="1">
+<li>Run <b>lpvKeyTool.exe</b> under the installed folder. It generates a <b>lpv.key</b> file on your desktop.</li>
+<li>Send the generated lpv.key file to us or your LPW SDK Tech Support. We will send you back a <b>.lic</b> license file.</li>
 <li>You may use any of the following approach to deploy the license file:</li>
 </ol>
 <ul>
@@ -111,25 +129,11 @@ Trial Version: Use License File</h3>
 <li>Put the license file under the user folder(AppData%/LPV).</li>
 <li>Open any demo application, it will pop up the unlicensed warning dialog, click <b>RETRY</b> and upload the license file, we will copy it for you to the right folder.</li>
 </ul>
-<p><em>Note: This approach is only for short-term evaluation, you'll be notified when the trial period expired, please contact us or your LPW SDK Tech Support.</em></p>
-<h3><a class="anchor" id="autotoc_md9"></a>
-Full Version: Use Sentinel Protection Key</h3>
-<ol type="1">
-<li>Plug in the Sentinel Protection Key of LPW. Make sure the key lights up.</li>
-<li>Open any demo application to see it if it works as expected.</li>
-</ol>
-<h3><a class="anchor" id="autotoc_md10"></a>
-Full Version: Use Sense Protection Key</h3>
-<ol type="1">
-<li>Download then install the Sense driver from the <a href="https://lm.virbox.com/tools.html">official site</a> or our download link <a href="http://fileserver.hzleaper.com:8086/f/4f4279fb56f9422db14b/">here</a>.</li>
-<li>Plug in the Sense Protection Key of LPW. Make sure the key lights up.</li>
-<li>Open any demo application to see it if it works as expected.</li>
-</ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Integration</h1>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Add LPW Libraries to Visual Studio Projects</h2>
  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
 <li>RMC your C# project, click "Add Reference"</li>
@@ -150,8 +154,8 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line"><span class="comment">// call @projectname functions and handle the returned error code, such as do pattern matching.</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) {}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:102</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:100</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 <div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV Geometry Library, provide geometric functionalities.</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:50</div></div>
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV Pattern Library, provides functionality for pattern matching.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:50</div></div>
 </div><!-- fragment --></li>

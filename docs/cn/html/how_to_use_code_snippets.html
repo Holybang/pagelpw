@@ -83,15 +83,15 @@ $(function() {
 <p>编译该代码片段的可执行程序，需先构建一个 Visual Studio 工程，然后将代码片段添加或复制到该工程中。对于代码片段中涉及的图像文件路径，需修改为真实可达的路径，图片通常位于 demo/images 文件夹内。然后按照通常的方式，编译和执行该工程。我们通常会在代码片段中使用 LDisplay 控件显示算法的执行结果。</p>
 <p><em>注意：DEMO 程序的平台需与安装注册的 lpv 版本对应。</em><br  />
  <em>注意：执行 DEMO 程序前，需保证 LPW 已正常注册和授权。</em></p>
-<h1><a class="anchor" id="autotoc_md21"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 创建 DEMO 代码片段工程</h1>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
 步骤 1 - 新建控制台程序</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>打开 Visual Studio，菜单点击 <b>文件 -&gt; 新建 -&gt; 项目**，新建一个 **控制台应用</b> 工程。</p>
 <p><img src="t04_new_console_app_proj.png" alt="" class="inline" title="T04 New Console App Proj"/></p>
  </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p>打开 Visual Studio，菜单点击 <b>文件 -&gt; 新建 -&gt; 项目**，新建一个 **控制台应用(.NET Framework)</b> 工程。</p>
 <p><img src="t04_new_console_app_proj_csharp.png" alt="" class="inline" title="T04 New Console App Proj Csharp"/></p>
- </div> <h2><a class="anchor" id="autotoc_md23"></a>
+ </div> <h2><a class="anchor" id="autotoc_md22"></a>
 步骤 2 - 添加代码段源文件到工程</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>移除新工程自带的 .cpp 文件，右键工程选择 **添加 -&gt; 现有项**，添加代码段的源代码文件到工程。</p>
 <p>或者，也可复制粘贴代码段的内容到新工程自带的 .cpp 文件中。</p>
@@ -102,7 +102,7 @@ $(function() {
 <li>右键工程的 Reference 项，点击 Add Reference</li>
 <li>选择 COM 页面，找到 LPVCoreLib（必须）及其他希望加入的 LPVXXXLib 算法库，勾选后点击 OK 。</li>
 </ol>
- </div> <h2><a class="anchor" id="autotoc_md24"></a>
+ </div> <h2><a class="anchor" id="autotoc_md23"></a>
 步骤 3 - 修改图像路径</h2>
 <p>修改代码中涉及的图像文件路径为真实可达的路径，如：</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line">    <span class="comment">// load some images, add them to list</span></div>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line">    <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = img-&gt;Load(L<span class="stringliteral">&quot;sourceImg.png&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">if</span> (err != LPVNoError)</div>
 <div class="line">        <span class="keywordflow">return</span>; <span class="comment">// load image failed</span></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line">    <span class="comment">// load some images, add them to list</span></div>
 <div class="line">    LImage img = <span class="keyword">new</span> LImage();</div>
 <div class="line">    <span class="comment">// change the path, for example, D:/lpv_install_dir/demo/image/sourceImg.png</span></div>

@@ -122,6 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2e822142e0f2469812405d680e802a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514aa54b0c95fce90cfde03ac4632d52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_arc.html#a514aa54b0c95fce90cfde03ac4632d52">FromAnnulusSectorRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html">ILAnnulusSectorRegion</a> *val)</td></tr>
 <tr class="separator:a514aa54b0c95fce90cfde03ac4632d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc6a14c4251a7c9180003258522adc1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_arc.html#a6cc6a14c4251a7c9180003258522adc1">GetLength</a> ()</td></tr>
+<tr class="separator:a6cc6a14c4251a7c9180003258522adc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6317a09a038ec330a5b51a063342d800"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_arc.html#a6317a09a038ec330a5b51a063342d800">GetAngle</a> ()</td></tr>
+<tr class="separator:a6317a09a038ec330a5b51a063342d800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0cd112aa5e62d431c0472ce52e29e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_arc.html#aba0cd112aa5e62d431c0472ce52e29e8">Resample</a> (int num)</td></tr>
+<tr class="separator:aba0cd112aa5e62d431c0472ce52e29e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -505,6 +511,82 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
       </table>
 </div><div class="memdoc">
 <p>Set placement of the arc from the input annulus sector region. The start and end angle is the same as the annulus sector region, the radius is the averaging of the inner and outer radius of the region. </p>
+
+</div>
+</div>
+<a id="a6cc6a14c4251a7c9180003258522adc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc6a14c4251a7c9180003258522adc1">&#9670;&nbsp;</a></span>GetLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GetLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the length of the arc segment </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return the length. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6317a09a038ec330a5b51a063342d800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6317a09a038ec330a5b51a063342d800">&#9670;&nbsp;</a></span>GetAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GetAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the angle size of the arc segment </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return the angle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aba0cd112aa5e62d431c0472ce52e29e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0cd112aa5e62d431c0472ce52e29e8">&#9670;&nbsp;</a></span>Resample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Resample </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Resample the arc object into an open polygon of the specified vertex count The start and end point is always kept in the resampled result. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>The count of the resampled vertexes, at least 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return the resampling result polygon </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

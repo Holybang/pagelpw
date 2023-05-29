@@ -128,15 +128,13 @@ Properties</h2></td></tr>
 <tr>
 <td><a class="el" href="namespace_l_p_v_locate_x_lib.html" title="LPV Advanced Feature Locating Library, provides classes for the advanced object/edge detection tasks.">LPVLocateXLib</a></td><td><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html">LPathResult</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html">LContourResult</a> </td></tr>
 <tr>
-<td><a class="el" href="namespace_l_p_v_gauge_lib.html" title="LPV Gauging Library, provides classes for 1D and 2D shape metrology.">LPVGaugeLib</a></td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge_result.html">LGaugeResult</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_gauge_lib.html" title="LPV Gauging Library, provides classes for 1D edge and 2D shape metrology.">LPVGaugeLib</a></td><td>LGaugeResult </td></tr>
 <tr>
 <td><a class="el" href="namespace_l_p_v_math_lib.html" title="LPV Math&amp; Data analysis Library, provide mathematics and data analysis functionalities.">LPVMathLib</a></td><td><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_list.html">LDataList</a> </td></tr>
 <tr>
 <td><a class="el" href="namespace_l_p_v_barcode_lib.html" title="LPV Barcode Library, provides functionality for 1D/2D barcode inspection.">LPVBarcodeLib</a></td><td><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html">LBarcodeResult</a> </td></tr>
 <tr>
 <td><a class="el" href="namespace_l_p_v_o_c_r_lib.html" title="LPV OCR(Optical Character Recognition) Library, provides classes for character segmentation,...">LPVOCRLib</a></td><td><a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r_char.html">LOCRChar</a>, <a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r_line.html">LOCRLine</a>, <a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r_result.html">LOCRResult</a> </td></tr>
-<tr>
-<td><a class="el" href="namespace_l_p_w_kerf_lib.html" title="LPW Cutting Kerf Inspection Library, provides classes for the cutting kerf inspection algorithms that...">LPWKerfLib</a></td><td><a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_result.html">LKerfResult</a> </td></tr>
 </table>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">CComSafeArray&lt;ILRegionPtr&gt; regions;</div>
@@ -158,9 +156,9 @@ Properties</h2></td></tr>
 <div class="line"><span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> index <span class="keywordflow">in</span> sortedIndexs) {</div>
 <div class="line">    LRegion sortedRegion = regions[index];</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">This enumeration represents the type of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:826</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">This enumeration represents the order of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:865</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:923</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">This enumeration represents the type of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:825</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">This enumeration represents the order of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:864</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:922</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af8472aa92c6ad26d104a3a347e3ee890"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8472aa92c6ad26d104a3a347e3ee890">&#9670;&nbsp;</a></span>GetPosX()</h2>

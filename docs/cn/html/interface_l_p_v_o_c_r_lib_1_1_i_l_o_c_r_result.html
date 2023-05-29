@@ -134,7 +134,7 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ocr_tool-&gt;Detect(img, roi, &amp;ocr_result);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed, or no result</span></div>
 <div class="line"><span class="keywordtype">int</span> lineCount = ocr_result-&gt;CountLine();</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LOCRResult ocr_result;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ocr_tool.Detect(img, roi, out ocr_result);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed, or no result</span></div>
@@ -302,6 +302,8 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>绘制该字符识别结果对象中的部分到给定设备。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制字符绘制内容，使用方式请查阅 LPVOCRDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lineIndex</td><td>需绘制的行号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">charIndex</td><td>需绘制的字符的行内索引。负数表示绘制全行。 </td></tr>
   </table>
   </dd>
 </dl>

@@ -220,7 +220,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 <div class="line">m_match-&gt;Learn(m_template_img, NULL);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatch m_match = <span class="keyword">new</span> LMatch();</div>
 <div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
@@ -300,7 +300,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
       </table>
 </div><div class="memdoc">
 <p>Learn the pattern template features from the provided image. The template center can be modified later.<br  />
-The shape and polarity of the template features is described with the given shape region, adding a region produce a white-on-black shape while subtracting a region produce a black-on-white shape. </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="90px" class="inline"/></center> <dl class="params"><dt>Parameters</dt><dd>
+The shape and polarity of the template features is described with the given shape region, adding a region produce a white-on-black shape while subtracting a region produce a black-on-white shape. </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The optional input region, to limit the region of pattern template on the input image. and also exclude some unwanted pixels and shape. </td></tr>

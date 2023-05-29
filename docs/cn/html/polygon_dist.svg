@@ -6,7 +6,7 @@
 	.st1{fill:#FFFFFF;stroke:#00FF00;stroke-width:10;stroke-miterlimit:10;}
 	.st2{fill:#FFFFFF;}
 	.st3{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;stroke-dasharray:10,10;}
-	.st4{font-family:'ArialMT';}
+	.st4{font-family:'Arial';}
 	.st5{font-size:40px;}
 </style>
 <polyline class="st0" points="63.77,2.99 59.38,128.26 181.36,246.94 67.07,335.96 126.41,396.4 "/>

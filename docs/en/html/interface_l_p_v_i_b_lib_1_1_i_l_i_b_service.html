@@ -123,11 +123,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aefb57c86d795c089f008a5a1e7182271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d0f2aa2a440e9d4b1a46c4d0f8b5599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a7d0f2aa2a440e9d4b1a46c4d0f8b5599">SetGlobalVariableValue</a> (BSTR gvName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *val)</td></tr>
 <tr class="separator:a7d0f2aa2a440e9d4b1a46c4d0f8b5599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca007dc21600426ddf286663b302481f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aca007dc21600426ddf286663b302481f">UnloadTask</a> (int taskId)</td></tr>
+<tr class="separator:aca007dc21600426ddf286663b302481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities to connect to the IntelliBlink service. </p>
 <p>IntelliBlink is a lightweight intelligent machine vision platform powered by Leaper Vision. You can use its WYSIWYG user interface to develop various optical location and measurement tasks via drag-and-drop operations, and benefits from its powerful algorithm toolkits: Location, Counting, Presence, Math &amp; Logic, Image Filter, Geometry, Calibration, Identification, Classification, etc.</p>
 <p>The LPV IB service module helps you to make use of the flexible and scalable IntelliBlink tasks, to integrate, execute and manipulate them in a LPV application.</p>
+<div class="image">
+<object type="image/svg+xml" data="how_ib_service_works_en.svg" style="pointer-events: none;"></object>
+</div>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_i_b_lib_1_1_l_i_b_service.html">LIBService</a> object.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr m_ib_service(__uuidof(LIBService));</div>
@@ -172,7 +177,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="comment">// do other stuff, like parse and display task result, change task configuration...</span></div>
 <div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
 <div class="line">m_ib_service.TearDown();</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06d21a51a97e29d464e5690452fe7565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06d21a51a97e29d464e5690452fe7565">&#9670;&nbsp;</a></span>IsReady()</h2>
@@ -311,6 +316,7 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aca007dc21600426ddf286663b302481f">UnloadTask()</a> </dd></dl>
 
 </div>
 </div>
@@ -640,6 +646,31 @@ Return null if failed to find the task with the specified ID or its algorithm wi
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aefb57c86d795c089f008a5a1e7182271">GetGlobalVariableValue()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aca007dc21600426ddf286663b302481f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca007dc21600426ddf286663b302481f">&#9670;&nbsp;</a></span>UnloadTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnloadTask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taskId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unload the IntelliBlink task with the given ID. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a37a3d7ed9bb58a6bd9683603e559af65">LoadTask()</a> </dd></dl>
 
 </div>
 </div>

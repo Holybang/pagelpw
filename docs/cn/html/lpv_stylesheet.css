@@ -1168,7 +1168,7 @@ div.header
 {
     background-image:url('nav_h.png');
     background-repeat:repeat-x;
-	background-color: #FDFCFD;
+	background-color: var(--page-background-color);
 	margin:  0px;
 	border-bottom: 1px solid #CCD2DE;
 }

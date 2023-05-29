@@ -80,14 +80,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>目录</h3>
-<ul><li class="level1"><a href="#autotoc_md13">如何添加显示控件到工程</a><ul><li class="level2"><a href="#autotoc_md14">方法 1: 使用工具箱</a></li>
-<li class="level2"><a href="#autotoc_md15">方法 2: 使用类向导（MFC）</a></li>
-<li class="level2"><a href="#autotoc_md16">方法 3: 使用 #import 指令（C++）</a></li>
-<li class="level2"><a href="#autotoc_md17">方法 4: 添加引用（C#）</a></li>
+<ul><li class="level1"><a href="#autotoc_md12">如何添加显示控件到工程</a><ul><li class="level2"><a href="#autotoc_md13">方法 1: 使用工具箱</a></li>
+<li class="level2"><a href="#autotoc_md14">方法 2: 使用类向导（MFC）</a></li>
+<li class="level2"><a href="#autotoc_md15">方法 3: 使用 #import 指令（C++）</a></li>
+<li class="level2"><a href="#autotoc_md16">方法 4: 添加引用（C#）</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md18">在代码中创建 LDisplay 控件</a><ul><li class="level2"><a href="#autotoc_md19">示例代码（在UI程序中使用）</a></li>
-<li class="level2"><a href="#autotoc_md20">示例代码（在控制台程序中使用）</a></li>
+<li class="level1"><a href="#autotoc_md17">在代码中创建 LDisplay 控件</a><ul><li class="level2"><a href="#autotoc_md18">示例代码（在UI程序中使用）</a></li>
+<li class="level2"><a href="#autotoc_md19">示例代码（在控制台程序中使用）</a></li>
 </ul>
 </li>
 </ul>
@@ -105,11 +105,11 @@ $(function() {
 </ul>
 <p><em>用户也可以选择另一种更灵活的显示调用方式，使用 LPW 类型自带的<a class="el" href="use_draw_functions.html">绘制函数</a></em></p>
 <p><img src="t03_07_displayctrl.png" alt="" class="inline" title="LDisplay Control"/></p>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 如何添加显示控件到工程</h1>
 <p>模块: <b>lpvDisplay.dll</b></p>
-<p><em>注意: 请确保所需 LVP 算法库均已注册并授权。</em></p>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<p><em>注意: 请确保所需 LPW 算法库均已注册并授权。</em></p>
+<h2><a class="anchor" id="autotoc_md13"></a>
 方法 1: 使用工具箱</h2>
 <p><b>步骤 1</b> - 在所需配置的工程的资源界面，右键点击工具箱窗口的任意位置，在菜单中点击 <b>选择项</b> 。</p>
 <p><img src="t03_01_rmc_choose_items.png" alt="" class="inline" title="T03 01 Rmc Choose Items"/></p>
@@ -119,7 +119,7 @@ $(function() {
 <p><b>步骤 3 (B)</b> - 或者，也可以通过浏览到 <b>lpvDisplay.dll</b> 文件所在位置的方式，添加 LDisplay 控件。</p>
 <p><b>步骤 4</b> - 之后，您就可以在工具箱中通过双击或拖拽LDisplay控件，将其添加到 MFC 或 .NET 窗口中。相关的引用配置将被自动添加到工程文件。</p>
 <p><img src="t03_03_display_control_in_design.png" alt="" class="inline" title="T03 03 Display Control In Design"/></p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 方法 2: 使用类向导（MFC）</h2>
 <p><b>步骤 1</b> - 在所需配置的工程的解决方案页面，右键点击该项目，在菜单中选择 <b>类向导</b> 。</p>
 <p><img src="t03_04_rmc_class_wizard.png" alt="" class="inline" title="T03 04 Rmc Class Wizard"/></p>
@@ -131,7 +131,7 @@ $(function() {
 <p><b>步骤 5</b> - 点击 <b>完成**然后**确定</b> 。工程中将新增自动生成的 CLDisplay.h 和 CLDisplay.cpp 文件。</p>
 <p><b>步骤 6</b> - 之后，您就可以在工程中添加相关代码，使用该显示控件。更多使用样例，请查阅 <b>demo/mfcdemo/MFCDisplay</b> 样例工程。</p>
 <p>或者，您也可以直接使用我们在发布版本中附带的封装类。.h和.cpp位于 demo/mfcdemo/Wrappers/LPVDisplay 文件加中，您需要引用 <b>LPVDisplay.h</b> ，并将 CLDisplay.cpp 加到工程中。</p>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 方法 3: 使用 #import 指令（C++）</h2>
 <p>该指令用于导入类型库中的类、接口等信息。更多细节，请参考 <a href="https://docs.microsoft.com/zh-cn/cpp/preprocessor/hash-import-directive-cpp">https://docs.microsoft.com/zh-cn/cpp/preprocessor/hash-import-directive-cpp</a> 。</p>
 <p>在代码中添加以下导入命令：</p>
@@ -143,7 +143,7 @@ $(function() {
 </div><!-- fragment --><p>-or-</p>
 <div class="fragment"><div class="line"><span class="comment">// 使用 LDisplay 类的 progid</span></div>
 <div class="line"><span class="preprocessor">#import &quot;progid:LPV.LDisplay&quot;</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md17"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>
 方法 4: 添加引用（C#）</h2>
 <p>您可以按照使用其他 LPW 模块的方式，添加 LPVDisplay 模块到 C# 工程：</p>
 <ol type="1">
@@ -151,9 +151,9 @@ $(function() {
 <li>选择 COM 页面，找到并添加 LPVDisplayLib，勾选后点击 OK 。</li>
 <li>在代码文件中添加 <code>using <a class="el" href="namespace_l_p_v_display_lib.html" title="LPV 显示模块模块，提供 UI 控件，用于图像、region、几何形状及算法结果的显示和交互。">LPVDisplayLib</a>;</code></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 在代码中创建 LDisplay 控件</h1>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 示例代码（在UI程序中使用）</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">class </span>CDisplayDialog : <span class="keyword">public</span> CDialog</div>
 <div class="line">{</div>
@@ -209,7 +209,7 @@ $(function() {
 <div class="line">        }</div>
 </div><!-- fragment --><div class="fragment"><div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div> <h2><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --> </div> <h2><a class="anchor" id="autotoc_md19"></a>
 示例代码（在控制台程序中使用）</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line">    <span class="comment">// blending: average</span></div>
 <div class="line">    ILImageArithmPtr arithm(__uuidof(LImageArithm));</div>
@@ -229,7 +229,7 @@ $(function() {
 <div class="line">    LDisplay displayCtrl = <span class="keyword">new</span> LDisplay();</div>
 <div class="line">    displayCtrl.SetImage(result_img);</div>
 <div class="line">    displayCtrl.ShowDialog(<span class="stringliteral">&quot;blend avg result&quot;</span>);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVCoreLib::LPVAggregation</a></div><div class="ttdeci">LPVAggregation</div><div class="ttdoc">数值统计的方式</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:636</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVCoreLib::LPVAggregation</a></div><div class="ttdeci">LPVAggregation</div><div class="ttdoc">数值统计的方式</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:634</div></div>
 </div><!-- fragment --> </div>  </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->

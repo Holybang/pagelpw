@@ -113,10 +113,11 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
-<tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
+<tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
+<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:afad2aa7828e45b84ec1f3f80f3787305"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的<em>目标极性</em>。<br  />
 极性指的是路径像素相对于背景的变换方式，可为 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> （白色背景上的黑色路径） 或者 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> （黑色背景上的白色路径） 由白（亮）像素向黑（暗）像素转变，或由黑（暗）像素向白（亮）像素转变。<br  />
- <a href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#afad2aa7828e45b84ec1f3f80f3787305">更多...</a><br /></td></tr>
+<br /></td></tr>
 <tr class="separator:afad2aa7828e45b84ec1f3f80f3787305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a659ae867dc0562c44d5e7e23e83451d1"><td class="memItemLeft" align="right" valign="top"><a id="a659ae867dc0562c44d5e7e23e83451d1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#a659ae867dc0562c44d5e7e23e83451d1">AcceptScore</a><code> [get, set]</code></td></tr>
@@ -153,12 +154,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">m_path_detector-&gt;Polarity = LPVPolarity::LPVBlackOnWhite;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_path_detector-&gt;Detect(m_img, m_roi, &amp;m_path_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LPathDetector m_path_detector = <span class="keyword">new</span> LPathDetector();</div>
 <div class="line">m_path_detector.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVBlackOnWhite;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_path_detector.Detect(m_img, (LRotRectRegion)m_roi, out m_path_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:758</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:757</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a44ebeebf5e164ea2f8e077a56219c2ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44ebeebf5e164ea2f8e077a56219c2ca">&#9670;&nbsp;</a></span>Detect()</h2>
@@ -205,34 +206,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">属性说明</h2>
-<a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad2aa7828e45b84ec1f3f80f3787305">&#9670;&nbsp;</a></span>Polarity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> Polarity</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>检测的<em>目标极性</em>。<br  />
-极性指的是路径像素相对于背景的变换方式，可为 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> （白色背景上的黑色路径） 或者 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> （黑色背景上的白色路径） 由白（亮）像素向黑（暗）像素转变，或由黑（暗）像素向白（亮）像素转变。<br  />
-</p>
-<p><img src="path_polarity.png" alt="" class="inline"/> </p>
 
 </div>
 </div>

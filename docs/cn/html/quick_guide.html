@@ -100,7 +100,25 @@ $(function() {
 <h1><a class="anchor" id="autotoc_md7"></a>
 授权</h1>
 <h3><a class="anchor" id="autotoc_md8"></a>
+正式版：使用加密狗进行授权</h3>
+<ol type="1">
+<li>若使用深思加密狗，请下载并安装深思驱动，可从 <a href="https://lm.virbox.com/tools.html">官网</a> 或我们提供的 <a href="http://fileserver.hzleaper.com:8086/f/4f4279fb56f9422db14b/">链接</a> 下载。</li>
+<li>插入 LPW 加密狗，检查加密狗是否亮灯并常亮。</li>
+<li>打开 <b>lpvAssistant</b> 应用程序，可从安装目录或开始菜单的快捷方式打开。</li>
+<li>在 <b>Dongles</b> 分组下，切换到 <b>View Licenses</b> 界面，检查各个模块的授权状态。</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md9"></a>
 试用版：使用 License 文件进行授权</h3>
+<p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，届时请联系我们或者您的 LPW SDK 技术支持。</em></p>
+<ol type="1">
+<li>打开 <b>lpvAssistant</b> 应用程序，可从安装目录或开始菜单的快捷方式打开。</li>
+<li>在 <b>Licenses Files</b> 分组下，切换到 <b>Activate Licenses</b> 界面，然后点击 <b>Generate Key File</b> 按钮。助手程序将在您选择的文件夹下生成 <b>lpv.key</b> 文件。</li>
+<li>将生成的 lpv.key 文件发给我们或者您的 LPW SDK 技术支持，我们将为您的机器进行授权，并发回 **.lic** 授权文件。</li>
+<li>点击同界面的 <b>Activate</b> 按钮，选择正确的授权文件。</li>
+<li>助手程序将验证该授权文件，若验证通过，将显示 <em>"Successfully licensed!"</em> 弹窗告知。</li>
+<li>您可以在 <b>Licenses Files</b> 分组的 <b>View Licenses</b> 界面，检查各个模块的授权状态。</li>
+</ol>
+<p><em>旧的方式</em></p>
 <ol type="1">
 <li>运行 LPW 运行目录下的 <b>lpvKeyTool.exe</b> ，生成 <b>lpv.key</b> 文件。</li>
 <li>将生成的 lpv.key 文件发给我们或者您的 LPW SDK 技术支持，我们将为您的机器进行授权，并发回 **.lic** 授权文件。</li>
@@ -111,25 +129,11 @@ $(function() {
 <li>将授权文件放在用户目录下 (AppData%/LPV)。</li>
 <li>打开任意一个 demo 程序，弹出未授权提示，选择 <b>RETRY</b> 并选择上传授权文件，我们将自动复制该文件到可授权的目录。</li>
 </ul>
-<p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，届时请联系我们或者您的 LPW SDK 技术支持。</em></p>
-<h3><a class="anchor" id="autotoc_md9"></a>
-正式版：使用圣天诺加密狗进行授权</h3>
-<ol type="1">
-<li>插入 LPW 加密狗，检查加密狗是否亮灯并常亮。</li>
-<li>打开任意一个 demo 程序，检测授权是否正常。</li>
-</ol>
-<h3><a class="anchor" id="autotoc_md10"></a>
-正式版：使用深思加密狗进行授权</h3>
-<ol type="1">
-<li>下载并安装深思驱动，可从 <a href="https://lm.virbox.com/tools.html">官网</a> 或我们提供的 <a href="http://fileserver.hzleaper.com:8086/f/4f4279fb56f9422db14b/">链接</a> 下载。</li>
-<li>插入 LPW 加密狗，检查加密狗是否亮灯并常亮。</li>
-<li>打开任意一个 demo 程序，检测授权是否正常。</li>
-</ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 集成和调用</h1>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 添加库到 Visual Studio 工程</h2>
  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
 <li>右键工程的 Reference 项，点击 Add Reference</li>
@@ -149,8 +153,8 @@ $(function() {
 <div class="line"><span class="comment">// 调用接口，处理返回错误码，如下，进行模板匹配</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) {}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、region、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:102</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:100</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 <div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV 几何库，提供几何形状相关的数据定义、计算和测量功能。</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:50</div></div>
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV 模板匹配模块，用于提供模板匹配功能。</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:50</div></div>
 </div><!-- fragment --></li>

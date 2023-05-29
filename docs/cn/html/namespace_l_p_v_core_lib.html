@@ -84,7 +84,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>LPV 基础模块，提供图像、region、绘制等基础功能。  
+<p>LPV 基础模块，提供图像、检测区域、绘制等基础功能。  
 <a href="namespace_l_p_v_core_lib.html#details">更多...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -504,12 +504,12 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 <tr class="separator:a161cc4b1a61facd7b0ba3bdce897ec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>LPV 基础模块，提供图像、region、绘制等基础功能。 </p>
+<div class="textblock"><p>LPV 基础模块，提供图像、检测区域、绘制等基础功能。 </p>
 <p>所有其他 LPV 模块均依赖该基础模块。使用该模块中的类和算法，需按照以下方式引用该模块：</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、region、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:102</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:100</div></div>
 </div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">MFCSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">MFCRegion</a> <br  />
 <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">CSharpSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">CSharpRegion</a>, <a class="el" href="how_to_play_with_demo.html#demo_hikcam">CSharpHikCam</a> </p>
 </div><h2 class="groupheader">枚举类型说明</h2>
@@ -818,6 +818,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 </div><div class="memdoc">
 
 <p>该枚举类型表示要定位的物体或边缘的极性 </p>
+<p><img src="polarity.png" alt="" class="inline"/> </p>
 <table class="fieldtable">
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bae063535a89c7f149c8e490e3238de655"></a>LPVBlack2White&#160;</td><td class="fielddoc"><p>沿着区域的扫描方向看，边处于从黑（暗）到白（亮）的边缘 </p>
 </td></tr>
@@ -1241,16 +1242,10 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 <table class="fieldtable">
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a9ee3caeb8bb07dd31b75de436ef986a2"></a>LPVColorSpaceBGR&#160;</td><td class="fielddoc"><p>BGR 颜色空间。通道顺序为：B（蓝）、G（绿）、R（红） </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a2bdcf03bcfb797b56c086a34b5a2446c"></a>LPVColorSpaceHSV&#160;</td><td class="fielddoc"><p>HSV 颜色空间。通道顺序为：H（色度）、S（饱和度、V（亮度）</p>
-<p class="formulaDsp">
-\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ V = V_{max} \\ S = \left\{ \begin{array}{ll} \frac{V - V_{min}}{V} \cdot 255 &amp; V \neq 0 \\ 0 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V - V_{min}} \cdot 60 &amp; V = R \\ \frac{B - R}{V - V_{min}} \cdot 60 + 120 &amp; V = R \\ \frac{R - G}{V - V_{min}} \cdot 60 + 240 &amp; V = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
-</p>
- </td></tr>
-<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a05e36ea1a23bf4914fa568ba426cbe3e"></a>LPVColorSpaceHLS&#160;</td><td class="fielddoc"><p>HLS 颜色空间。通道顺序为：H（色度）、L（亮度）、S（饱和度）</p>
-<p class="formulaDsp">
-\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ L = \frac{V_{min} + V_{max}}{2} \\ S = \left\{ \begin{array}{ll} \frac{V_{max} - V_{min}}{V_{max} + V_{min}} \cdot 255 &amp; L &lt; 128 \\ \frac{V_{max} - V_{min}}{255 \cdot 2 - (V_{max} + V_{min})} \cdot 255 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V_{max} - V_{min}} \cdot 60 &amp; V_{max} = R \\ \frac{B - R}{V_{max} - V_{min}} \cdot 60 + 120 &amp; V_{max} = R \\ \frac{R - G}{V_{max} - V_{min}} \cdot 60 + 240 &amp; V_{max} = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
-</p>
- </td></tr>
+<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a2bdcf03bcfb797b56c086a34b5a2446c"></a>LPVColorSpaceHSV&#160;</td><td class="fielddoc"><p>HSV 颜色空间。通道顺序为：H（色度）、S（饱和度、V（亮度） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a05e36ea1a23bf4914fa568ba426cbe3e"></a>LPVColorSpaceHLS&#160;</td><td class="fielddoc"><p>HLS 颜色空间。通道顺序为：H（色度）、L（亮度）、S（饱和度） </p>
+</td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17"></a>LPVColorSpaceYCrCb&#160;</td><td class="fielddoc"><p>YCrCb 颜色空间。通道顺序为：Y（亮度），Cb（蓝色色度），Cr（红色色度）</p>
 <p class="formulaDsp">
 \[ Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B \\ Cr = 0.713 \cdot (R-Y) + 128 \\ Cb = 0.564 \cdot (B-Y) + 128 \\ \]
@@ -1267,17 +1262,11 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 </p>
  </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083ab8114f9da47c49e3f63e8e097f02daa8"></a>LPVColorSpaceLAB&#160;</td><td class="fielddoc"><p>CIE 1976 L*a*b* 颜色空间。通道顺序为：L（亮度）、a*（红绿色度）、b*（蓝黄色度）。<br  />
-其与 BGR 颜色空间的转换基于 XYZ 颜色空间的转换结果，该转换结果使用归一化到 0 ~ 1 的 BGR 值。</p>
-<p class="formulaDsp">
-\[ l = \left\{ \begin{array}{ll} (116 \cdot Y^{\frac{1}{3}} - 16) &amp; Y &gt; 0.008856 \\ 903.3 \cdot Y &amp; otherwise \\ \end{array} \right. \\ L = l \cdot \frac{255}{100} \\ f(t) = \left\{ \begin{array}{ll} t^{\frac{1}{3}} &amp; t &gt; 0.008856 \\ 7.787 \cdot t + \frac{16}{116} &amp; otherwise \\ \end{array} \right. \\ a = (f(\frac{X}{0.950456}) - f(Y)) \cdot 500 + 255 \\ b = (f(Y) - f(\frac{X}{1.088754})) \cdot 200 + 255 \\ \]
-</p>
- </td></tr>
+其与 BGR 颜色空间的转换基于 XYZ 颜色空间的转换结果，该转换结果使用归一化到 0 ~ 1 的 BGR 值。 </p>
+</td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083ac9429e9db960415d48d758e115547d0a"></a>LPVColorSpaceLUV&#160;</td><td class="fielddoc"><p>CIE 1976 L*u*v* 颜色空间。通道顺序为：L*（亮度）、u*（u色度）、v*（v色度）.<br  />
-其与 BGR 颜色空间的转换基于 XYZ 颜色空间的转换结果，该转换结果使用归一化到 0 ~ 1 的 BGR 值。</p>
-<p class="formulaDsp">
-\[ l = \left\{ \begin{array}{ll} (116 \cdot Y^{\frac{1}{3}} - 16) &amp; Y &gt; 0.008856 \\ 903.3 \cdot Y &amp; otherwise \\ \end{array} \right. \\ L = l \cdot \frac{255}{100} \\ u&#39; = \frac{4 \cdot X}{X + 15 \cdot Y + 3 \cdot Z} \\ v&#39; = \frac{9 \cdot Y}{X + 15 \cdot Y + 3 \cdot Z} \\ u = (13 \cdot l \cdot (u&#39; - 0.19793943) + 134) \cdot \frac{255}{354} \\ v = (13 \cdot l \cdot (v&#39; - 0.46831096) + 140) \cdot \frac{255}{262} \\ \]
-</p>
- </td></tr>
+其与 BGR 颜色空间的转换基于 XYZ 颜色空间的转换结果，该转换结果使用归一化到 0 ~ 1 的 BGR 值。 </p>
+</td></tr>
 </table>
 
 </div>

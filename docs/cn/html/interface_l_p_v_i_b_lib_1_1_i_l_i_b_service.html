@@ -123,11 +123,16 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aefb57c86d795c089f008a5a1e7182271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d0f2aa2a440e9d4b1a46c4d0f8b5599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a7d0f2aa2a440e9d4b1a46c4d0f8b5599">SetGlobalVariableValue</a> (BSTR gvName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *val)</td></tr>
 <tr class="separator:a7d0f2aa2a440e9d4b1a46c4d0f8b5599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca007dc21600426ddf286663b302481f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aca007dc21600426ddf286663b302481f">UnloadTask</a> (int taskId)</td></tr>
+<tr class="separator:aca007dc21600426ddf286663b302481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供连接到灵闪服务的功能。 </p>
 <p>灵闪是一个基于利珀科技机器视觉基础框架开发的轻便的智能算法配置及组合工具平台。 通过所见即所得的交互界面和简单的拖拽操作，用于快速开发和迭代定位、测量、缺陷检测等机器视觉任务。 灵闪平台提供一系列覆盖具体应用需求的算法工具包: 特征定位、数量检测、有无判定、基础计算、图像变换、结合测量和计算、相机标定、符号识别、物体分类等等。</p>
 <p>LPV IB 服务模块帮助用户在基于灵闪快速编辑机器视觉方案的基础上，将其集成到 LPV 应用程序中运行、操作， 实现更大程度上的灵活性和可扩展性。</p>
+<div class="image">
+<object type="image/svg+xml" data="how_ib_service_works_cn.svg" style="pointer-events: none;"></object>
+</div>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_i_b_lib_1_1_l_i_b_service.html">LIBService</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr m_ib_service(__uuidof(LIBService));</div>
@@ -172,7 +177,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="comment">// do other stuff, like parse and display task result, change task configuration...</span></div>
 <div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
 <div class="line">m_ib_service.TearDown();</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a06d21a51a97e29d464e5690452fe7565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06d21a51a97e29d464e5690452fe7565">&#9670;&nbsp;</a></span>IsReady()</h2>
@@ -311,6 +316,7 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aca007dc21600426ddf286663b302481f">UnloadTask()</a> </dd></dl>
 
 </div>
 </div>
@@ -640,6 +646,37 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aefb57c86d795c089f008a5a1e7182271">GetGlobalVariableValue()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aca007dc21600426ddf286663b302481f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca007dc21600426ddf286663b302481f">&#9670;&nbsp;</a></span>UnloadTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnloadTask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taskId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>卸载指定 ID 对应的灵闪作业。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">errCode</td><td>返回错误码（查阅<a class="el" href="ib_error.html">错误码对照表</a>）。若成功，返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a37a3d7ed9bb58a6bd9683603e559af65">LoadTask()</a> </dd></dl>
 
 </div>
 </div>

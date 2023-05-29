@@ -126,13 +126,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口表示单个刻线检测结果，可获取其具体属性。 </p>
-<p>通常通过 <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#a0cc58a6bc5ca613aa89b25bdf5a989cc">ILKerfDetector::Detect1()</a> 或者 <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#aa7aab3752f2470bbc423dd8ad1f4e20a">ILKerfDetector::Detect2()</a> 函数获得 <a class="el" href="class_l_p_w_kerf_lib_1_1_l_kerf_result.html">LKerfResult</a> 对象。 可以使用该接口访问单个刻线检测对象的具体信息，如边线位置、刻线能量评分等，还可以调用绘制函数将该检测结果绘制在界面上。</p>
+<p>通常通过 <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#a335ee7ad0c4aa107ebc8c04db3e5c9ed">ILKerfDetector::Detect1()</a> 或者 <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#a80b8646091ccb07b5935a51e6d6ec2d6">ILKerfDetector::Detect2()</a> 函数获得 <a class="el" href="class_l_p_w_kerf_lib_1_1_l_kerf_result.html">LKerfResult</a> 对象。 可以使用该接口访问单个刻线检测对象的具体信息，如边线位置、刻线能量评分等，还可以调用绘制函数将该检测结果绘制在界面上。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILKerfResultPtr result;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_kerftool-&gt;Detect1(m_img, m_rotroi, &amp;result);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// no result or failed</span></div>
 <div class="line"><span class="keywordtype">double</span> kerfWidth = result-&gt;LineUp-&gt;Distance(result-&gt;LineDown);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LKerfResult result;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_kerftool.Detect1(m_img, m_rotroi, out result);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// no result or failed</span></div>
@@ -212,7 +212,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>绘制该刻线检测结果到给定设备。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制直线绘制内容，使用方式请查阅 LPWKerfDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制绘制内容，使用方式请查阅 LPWKerfDrawFlags </td></tr>
   </table>
   </dd>
 </dl>

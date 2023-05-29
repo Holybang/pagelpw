@@ -125,12 +125,6 @@ $(function() {
 <td><a class="el" href="how_to_play_with_demo.html#demo_display">显示控件</a></td><td>演示如何使用显示控件。 </td></tr>
 <tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_ibservice">连接到灵闪服务</a></td><td>演示如何与灵闪服务集成，并使用具有强大功能的灵闪作业。 </td></tr>
-<tr>
-<td><a class="el" href="how_to_play_with_demo.html#demo_kerf">刻线检测</a></td><td>演示高精度、高稳定性的刻线检测算法。 </td></tr>
-<tr>
-<td><a class="el" href="how_to_play_with_demo.html#demo_wafer_editor">晶圆编辑器</a></td><td>演示晶圆图生成和编辑。 </td></tr>
-<tr>
-<td><a class="el" href="how_to_play_with_demo.html#demo_wafer_map">晶圆扫描和晶圆图生成</a></td><td>演示晶圆扫描过程，包括实时晶圆图生成、晶圆图排序等。 </td></tr>
 </table>
 <p><b>代码片段</b></p>
 <table class="markdownTable">
@@ -159,7 +153,13 @@ $(function() {
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><b>图像和图形的线性变换</b>   </td><td class="markdownTableBodyLeft">LinearTransform.cpp/cs   </td><td class="markdownTableBodyLeft">演示基于点对生成变换矩阵，并对图像和图形进行线性变换    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><b>机器学习分类</b>   </td><td class="markdownTableBodyLeft">MLClassification.cpp/cs   </td><td class="markdownTableBodyLeft">演示使用机器学习模型进行图像分类任务。   </td></tr>
+<td class="markdownTableBodyLeft"><b>机器学习分类</b>   </td><td class="markdownTableBodyLeft">MLClassification.cpp/cs   </td><td class="markdownTableBodyLeft">演示使用机器学习模型进行图像分类任务。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>手写字符识别</b>   </td><td class="markdownTableBodyLeft">OCRHandWritten.cpp/cs   </td><td class="markdownTableBodyLeft">演示使用 OCR 工具识别字符，以手写字符为例。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>多边形编辑</b>   </td><td class="markdownTableBodyLeft">PolygonClipper.cpp/cs   </td><td class="markdownTableBodyLeft">演示多边形的扩张、收缩、以及相交、合并等布尔运算。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>引脚数量检测</b>   </td><td class="markdownTableBodyLeft">PinCount.cpp/cs   </td><td class="markdownTableBodyLeft">演示基于双边缘卡尺工具的引脚定位和数量检测。   </td></tr>
 </table>
 <p><br  />
 </p>
@@ -393,7 +393,7 @@ Region 操作</h1>
  <b>源代码 (Qt)：</b> qtdemo/QtPath<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpPath<br  />
  <b>图像文件：</b> nline_many.png, leadcut.png</p>
-<p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LPathDetector, LPathResults </p>
+<p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html">LPathDetector</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html">LPathResults</a> </p>
 </blockquote>
 <p><a href="t02_14_path.png"><img src="t02_14_path.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
 <ol type="1">
@@ -426,7 +426,7 @@ Region 操作</h1>
  <b>源代码 (Qt)：</b> qtdemo/QtContour<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpContour<br  />
  <b>图像文件：</b> rectwithhole.png</p>
-<p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LContourDetector, LContourResults </p>
+<p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html">LContourDetector</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_results.html">LContourResults</a> </p>
 </blockquote>
 <p><a href="t02_15_contour.png"><img src="t02_15_contour.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
 <ol type="1">
@@ -624,78 +624,6 @@ Region 操作</h1>
 <li>在输入框中修改参数的数值。</li>
 <li>拖动图形界面中的 Region 边缘，可移动或改变作业中 Region 的形状和位置。</li>
 <li>点击 <b>Apply</b> 按钮，应用改动后的参数到灵闪服务，再次执行该作业将看到参数变换的影响。</li>
-</ol>
-<p><br  />
-</p>
-<h1><a class="anchor" id="demo_kerf"></a>
-刻线检测</h1>
-<p>演示高精度、高稳定性的刻线检测算法。</p>
-<blockquote class="doxtable">
-<p><b>源代码 (C++):</b> mfcdemo/MFCKerf<br  />
- <b>源代码 (C#):</b> csharpdemo/CSharpKerf<br  />
- <b>图像文件夹:</b> kerfs</p>
-<p><b>相关类：</b> <a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html">LKerfDetector</a> </p>
-</blockquote>
-<p><a href="t02_16_kerf.png"><img src="t02_16_kerf.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
-<ol type="1">
-<li>点击 <b>Load Image</b> 按钮，加载图像。</li>
-<li>选择 <b>Mode</b> 切换 Wide(1) 或则 Narrow(2) 检测模式。</li>
-<li>修改检测阈值参数：<ul>
-<li><b>Luminance Threshold</b>: 用于检测防呆的亮度均值阈值。</li>
-<li><b>Contrast Threshold</b>: 用于筛选比刻线候选边缘的最小对比度数值。</li>
-<li><b>Glue Edge Threshold</b>: 用于确定涂胶区域的范围，帮助去除边缘检测过程中的涂胶噪声对定位的影响。</li>
-</ul>
-</li>
-<li>修改刻线的指导宽度和距离。</li>
-<li>修改 <b>MidLine Offset Tolerance</b>, 即刻线对的中线到检测区域中心的偏移范围。</li>
-<li>对于刻线边缘极性多变的情况，可勾选 <b>Ignore Polarity</b> 。</li>
-<li>修改 <b>Grow Stategy</b> 改变检测过程中使用的生长策略。</li>
-<li>点击 <b>Detect</b> 按钮进行刻线检测。若加载了多张图像，点击 <b>Back</b> 或者 <b>Next</b> 可切换图像并进行检测。</li>
-<li>右侧的图表展示沿着 Region 搜索方向的分数分布，用于方便地设置更佳的检测阈值。</li>
-</ol>
-<p><br  />
-</p>
-<h1><a class="anchor" id="demo_wafer_editor"></a>
-晶圆编辑器</h1>
-<p>演示晶圆图生成和编辑。</p>
-<blockquote class="doxtable">
-<p><b>源代码 (C++):</b> mfcdemo/MFCWaferEditor<br  />
- <b>源代码 (C#):</b> csharpdemo/CSharpWaferEditor<br  />
-</p>
-<p><b>相关类：</b> <a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html">LWaferMap</a> LWaferDisplay </p>
-</blockquote>
-<p><a href="t02_17_wafer_editor.png"><img src="t02_17_wafer_editor.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
-<ol type="1">
-<li>修改晶圆属性，包括直径、DIE 尺寸等。DEMO中提供了几种预设的晶圆属性样例。</li>
-<li>点击 <b>Synthesize</b> 生成晶圆图。</li>
-<li>修改 BIN 代号和颜色，点击 <b>Apply</b> 按钮，修改后的晶圆图即时显示在左侧的显示控件中。</li>
-<li>鼠标点击可选中 DIE，或者输入行列号，点击 <b>Go To</b> 按钮跳转到该 DIE。</li>
-<li>修改选中 DIE 的 BIN 类型，晶圆图即时更新其内容到显示控件中。</li>
-<li>点击 <b>Save</b> 按钮，保存当前的晶圆图到文件，可保存为 LWMP 或 SINF 格式。</li>
-</ol>
-<p><br  />
-</p>
-<h1><a class="anchor" id="demo_wafer_map"></a>
-晶圆扫描和晶圆图生成</h1>
-<p>演示晶圆扫描过程，包括实时晶圆图生成、晶圆图排序等。</p>
-<blockquote class="doxtable">
-<p><b>源代码 (C++):</b> mfcdemo/MFCWaferMap<br  />
- <b>源代码 (C#):</b> csharpdemo/CSharpWaferMap<br  />
- <b>图像文件夹:</b> wafer200</p>
-<p><b>相关类：</b> <a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html">LWaferMap</a> <a class="el" href="interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_sorter.html">LWaferSorter</a> LWaferDisplay </p>
-</blockquote>
-<p><a href="t02_18_wafer_map.png"><img src="t02_18_wafer_map.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
-<ol type="1">
-<li>点击 <b>Load Template Wafer Map</b> 按钮，选择文件夹中的 wafer200.lwmp/sinf 文件。该文件为 DEMO 程序所需的晶圆图模板，帮助 DEMO 程序获取晶圆的尺寸信息和 MARK 所在的位置。</li>
-<li>点击 <b>Load Images</b> 按钮，加载扫描图像。对于每一张扫描图像，其文件名记录了抓取该图像的顺序、缩放比例和物理坐标等。</li>
-<li>点击 <b>Load Die Template</b> 按钮，加载识别一般 DIE 的模板图像。</li>
-<li>点击 <b>Load Mark Template</b> 按钮，加载识别 MARK（参考 DIE）的模板图像。</li>
-<li>修改模板匹配的各项参数，然后点击 <b>Detect</b> 按钮在当前图像中检出 DIE 和 MARK 位置。检出结果显示在右侧的显示控件中。</li>
-<li>修改 <b>Pass Score</b> 数值，对于检出的 DIE，若其匹配分数高于该 PASS Score，则该 DIE 为 PASS，否则则为 FAIL。</li>
-<li>点击 <b>Add To Wafer Map</b> 按钮，添加检出的 DIE 和 MARK 到晶圆图，此时将生成实时晶圆图并显示在左侧的显示控件中。当前检出的 PASS 和 FAIL 总数，显示在下方的状态栏中。</li>
-<li>点击 <b>Run</b> 按钮，运行所有扫描图像。</li>
-<li>当扫描完成后，点击 <b>Sort Wafer Map</b> 按钮，进行全图排序生成排序后的晶圆图。</li>
-<li>点击 <b>Data Map</b> 显示扫描分数的数据热力图，点击 <b>Bin Map</b> 按钮可切换回到 BIN 图显示。</li>
 </ol>
 <p><br  />
  </p>

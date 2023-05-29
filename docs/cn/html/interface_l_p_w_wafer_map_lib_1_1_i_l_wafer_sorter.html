@@ -147,7 +147,7 @@ Public 成员函数</h2></td></tr>
 <div class="line">ILWaferMapPtr sortedMap;</div>
 <div class="line">err = sorter-&gt;Sort(&amp;sortedMap);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:203</div></div>
 <div class="ttc" id="anamespace_l_p_w_wafer_map_lib_html_ad0dbc42e0c54aaf28b2c5f9a2fc83079ae5d60a789f4d3337df142a6cfe2e2079"><div class="ttname"><a href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079ae5d60a789f4d3337df142a6cfe2e2079">LPWWaferMapLib::LPWBinPass</a></div><div class="ttdeci">@ LPWBinPass</div><div class="ttdef"><b>Definition:</b> LPWWaferMap.idl:101</div></div>
 <div class="ttc" id="anamespace_l_p_w_wafer_map_lib_html_ad0dbc42e0c54aaf28b2c5f9a2fc83079aff9d4f58f6f4a55ff7b8bc0fc1cf83a8"><div class="ttname"><a href="namespace_l_p_w_wafer_map_lib.html#ad0dbc42e0c54aaf28b2c5f9a2fc83079aff9d4f58f6f4a55ff7b8bc0fc1cf83a8">LPWWaferMapLib::LPWBinRef</a></div><div class="ttdeci">@ LPWBinRef</div><div class="ttdef"><b>Definition:</b> LPWWaferMap.idl:74</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LWaferSorter sorter = <span class="keyword">new</span> LWaferSorter();</div>
@@ -263,7 +263,8 @@ Public 成员函数</h2></td></tr>
 所有已知的 DIE 基于模板晶圆图上的最近位置进行摆放。<br  />
 若已有参考 DIE，实时晶圆图将基于对应的参考 DIE 的位置变换，对齐到模板晶圆图。 因此，推荐在晶圆扫描前，先进行参考 DIE 的识别并将其加入排序。<br  />
 生成实时晶圆图的速度快于最终排序，但同时可能输出错误的 BIN（缺失的或者多余的）。<br  />
-<img src="wmap_realtime1.png" alt="" height="300cm" class="inline"/> <img src="wmap_realtime2.png" alt="" height="300cm" class="inline"/> <img src="wmap_realtime3.png" alt="" height="300cm" class="inline"/> </p><dl class="params"><dt>参数</dt><dd>
+ <img src="wmap_realtime1.png" alt="" height="300cm" class="inline"/> <img src="wmap_realtime2.png" alt="" height="300cm" class="inline"/> <img src="wmap_realtime3.png" alt="" height="300cm" class="inline"/></p>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">realtimeWaferMap</td><td>输出实时晶圆图 </td></tr>
   </table>
@@ -294,7 +295,8 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>排序并生成排序晶圆图。通常在晶圆扫描结束后进行，整个过程耗时较实时晶圆图更长。 所有 DIE 将按照其与邻近 DIE 的相对位置，全局优化后组成整列。重复和错位的位置将被作为噪声滤除。 排序晶圆图将基于对应的参考 DIE 的位置变换以及晶圆整体的分布情况，与模板晶圆图进行对齐。<br  />
-<img src="wmap_sorted1.png" alt="" height="300cm" class="inline"/> <img src="wmap_sorted2.png" alt="" height="300cm" class="inline"/> <img src="wmap_sorted3.png" alt="" height="300cm" class="inline"/> </p><dl class="params"><dt>参数</dt><dd>
+ <img src="wmap_sorted1.png" alt="" height="300cm" class="inline"/> <img src="wmap_sorted2.png" alt="" height="300cm" class="inline"/> <img src="wmap_sorted3.png" alt="" height="300cm" class="inline"/></p>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">sortedWaferMap</td><td>输出排序后的晶圆图 </td></tr>
   </table>

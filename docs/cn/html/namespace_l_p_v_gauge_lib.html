@@ -83,16 +83,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>LPV 卡尺模块，提供 1D 和 2D 形状的卡尺定位和测量。  
+<p>LPV 卡尺模块，提供 1D 边缘和 2D 形状的卡尺定位和测量。  
 <a href="namespace_l_p_v_gauge_lib.html#details">更多...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge_result.html">ILGaugeResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口表示卡尺检测结果，可获取其具体属性。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_gauge_result.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html">ILGauge</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类为卡尺对象的基类，提供基本卡尺工具的接口和参数。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_shape_gauge_result.html">ILShapeGaugeResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口表示形状卡尺检测结果，可获取其具体属性。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_shape_gauge_result.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_shape_gauge.html">ILShapeGauge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类为形状卡尺对象的基类，提供基本形状卡尺工具的接口和参数。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_shape_gauge.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">ILLineGauge</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供基于卡尺的直线检测功能。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html#details">更多...</a><br /></td></tr>
@@ -103,13 +106,33 @@ $(function() {
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html">ILArcGauge</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供基于卡尺的圆弧检测功能。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_gauge_result.html">LGaugeResult</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_ellipse_gauge.html">ILEllipseGauge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供基于卡尺的椭圆检测功能。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_ellipse_gauge.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_poly_gauge.html">ILPolyGauge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供基于卡尺的多边形检测功能。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_poly_gauge.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge_result.html">ILEdgeGaugeResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口表示边缘卡尺检测结果，可获取其具体属性。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge_result.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html">ILEdgeGauge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供基于卡尺的 1D 边缘检测功能。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_shape_gauge_result.html">LShapeGaugeResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_line_gauge.html">LLineGauge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_circle_gauge.html">LCircleGauge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_arc_gauge.html">LArcGauge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_ellipse_gauge.html">LEllipseGauge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_poly_gauge.html">LPolyGauge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_edge_gauge_result.html">LEdgeGaugeResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_gauge_lib_1_1_l_edge_gauge.html">LEdgeGauge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -129,19 +152,20 @@ $(function() {
 <tr class="memitem:a22453664a582d012f1cadabd405027e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0">LPVGaugeFeatures</a> { <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0a9b2353ef0024b8607b464e2f56d34dd8">LPVGaugeFeatureNone</a> = 0x0
 , <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0a3cb1b991164db67e54ab6ec50f5a0317">LPVGaugeFeaturePosition</a> = 0x1
 , <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0a9d3c3961c91f705116a1b6c7d5053886">LPVGaugeFeatureScore</a> = 0x2
+, <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0a4708f7bcdad285f76d3e839bba2a506f">LPVGaugeFeatureDistance</a> = 0x4
  }</td></tr>
 <tr class="memdesc:a22453664a582d012f1cadabd405027e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示卡点的特征类型，用于筛选卡点  <a href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0">更多...</a><br /></td></tr>
 <tr class="separator:a22453664a582d012f1cadabd405027e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>LPV 卡尺模块，提供 1D 和 2D 形状的卡尺定位和测量。 </p>
-<p>该模块提供一些算法类，用于 1D 和 2D 形状的卡尺定位和测量。使用该模块中的类和算法，需按照以下方式引用该模块：</p>
+<div class="textblock"><p>LPV 卡尺模块，提供 1D 边缘和 2D 形状的卡尺定位和测量。 </p>
+<p>该模块提供一些算法类，用于 1D 边缘和 2D 形状的卡尺定位和测量。使用该模块中的类和算法，需按照以下方式引用该模块：</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVGauge.h&quot;</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_gauge_lib.html">LPVGaugeLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_gauge_lib_html"><div class="ttname"><a href="namespace_l_p_v_gauge_lib.html">LPVGaugeLib</a></div><div class="ttdoc">LPV 卡尺模块，提供 1D 和 2D 形状的卡尺定位和测量。</div><div class="ttdef"><b>Definition:</b> LPVGauge.idl:52</div></div>
-</div><!-- fragment --> </div> <p><b>MFC Demo:</b> <br  />
-<b>C# Demo:</b> </p>
+<div class="ttc" id="anamespace_l_p_v_gauge_lib_html"><div class="ttname"><a href="namespace_l_p_v_gauge_lib.html">LPVGaugeLib</a></div><div class="ttdoc">LPV 卡尺模块，提供 1D 边缘和 2D 形状的卡尺定位和测量。</div><div class="ttdef"><b>Definition:</b> LPVGauge.idl:52</div></div>
+</div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_gauge">MFCGauge</a> <br  />
+<b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_gauge">CSharpGauge</a> </p>
 </div><h2 class="groupheader">枚举类型说明</h2>
 <a id="a5b389250582da9a00fc60e6596010467"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b389250582da9a00fc60e6596010467">&#9670;&nbsp;</a></span>LPVGaugeDrawFlags</h2>
@@ -157,13 +181,13 @@ $(function() {
 
 <p>该枚举用于控制卡尺检测结果绘制的行为 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7602feb1175411e55a9ee808330a6bae"></a>LPVGaugeDrawResult&#160;</td><td class="fielddoc"><p>绘制结果对应的形状对象，如直线、圆等 </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7602feb1175411e55a9ee808330a6bae"></a>LPVGaugeDrawResult&#160;</td><td class="fielddoc"><p>绘制结果对应的形状对象，如直线、圆等，或结果边缘 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7c79cba83f09c9f9c530c15933e37615"></a>LPVGaugeDrawSampleRegion&#160;</td><td class="fielddoc"><p>绘制卡点采样区域 </p>
+<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7c79cba83f09c9f9c530c15933e37615"></a>LPVGaugeDrawSampleRegion&#160;</td><td class="fielddoc"><p>绘制卡点采样区域，仅用于形状卡尺 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a232d89a7f35b3d1c149b88de01f391e5"></a>LPVGaugeDrawSamplePoints&#160;</td><td class="fielddoc"><p>绘制有效卡点 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a1ea31c7d56bd7ee0d0a1dfe2be2bd6c2"></a>LPVGaugeDrawSampleIndex&#160;</td><td class="fielddoc"><p>绘制卡点采样区域的索引，在其左上角附近 </p>
+<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a1ea31c7d56bd7ee0d0a1dfe2be2bd6c2"></a>LPVGaugeDrawSampleIndex&#160;</td><td class="fielddoc"><p>绘制卡点采样区域的索引，在其左上角附近，仅用于形状卡尺 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7b740e42223889594b426b9a3abcde70"></a>LPVGaugeDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制结果对应的形状对象 </p>
 </td></tr>
@@ -192,6 +216,8 @@ $(function() {
 <tr><td class="fieldname"><a id="a22453664a582d012f1cadabd405027e0a3cb1b991164db67e54ab6ec50f5a0317"></a>LPVGaugeFeaturePosition&#160;</td><td class="fielddoc"><p>卡点的位置，基于当前的位置依据设置 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a22453664a582d012f1cadabd405027e0a9d3c3961c91f705116a1b6c7d5053886"></a>LPVGaugeFeatureScore&#160;</td><td class="fielddoc"><p>卡点的分数，即其边缘梯度强度或灰度强度，基于当前的极性设置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a22453664a582d012f1cadabd405027e0a4708f7bcdad285f76d3e839bba2a506f"></a>LPVGaugeFeatureDistance&#160;</td><td class="fielddoc"><p>卡点的距离，基于当前的期望距离和容差影响。仅用于双边缘卡尺定位。 </p>
 </td></tr>
 </table>
 
