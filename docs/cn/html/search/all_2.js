@@ -21,7 +21,7 @@ var searchData=
   ['close_95',['Close',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#a6a8bdf032eb5a0b9c792a5df1ce6c8f9',1,'LPVImgProcLib::ILImageMorph']]],
   ['closed_96',['Closed',['../interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a7b9cbfb18f88d1a71a729acc420777f6',1,'LPVGeomLib::ILPolygon']]],
   ['collinear_97',['Collinear',['../interface_l_p_v_geom_lib_1_1_i_l_point.html#ac93256eac42419cf69126c894dbfc63d',1,'LPVGeomLib::ILPoint']]],
-  ['colormode_98',['ColorMode',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a578080e61d50698076077b040524ba0b',1,'LPVBlobLib::ILBlobAnalysis']]],
+  ['colormode_98',['ColorMode',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a578080e61d50698076077b040524ba0b',1,'LPVBlobLib::ILBlobAnalysis::ColorMode()'],['../interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a578080e61d50698076077b040524ba0b',1,'LPVCalibLib::ILFlatField::ColorMode()']]],
   ['columncount_99',['ColumnCount',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#a750eab24b48fd49dde0e11a157b46c6b',1,'LPVGeomXLib::ILSortedArray::ColumnCount()'],['../interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_props.html#a750eab24b48fd49dde0e11a157b46c6b',1,'LPWWaferMapLib::ILWaferProps::ColumnCount()']]],
   ['columnline_100',['ColumnLine',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#a5a715f09cefa5ffbd4afe55745168a42',1,'LPVGeomXLib::ILSortedArray::ColumnLine()'],['../interface_l_p_w_wafer_map_lib_1_1_i_l_wafer_map.html#a5a715f09cefa5ffbd4afe55745168a42',1,'LPWWaferMapLib::ILWaferMap::ColumnLine()']]],
   ['concentric_101',['Concentric',['../interface_l_p_v_geom_lib_1_1_i_l_circle.html#a1d3ae5ada794abfa367fa2baae388b1d',1,'LPVGeomLib::ILCircle']]],

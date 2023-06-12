@@ -155,8 +155,8 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">((ILDrawable)roi).SetPenWidth(2);</div>
 <div class="line"><span class="comment">// or do it via LSystem object</span></div>
 <div class="line">sys.SetPen(roi, <a class="code" href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVPenStyle</a>.LPVPenSolid, 1, <a class="code" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVColor</a>.LPVYellow);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a2621143506dcb8d80e6b3892ecfd8a7c"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVCoreLib::LPVColor</a></div><div class="ttdeci">LPVColor</div><div class="ttdoc">该枚举表示一些常用的颜色</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1187</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a538e01db39d41ce04a34266c00d41f1f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVCoreLib::LPVPenStyle</a></div><div class="ttdeci">LPVPenStyle</div><div class="ttdoc">该枚举类型表示绘制路径用的描边风格</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:678</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a2621143506dcb8d80e6b3892ecfd8a7c"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVCoreLib::LPVColor</a></div><div class="ttdeci">LPVColor</div><div class="ttdoc">该枚举表示一些常用的颜色</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1190</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a538e01db39d41ce04a34266c00d41f1f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVCoreLib::LPVPenStyle</a></div><div class="ttdeci">LPVPenStyle</div><div class="ttdoc">该枚举类型表示绘制路径用的描边风格</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:681</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="ac5d9a43892c40f2791584cb242e1a565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5d9a43892c40f2791584cb242e1a565">&#9670;&nbsp;</a></span>SetPen()</h2>
@@ -192,7 +192,7 @@ Public 成员函数</h2></td></tr>
 <p>设置用于绘制路径的描边笔。如果不设置，默认会用一个宽度为1个像素的绿色实心描边笔。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">penStyle</td><td>描边笔的风格 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">penWidth</td><td>描边笔的宽度，至少为1个像素宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">penWidth</td><td>描边笔的宽度，至少为1个像素宽度，最多支持31像素宽度 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">penColor</td><td>描边笔的颜色，查看 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">ILSystem::GetColorRef</a> </td></tr>
   </table>
   </dd>
