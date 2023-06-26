@@ -80,7 +80,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public 成员函数</a>  </div>
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
   <div class="headertitle">
 <div class="title">ILImageArithm接口 参考</div>  </div>
 </div><!--header-->
@@ -139,6 +140,17 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a7527d7f34dbceb5eacdcffbbdcf48949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9da5ffbb1c8710c2ba2461b6fb1f74"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aeb9da5ffbb1c8710c2ba2461b6fb1f74">ProjectY</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType)</td></tr>
 <tr class="separator:aeb9da5ffbb1c8710c2ba2461b6fb1f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ac665151de36f62491cbc143500cac3cd"><td class="memItemLeft" align="right" valign="top"><a id="ac665151de36f62491cbc143500cac3cd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd">ResultGain</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac665151de36f62491cbc143500cac3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">对运算结果进行增益，放大或缩小数值分布范围。需要是一个正数，默认值为 1，即不缩放。 <br /></td></tr>
+<tr class="separator:ac665151de36f62491cbc143500cac3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memItemLeft" align="right" valign="top"><a id="aa89fd99d76e4f617802fdffabe63ef9a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aa89fd99d76e4f617802fdffabe63ef9a">ResultOffset</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa89fd99d76e4f617802fdffabe63ef9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将运算结果加上偏移值，在增益 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd" title="对运算结果进行增益，放大或缩小数值分布范围。需要是一个正数，默认值为 1，即不缩放。">ResultGain</a> 之后进行。默认值为 1，即无偏移。 <br /></td></tr>
+<tr class="separator:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口类提供了图像类的数学运算功能。 </p>
@@ -538,9 +550,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>两个图像逐像素比较，取其最小值，输出一个新图像， \( I&#39; = \min (I_{1}, I_{2}) \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第一个输入图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第二个输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -580,9 +592,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>两个图像逐像素比较，取其最大值，输出一个新图像， \( I&#39; = \max (I_{1}, I_{2}) \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第一个输入图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第二个输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>

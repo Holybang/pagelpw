@@ -157,6 +157,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a71f6f46d2bc5ee4b2a5564e5f3565e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa31082143d863d7265c92c29acd28c4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#aa31082143d863d7265c92c29acd28c4e">AddPointsInRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:aa31082143d863d7265c92c29acd28c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac631e73071f6758a1a5e173b48a170ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#ac631e73071f6758a1a5e173b48a170ff">FromSortables</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html">ILSortables</a> *obj, <a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a> posMode)</td></tr>
+<tr class="separator:ac631e73071f6758a1a5e173b48a170ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口对应一组点的集合（LPoints对象）。 </p>
@@ -1124,6 +1126,41 @@ Public 成员函数</h2></td></tr>
 <p>将输入区域中的所有点，加入该点集中 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac631e73071f6758a1a5e173b48a170ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac631e73071f6758a1a5e173b48a170ff">&#9670;&nbsp;</a></span>FromSortables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FromSortables </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html">ILSortables</a> *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>&#160;</td>
+          <td class="paramname"><em>posMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据输入的可排序对象，设置该点的位置。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>输入的可排序集合对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posMode</td><td>设置位置计算的方式 </td></tr>
   </table>
   </dd>
 </dl>

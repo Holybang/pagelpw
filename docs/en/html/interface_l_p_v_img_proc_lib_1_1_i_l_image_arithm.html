@@ -80,7 +80,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a>  </div>
   <div class="headertitle">
 <div class="title">ILImageArithm Interface Reference</div>  </div>
 </div><!--header-->
@@ -139,6 +140,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7527d7f34dbceb5eacdcffbbdcf48949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9da5ffbb1c8710c2ba2461b6fb1f74"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aeb9da5ffbb1c8710c2ba2461b6fb1f74">ProjectY</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType)</td></tr>
 <tr class="separator:aeb9da5ffbb1c8710c2ba2461b6fb1f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ac665151de36f62491cbc143500cac3cd"><td class="memItemLeft" align="right" valign="top"><a id="ac665151de36f62491cbc143500cac3cd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd">ResultGain</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac665151de36f62491cbc143500cac3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the final result of the operation with the gain value. It should be a positive value, by default, it's 1, aka no scale. <br /></td></tr>
+<tr class="separator:ac665151de36f62491cbc143500cac3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memItemLeft" align="right" valign="top"><a id="aa89fd99d76e4f617802fdffabe63ef9a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aa89fd99d76e4f617802fdffabe63ef9a">ResultOffset</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa89fd99d76e4f617802fdffabe63ef9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset value added to the final result of the operation, after scaled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd" title="Scale the final result of the operation with the gain value. It should be a positive value,...">ResultGain</a>. Default to 0, aka no offset. <br /></td></tr>
+<tr class="separator:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of arithmetic operations. </p>
@@ -538,9 +550,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the maximum of the two input images pixel by pixel, output a new result image, \( I&#39; = \min (I_{1}, I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The first input image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The second input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -580,9 +592,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the minimum of the two input images pixel by pixel, output a new result image, \( I&#39; = \max (I_{1}, I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The first input image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The second input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>

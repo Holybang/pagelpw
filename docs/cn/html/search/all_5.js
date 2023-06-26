@@ -52,7 +52,9 @@ var searchData=
   ['fromrectregion_257',['FromRectRegion',['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#a2a0be4dfd7675cb0d37872de9feb98cd',1,'LPVGeomLib::ILRect']]],
   ['fromregion_258',['FromRegion',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#adadd4ea09b8ca3d5b514078a7d4c4236',1,'LPVBlobLib::ILBlob::FromRegion()'],['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#abb51fa04c299f6a654aa4cce591bd656',1,'LPVIBLib::ILIBData::FromRegion()']]],
   ['fromrotrectregion_259',['FromRotRectRegion',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#a518e423f489fb73aa01e7bd038a2ed8f',1,'LPVGeomLib::ILLine::FromRotRectRegion()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#a518e423f489fb73aa01e7bd038a2ed8f',1,'LPVGeomLib::ILRect::FromRotRectRegion()']]],
-  ['fromstring_260',['FromString',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743',1,'LPVIBLib::ILIBData']]],
-  ['fromstringlist_261',['FromStringList',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#ad59ffbbb83fde87f0f325a996da3d66f',1,'LPVIBLib::ILIBData']]],
-  ['fullpath_262',['FullPath',['../interface_l_p_v_m_l_lib_1_1_i_l_sample.html#a6dd71c9281066bf4019087241dc64a40',1,'LPVMLLib::ILSample']]]
+  ['fromsortable_260',['FromSortable',['../interface_l_p_v_geom_lib_1_1_i_l_point.html#a0bba5a4d8ba05e90009d612796b7111f',1,'LPVGeomLib::ILPoint']]],
+  ['fromsortables_261',['FromSortables',['../interface_l_p_v_geom_lib_1_1_i_l_points.html#ac631e73071f6758a1a5e173b48a170ff',1,'LPVGeomLib::ILPoints']]],
+  ['fromstring_262',['FromString',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743',1,'LPVIBLib::ILIBData']]],
+  ['fromstringlist_263',['FromStringList',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#ad59ffbbb83fde87f0f325a996da3d66f',1,'LPVIBLib::ILIBData']]],
+  ['fullpath_264',['FullPath',['../interface_l_p_v_m_l_lib_1_1_i_l_sample.html#a6dd71c9281066bf4019087241dc64a40',1,'LPVMLLib::ILSample']]]
 ];

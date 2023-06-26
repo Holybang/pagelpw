@@ -143,8 +143,7 @@ The center is estimated with the rotation points or pairs of points around the c
 <p>After calibration, you can use the center for aim-object alignment, it report the translation and rotation for align the aim and object point.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_rotation.html">LCalibRotation</a> object.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/CalibRotationCenter.cpp</div>
-<div class="line">ILCalibRotationPtr m_rot_calib(__uuidof(LCalibRotation));</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/CalibRotationCenter.cpp </p><div class="fragment"><div class="line">ILCalibRotationPtr m_rot_calib(__uuidof(LCalibRotation));</div>
 <div class="line">m_rot_calib-&gt;AddRotPointPair(0, 100, 0, -100, 0);</div>
 <div class="line">m_rot_calib-&gt;AddRotPointPair(100, 100, -100, -100, 45);</div>
 <div class="line">m_rot_calib-&gt;AddRotPointPair(100, 0, -100, 0, 90);</div>
@@ -154,8 +153,7 @@ The center is estimated with the rotation points or pairs of points around the c
 <div class="line"><span class="keywordtype">double</span> dx, dy, da;</div>
 <div class="line">m_rot_calib-&gt;Align(10, 0, 90, 0, &amp;dx, &amp;dy, &amp;da);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:206</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/CalibRotationCenter.cs</div>
-<div class="line">LCalibRotation m_rot_calib = <span class="keyword">new</span> LCalibRotation();</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/CalibRotationCenter.cs </p><div class="fragment"><div class="line">LCalibRotation m_rot_calib = <span class="keyword">new</span> LCalibRotation();</div>
 <div class="line">m_rot_calib.AddRotPointPair(0, 100, 0, -100, 0);</div>
 <div class="line">m_rot_calib.AddRotPointPair(100, 100, -100, -100, 45);</div>
 <div class="line">m_rot_calib.AddRotPointPair(100, 0, -100, 0, 90);</div>

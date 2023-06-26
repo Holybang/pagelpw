@@ -173,8 +173,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </ol>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_calib_lib_1_1_l_flat_field.html">LFlatField</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/FlatFieldWhiteBoard.cpp, snippets/FlatFieldSolar.cpp</div>
-<div class="line">ILFlatFieldPtr ffc(__uuidof(LFlatField));</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/FlatFieldWhiteBoard.cpp, snippets/FlatFieldSolar.cpp </p><div class="fragment"><div class="line">ILFlatFieldPtr ffc(__uuidof(LFlatField));</div>
 <div class="line"><span class="comment">// with white board</span></div>
 <div class="line">ffc-&gt;ColorMode = LPVImageFormat::LPVImageFormatGrayscale8;</div>
 <div class="line">ffc-&gt;ToGray = 160; <span class="comment">// correct the white board to 160 gray</span></div>
@@ -187,8 +186,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">err = ffc-&gt;FixImage(rawImg, correctedImg); <span class="comment">// do flat field correction</span></div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:206</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/FlatFieldWhiteBoard.cs, snippets/FlatFieldSolar.cs</div>
-<div class="line">LFlatField ffc = <span class="keyword">new</span> LFlatField();</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/FlatFieldWhiteBoard.cs, snippets/FlatFieldSolar.cs </p><div class="fragment"><div class="line">LFlatField ffc = <span class="keyword">new</span> LFlatField();</div>
 <div class="line"><span class="comment">// with white board</span></div>
 <div class="line">ffc.ColorMode = <a class="code" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>.LPVImageFormatGrayscale8;</div>
 <div class="line">ffc.ToGray = 160; <span class="comment">// correct the white board to 160 gray</span></div>

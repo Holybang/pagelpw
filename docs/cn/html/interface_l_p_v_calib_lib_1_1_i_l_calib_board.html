@@ -105,6 +105,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aa174ae718c73636f93cff15578386560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abee452fce9fcd580f809b57613aab1f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#abee452fce9fcd580f809b57613aab1f2">DetectInRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
 <tr class="separator:abee452fce9fcd580f809b57613aab1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef55e1eefddce8a8c94c9c6f52a8ce11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aef55e1eefddce8a8c94c9c6f52a8ce11">GeneratePointPairs</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *imgPoints, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
+<tr class="separator:aef55e1eefddce8a8c94c9c6f52a8ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
 <tr class="separator:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,12 +163,36 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a299223d3c1410cbdc6bfaeffcadcab6e">InvertBlock</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a299223d3c1410cbdc6bfaeffcadcab6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否翻转标定块，对分散式二维码棋盘格标定板起效。若相机采图配置为上下或左右镜像，则开启该配置以帮助算法获取正确的坐标系方向。默认关闭。 <br /></td></tr>
 <tr class="separator:a299223d3c1410cbdc6bfaeffcadcab6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cbe645d0a9732d0f73c1e0a4e69271"><td class="memItemLeft" align="right" valign="top"><a id="a23cbe645d0a9732d0f73c1e0a4e69271"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a23cbe645d0a9732d0f73c1e0a4e69271">StartX</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a23cbe645d0a9732d0f73c1e0a4e69271"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定标定板起始点的场景位置的 x 坐标。起始点通常为图像中标定点的最左上点。<br  />
+对于带有坐标系的圆点标定板，为该坐标系的原点。<br  />
+对分散式二维码棋盘格标定板，因其带有完整的坐标信息，指定该起始坐标无效 <br /></td></tr>
+<tr class="separator:a23cbe645d0a9732d0f73c1e0a4e69271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afd6ddf5bddb030c45eef5d2ccc1e87"><td class="memItemLeft" align="right" valign="top"><a id="a1afd6ddf5bddb030c45eef5d2ccc1e87"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a1afd6ddf5bddb030c45eef5d2ccc1e87">StartY</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1afd6ddf5bddb030c45eef5d2ccc1e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定标定板起始点的场景位置的 y 坐标。起始点通常为图像中标定点的最左上点。 <br /></td></tr>
+<tr class="separator:a1afd6ddf5bddb030c45eef5d2ccc1e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供标定板相关的功能。 </p>
 <p>标定板为预知规格和图案的平面，用于拍摄后检测和生成用于标定的图像和物理点对。<br  />
-该接口支持 3 种类型的标定板，查看 LPVCalibBoardType</p>
-<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_board.html">LCalibBoard</a> 对象。</p>
+目前支持以下 4 种类型的标定板：<br  />
+<br  />
+ <img src="classicboard.svg" alt="" height="250cm" style="pointer-events: none;" class="inline"/><br  />
+经典的<b>棋盘格</b>标定板和<b>圆点阵</b>标定板<br  />
+<br  />
+<img src="distcharuco.svg" alt="" height="300cm" style="pointer-events: none;" class="inline"/><br  />
+<b>分散式二维码棋盘格</b>标定板，用于高精度标定场景，且使用更便捷，尤其对于相机阵列或多相机联合标定，可大幅度提高标定效率。<br  />
+<br  />
+<img src="emcirclegrid.svg" alt="" height="300cm" style="pointer-events: none;" class="inline"/><br  />
+<b>带有空标记的圆点阵</b>标定板，专为手眼标定设计。整体图案十分简单，便于激光打印。空标记用于指定坐标轴的朝向和原点位置：</p><ul>
+<li>当 X 方向的点数更多时，位于 Y 方向的最后一行、X 方向的最后一列</li>
+<li>当 Y 方向的点数更多或相等时，位于 Y 方向的倒数第二行、X 方向的最后一列</li>
+</ul>
+<p><br  />
+<br  />
+ 使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_board.html">LCalibBoard</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibBoardPtr m_calib_board(__uuidof(LCalibBoard));</div>
 <div class="line">m_calib_board-&gt;GridWidth = 10;</div>
@@ -268,6 +294,49 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aef55e1eefddce8a8c94c9c6f52a8ce11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef55e1eefddce8a8c94c9c6f52a8ce11">&#9670;&nbsp;</a></span>GeneratePointPairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> GeneratePointPairs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td>
+          <td class="paramname"><em>imgPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **&#160;</td>
+          <td class="paramname"><em>pointPairs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于输入的图像坐标点集，生成点对。<br  />
+输入的图像坐标点集将被按行从上到下、行内从左到右排序，其对应的物理坐标由当前的标定板设置从左上角开始自动生成。 除了带空标记的圆点阵标定板，其起始点和坐标轴朝向由图像坐标点的分布情况决定。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgPoints</td><td>输入的图像坐标点集，通常通过其他定位工具获得 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pointPairs</td><td>返回生成的图像和物理点对集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a7a74b04693b448c5f4979af0b16ad24b" title="标定板的类型">CalibBoardType</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ae0dc69304ee0d7baffda597b48d919cc" title="标定板网格的横向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridWidth</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70" title="标定板网格的纵向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridHeight</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="标定板的网格间距。 对于棋盘格和分散式二维码棋盘格标定板，其指的是一个黑色方块的物理尺寸。 对于圆点阵标定板，其指的是相邻两个圆点中心的物理距离。">SquareSize</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a23cbe645d0a9732d0f73c1e0a4e69271" title="指定标定板起始点的场景位置的 x 坐标。起始点通常为图像中标定点的最左上点。 对于带有坐标系的圆点标定板，为该坐标系的原点。 对分散式二维码棋盘格标定板，因其带有完整的坐标信息，指定该起始坐标无效">StartX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a1afd6ddf5bddb030c45eef5d2ccc1e87" title="指定标定板起始点的场景位置的 y 坐标。起始点通常为图像中标定点的最左上点。">StartY</a> </dd></dl>
 
 </div>
 </div>
