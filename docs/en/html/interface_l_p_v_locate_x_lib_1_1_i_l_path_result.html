@@ -116,9 +116,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="textblock"><p>This interface holds a single path detection result and is used to access its properties. </p>
 <p>Usually you get the <a class="el" href="class_l_p_v_locate_x_lib_1_1_l_path_result.html">LPathResult</a> object from the <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a38b03c34a46a022ad2844b2c8340ba69">ILPathResults::Item()</a> function.You can then use this interface to access to the path informations and draw the result on graphics windows.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILPathResultPtr result = m_path_results-&gt;Item(i);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILPathResultPtr result = path_results-&gt;Item(i);</div>
 <div class="line">ILPolygonPtr path = result-&gt;Path;</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LPathResult result = m_path_results.Item(i);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LPathResult result = path_results.Item(i);</div>
 <div class="line">LPolygon path = result.Path;</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9e01eb89b1b89fa921459a6a6b63fa26"></a>

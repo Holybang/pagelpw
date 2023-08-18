@@ -97,14 +97,14 @@ Inheritance diagram for ILHDR:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
-<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0da8bd9f3989e2bccd172ae7c75fde3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#af0da8bd9f3989e2bccd172ae7c75fde3">BuildCRF</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, SAFEARRAY *exposureTimes)</td></tr>
 <tr class="separator:af0da8bd9f3989e2bccd172ae7c75fde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4ac9658e67d2c56a75b02f498bdeb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a4d4ac9658e67d2c56a75b02f498bdeb6">ToneMapping</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, double gamma, double contrastEnhance, double saturationEnhance)</td></tr>
-<tr class="separator:a4d4ac9658e67d2c56a75b02f498bdeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a352c95095228a2a9d2ceb3988dad3487"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a352c95095228a2a9d2ceb3988dad3487">ExposureFusion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, double contrastWeight, double saturationWeight, double exposureWeight)</td></tr>
 <tr class="separator:a352c95095228a2a9d2ceb3988dad3487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4ac9658e67d2c56a75b02f498bdeb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a4d4ac9658e67d2c56a75b02f498bdeb6">ToneMapping</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, double gamma, double contrastEnhance, double saturationEnhance)</td></tr>
+<tr class="separator:a4d4ac9658e67d2c56a75b02f498bdeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of High Dynamic Range Imaging(HDR). </p>
@@ -135,24 +135,6 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="comment">// 2. exposure fusion</span></div>
 <div class="line">m_hdr.ExposureFusion(m_image_list, m_result_img2, 1, 1, 1);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reset all data, it clean up the CRF. </p>
-
-</div>
-</div>
 <a id="af0da8bd9f3989e2bccd172ae7c75fde3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0da8bd9f3989e2bccd172ae7c75fde3">&#9670;&nbsp;</a></span>BuildCRF()</h2>
 
@@ -191,6 +173,80 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a352c95095228a2a9d2ceb3988dad3487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352c95095228a2a9d2ceb3988dad3487">&#9670;&nbsp;</a></span>ExposureFusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExposureFusion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>contrastWeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>saturationWeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>exposureWeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>HDR imaging using exposure fusion approach. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input images with different exposure settings </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contrastWeight</td><td>The weight of contrast, by default, it's 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">saturationWeight</td><td>The weight of saturation, by default it's 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exposureWeight</td><td>The weight of exposure, by default, it's 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset all data, it clean up the CRF. </p>
 
 </div>
 </div>
@@ -248,62 +304,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#af0da8bd9f3989e2bccd172ae7c75fde3">BuildCRF()</a> </dd></dl>
-
-</div>
-</div>
-<a id="a352c95095228a2a9d2ceb3988dad3487"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352c95095228a2a9d2ceb3988dad3487">&#9670;&nbsp;</a></span>ExposureFusion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ExposureFusion </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
-          <td class="paramname"><em>imgList</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>contrastWeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>saturationWeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>exposureWeight</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>HDR imaging using exposure fusion approach. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input images with different exposure settings </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">contrastWeight</td><td>The weight of contrast, by default, it's 1. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">saturationWeight</td><td>The weight of saturation, by default it's 1. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">exposureWeight</td><td>The weight of exposure, by default, it's 1. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

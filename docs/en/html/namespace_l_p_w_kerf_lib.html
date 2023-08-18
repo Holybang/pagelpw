@@ -88,24 +88,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_result.html">ILKerfResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface holds a single kerf detection result and is used to access its properties.  <a href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_result.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html">ILKerfDetector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of cutting kerf detection.  <a href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_detector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_w_kerf_lib_1_1_l_kerf_result.html">LKerfResult</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_result.html">ILKerfResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface holds a single kerf detection result and is used to access its properties.  <a href="interface_l_p_w_kerf_lib_1_1_i_l_kerf_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_w_kerf_lib_1_1_l_kerf_detector.html">LKerfDetector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_w_kerf_lib_1_1_l_kerf_result.html">LKerfResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a090c1c7116d92555cd8d3bbbf63aa7cc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cc">LPWKerfGrowStrategy</a> { <a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cca77f9f0b85a9a28a7340e1ea28547cb13">LPWKerfGrowNearCenter</a> = 0
-, <a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7ccad7834b13624504f3c456ff13bac833f5">LPWKerfGrowNearDark</a> = 1
- }</td></tr>
-<tr class="memdesc:a090c1c7116d92555cd8d3bbbf63aa7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control the growing strategy of the kerf detection.  <a href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cc">More...</a><br /></td></tr>
-<tr class="separator:a090c1c7116d92555cd8d3bbbf63aa7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a037fabf5aa7ba4b1632279a2a615c9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_w_kerf_lib.html#a0a037fabf5aa7ba4b1632279a2a615c9">LPWKerfDrawFlags</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_w_kerf_lib.html#a0a037fabf5aa7ba4b1632279a2a615c9a470fe189bf2e97d52c1a72976e90e8ff">LPWKerfDrawLineUp</a> = 0x01
 , <a class="el" href="namespace_l_p_w_kerf_lib.html#a0a037fabf5aa7ba4b1632279a2a615c9a3f6150927c1730f1bbd7355ce2f7d8c4">LPWKerfDrawLineDown</a> = 0x02
@@ -119,6 +114,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a0a037fabf5aa7ba4b1632279a2a615c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control the kerf results' drawing behavior.  <a href="namespace_l_p_w_kerf_lib.html#a0a037fabf5aa7ba4b1632279a2a615c9">More...</a><br /></td></tr>
 <tr class="separator:a0a037fabf5aa7ba4b1632279a2a615c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090c1c7116d92555cd8d3bbbf63aa7cc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cc">LPWKerfGrowStrategy</a> { <a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cca77f9f0b85a9a28a7340e1ea28547cb13">LPWKerfGrowNearCenter</a> = 0
+, <a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7ccad7834b13624504f3c456ff13bac833f5">LPWKerfGrowNearDark</a> = 1
+ }</td></tr>
+<tr class="memdesc:a090c1c7116d92555cd8d3bbbf63aa7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control the growing strategy of the kerf detection.  <a href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cc">More...</a><br /></td></tr>
+<tr class="separator:a090c1c7116d92555cd8d3bbbf63aa7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPW Cutting Kerf Inspection Library, provides classes for the cutting kerf inspection algorithms that are accurate, reliable and resistant to noise. </p>
@@ -130,28 +130,6 @@ Enumerations</h2></td></tr>
 </div><!-- fragment --> </div> <p><b>MFC Demo:</b> MFCKerf <br  />
 <b>C# Demo:</b> CSharpKerf </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a090c1c7116d92555cd8d3bbbf63aa7cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a090c1c7116d92555cd8d3bbbf63aa7cc">&#9670;&nbsp;</a></span>LPWKerfGrowStrategy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cc">LPWKerfGrowStrategy</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This enumeration represents the flags to control the growing strategy of the kerf detection. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a090c1c7116d92555cd8d3bbbf63aa7cca77f9f0b85a9a28a7340e1ea28547cb13"></a>LPWKerfGrowNearCenter&#160;</td><td class="fielddoc"><p>The kerf lines grows starting and near the center of the detection region </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a090c1c7116d92555cd8d3bbbf63aa7ccad7834b13624504f3c456ff13bac833f5"></a>LPWKerfGrowNearDark&#160;</td><td class="fielddoc"><p>The kerf lines grows starting and near the darkest region </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="a0a037fabf5aa7ba4b1632279a2a615c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a037fabf5aa7ba4b1632279a2a615c9">&#9670;&nbsp;</a></span>LPWKerfDrawFlags</h2>
 
@@ -179,6 +157,28 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a0a037fabf5aa7ba4b1632279a2a615c9a446818f2f13336a160bab7daa3c7f6db"></a>LPWKerfDrawDefault&#160;</td><td class="fielddoc"><p>Default draw flags, which draws only the up and bottom border lines </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a0a037fabf5aa7ba4b1632279a2a615c9a93f7ff86853ba8d7b38513abea8ab1d4"></a>LPWKerfDrawAll&#160;</td><td class="fielddoc"><p>Draw the all components </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a090c1c7116d92555cd8d3bbbf63aa7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090c1c7116d92555cd8d3bbbf63aa7cc">&#9670;&nbsp;</a></span>LPWKerfGrowStrategy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_w_kerf_lib.html#a090c1c7116d92555cd8d3bbbf63aa7cc">LPWKerfGrowStrategy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the flags to control the growing strategy of the kerf detection. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a090c1c7116d92555cd8d3bbbf63aa7cca77f9f0b85a9a28a7340e1ea28547cb13"></a>LPWKerfGrowNearCenter&#160;</td><td class="fielddoc"><p>The kerf lines grows starting and near the center of the detection region </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a090c1c7116d92555cd8d3bbbf63aa7ccad7834b13624504f3c456ff13bac833f5"></a>LPWKerfGrowNearDark&#160;</td><td class="fielddoc"><p>The kerf lines grows starting and near the darkest region </p>
 </td></tr>
 </table>
 

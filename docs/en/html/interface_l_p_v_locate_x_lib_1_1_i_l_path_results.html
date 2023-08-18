@@ -97,57 +97,39 @@ Inheritance diagram for ILPathResults:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
-<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb7c47723f72f9554e3905fc94140e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a0cb7c47723f72f9554e3905fc94140e4">Count</a> ()</td></tr>
 <tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b03c34a46a022ad2844b2c8340ba69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html">ILPathResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a38b03c34a46a022ad2844b2c8340ba69">Item</a> (int index)</td></tr>
-<tr class="separator:a38b03c34a46a022ad2844b2c8340ba69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69c844740e9ac50cc61d9c3123340831"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a69c844740e9ac50cc61d9c3123340831">Draw</a> (HDC hdc, int index, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28">LPVPathDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a69c844740e9ac50cc61d9c3123340831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334a2c0bb7219fcd0ed6268c690eeb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a334a2c0bb7219fcd0ed6268c690eeb81">DrawAll</a> (HDC hdc, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28">LPVPathDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a334a2c0bb7219fcd0ed6268c690eeb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b03c34a46a022ad2844b2c8340ba69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html">ILPathResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a38b03c34a46a022ad2844b2c8340ba69">Item</a> (int index)</td></tr>
+<tr class="separator:a38b03c34a46a022ad2844b2c8340ba69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface holds a collection of path detection results. </p>
 <p>Usually you get the <a class="el" href="class_l_p_v_locate_x_lib_1_1_l_path_results.html">LPathResults</a> object from the <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#a44ebeebf5e164ea2f8e077a56219c2ca">ILPathDetector::Detect()</a> as detection result. You can then use this interface to access individual result and draw the results on graphics windows.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILPathResultsPtr m_path_results;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_path_detector-&gt;Detect(m_img, m_rot_roi, &amp;m_path_results);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILPathResultsPtr path_results;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = path_detector-&gt;Detect(img, rot_roi, &amp;path_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="keywordtype">int</span> c = m_path_results-&gt;Count();</div>
+<div class="line"><span class="keywordtype">int</span> c = path_results-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
-<div class="line">    ILPathResultPtr result = m_path_results-&gt;Item(i);</div>
+<div class="line">    ILPathResultPtr result = path_results-&gt;Item(i);</div>
 <div class="line">    <span class="comment">// handle each path result</span></div>
 <div class="line">}</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:206</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LPathResults m_path_results;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_path_detector.Detect(m_img, m_rot_roi, out m_path_results);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LPathResults path_results;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = path_detector.Detect(img, rot_roi, out path_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="keywordtype">int</span> c = m_path_results.Count();</div>
+<div class="line"><span class="keywordtype">int</span> c = path_results.Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
-<div class="line">    LPathResult result = m_path_results.Item(i);</div>
+<div class="line">    LPathResult result = path_results.Item(i);</div>
 <div class="line">    <span class="comment">// handle each path result</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reset the path results object, all data is cleaned up. </p>
-
-</div>
-</div>
 <a id="a0cb7c47723f72f9554e3905fc94140e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cb7c47723f72f9554e3905fc94140e4">&#9670;&nbsp;</a></span>Count()</h2>
 
@@ -163,36 +145,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get count of the results. </p>
-
-</div>
-</div>
-<a id="a38b03c34a46a022ad2844b2c8340ba69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38b03c34a46a022ad2844b2c8340ba69">&#9670;&nbsp;</a></span>Item()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html">ILPathResult</a>* Item </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Fetch one result with given index. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">error</td><td>Return the path result of given index. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -322,6 +274,54 @@ Public Member Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#a69c844740e9ac50cc61d9c3123340831">Draw()</a> </dd>
 <dd>
 <a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
+
+</div>
+</div>
+<a id="a38b03c34a46a022ad2844b2c8340ba69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b03c34a46a022ad2844b2c8340ba69">&#9670;&nbsp;</a></span>Item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html">ILPathResult</a>* Item </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fetch one result with given index. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return the path result of given index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset the path results object, all data is cleaned up. </p>
 
 </div>
 </div>

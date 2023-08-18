@@ -112,6 +112,8 @@ $(function() {
 <tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_contour">轮廓定位</a></td><td>演示亚像素轮廓定位。 </td></tr>
 <tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_crossmark">十字标记定位</a></td><td>演示亚像素十字标记定位。 </td></tr>
+<tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_gauge">卡尺定位</a></td><td>演示各种形状的卡尺定位功能。 </td></tr>
 <tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_calib">标定</a></td><td>演示相机标定，包括多点、小孔、FFD等相机模型，支持不同类型的标定板。 </td></tr>
@@ -451,6 +453,33 @@ Region 操作</h1>
 <li><b>2 Either</b> ：任意一种极性都可以。</li>
 </ul>
 </li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_crossmark"></a>
+十字标记定位</h1>
+<p>演示亚像素十字标记定位。</p>
+<blockquote class="doxtable">
+<p><b>源代码 (C++)：</b> mfcdemo/MFCCrossMark<br  />
+ <b>源代码 (C#)：</b> csharpdemo/CSharpCrossMark<br  />
+ <b>图像文件：</b> cross_white.png, cross_edge.png, cross_12.png</p>
+<p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_detector.html">LCrossMarkDetector</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_results.html">LCrossMarkResults</a> </p>
+</blockquote>
+<p><a href="t02_20_crossmark.png"><img src="t02_20_crossmark.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>点击 <b>Load Image</b> 按钮，加载图像。</li>
+<li>拖拽 Region 句柄，移动、缩放画布中的旋转矩形 Region。</li>
+<li>勾选 <b>Use Auto-Threshold</b> 开始使用自动阈值，或设置合适的 <b>Mark Range</b> 即自定义阈值，用于筛选大致的十字标记位置</li>
+<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边缘或目标类型：<ul>
+<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边缘。</li>
+<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边缘。</li>
+<li><b>2 Dark on Light</b> ：白（亮）十字在黑（暗）背景上。</li>
+<li><b>3 Light on Dark</b> ：黑（暗）十字在白（亮）背景上。</li>
+</ul>
+</li>
+<li>设置合适的 <b>Size Range</b> 尺寸范围和 <b>Width</b> 边宽，以帮助过滤错误的十字标记定位</li>
+<li>点击 <b>Detect</b> 或 <b>Detect in ROI</b> 按钮，执行十字标记定位。右侧的表格显示所有检测结果，包括每个十字标记的中心点 X 和 Y 坐标。</li>
+<li>选择其中某一个结果，在画布中高亮显示。</li>
 </ol>
 <p><br  />
 </p>

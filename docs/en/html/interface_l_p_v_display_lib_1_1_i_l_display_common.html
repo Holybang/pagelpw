@@ -101,8 +101,10 @@ Inheritance diagram for ILDisplayCommon:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c2ed3482f17828158b0a681b4e613ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a2c2ed3482f17828158b0a681b4e613ae">SetSize</a> (int w, int h)</td></tr>
-<tr class="separator:a2c2ed3482f17828158b0a681b4e613ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a68b6649b7ed6d9c66fb7ac4de72d2977">AddReferenceLineH</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
+<tr class="separator:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a64ce1f707c2857a5eda2d20a5e9b7803">AddReferenceLineV</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
+<tr class="separator:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d913d4876cdc9d4c5e59713d218c788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a6d913d4876cdc9d4c5e59713d218c788">FitInView</a> (int tlx, int tly, int w, int h, <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
 <tr class="separator:a6d913d4876cdc9d4c5e59713d218c788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadde65986cfadd223bef04b3ce008e36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#aadde65986cfadd223bef04b3ce008e36">FitToWindow</a> (<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
@@ -111,20 +113,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac3c6292a931287d34f6e353524a6a3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9207606f0b51be7815fab8b0ed23102f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a9207606f0b51be7815fab8b0ed23102f">RefreshImmediate</a> ()</td></tr>
 <tr class="separator:a9207606f0b51be7815fab8b0ed23102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09363be5a60d131aa2dd7da89a85aef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a09363be5a60d131aa2dd7da89a85aef9">SaveWindowToFile</a> (BSTR filename)</td></tr>
-<tr class="separator:a09363be5a60d131aa2dd7da89a85aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ebe2dc4a351b3a7236e946df400069"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069">SaveSceneToFile</a> (BSTR filename, double zoomX, double zoomY)</td></tr>
-<tr class="separator:a62ebe2dc4a351b3a7236e946df400069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34630d9dd2b50da9a6e3895cc43140da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a34630d9dd2b50da9a6e3895cc43140da">SetDisplayFlag</a> (<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, BOOL enable)</td></tr>
-<tr class="separator:a34630d9dd2b50da9a6e3895cc43140da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a68b6649b7ed6d9c66fb7ac4de72d2977">AddReferenceLineH</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
-<tr class="separator:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a64ce1f707c2857a5eda2d20a5e9b7803">AddReferenceLineV</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
-<tr class="separator:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a939e4c94b88e34bbb135d269880bc334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a939e4c94b88e34bbb135d269880bc334">RemoveReferenceLine</a> (int refLineId)</td></tr>
-<tr class="separator:a939e4c94b88e34bbb135d269880bc334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4719fff6f90f1ff3fb7cc84b82785cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ae4719fff6f90f1ff3fb7cc84b82785cf">RemoveAllReferenceLine</a> ()</td></tr>
 <tr class="separator:ae4719fff6f90f1ff3fb7cc84b82785cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939e4c94b88e34bbb135d269880bc334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a939e4c94b88e34bbb135d269880bc334">RemoveReferenceLine</a> (int refLineId)</td></tr>
+<tr class="separator:a939e4c94b88e34bbb135d269880bc334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ebe2dc4a351b3a7236e946df400069"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069">SaveSceneToFile</a> (BSTR filename, double zoomX, double zoomY)</td></tr>
+<tr class="separator:a62ebe2dc4a351b3a7236e946df400069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09363be5a60d131aa2dd7da89a85aef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a09363be5a60d131aa2dd7da89a85aef9">SaveWindowToFile</a> (BSTR filename)</td></tr>
+<tr class="separator:a09363be5a60d131aa2dd7da89a85aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34630d9dd2b50da9a6e3895cc43140da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a34630d9dd2b50da9a6e3895cc43140da">SetDisplayFlag</a> (<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, BOOL enable)</td></tr>
+<tr class="separator:a34630d9dd2b50da9a6e3895cc43140da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2ed3482f17828158b0a681b4e613ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a2c2ed3482f17828158b0a681b4e613ae">SetSize</a> (int w, int h)</td></tr>
+<tr class="separator:a2c2ed3482f17828158b0a681b4e613ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59ddb26897c32be05a846242874b1cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog</a> (BSTR dialogName, int x, int y, int w, int h)</td></tr>
 <tr class="separator:ad59ddb26897c32be05a846242874b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5364a06cb503911a4b1b44e394d2d437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync</a> (BSTR dialogName, int x, int y, int w, int h, int refreshInterval)</td></tr>
@@ -132,6 +132,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a0660162ba193ae8500efd79bbf1eb576"><td class="memItemLeft" align="right" valign="top"><a id="a0660162ba193ae8500efd79bbf1eb576"></a>
+<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0660162ba193ae8500efd79bbf1eb576">Alignment</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0660162ba193ae8500efd79bbf1eb576"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alignment the control is used when fit some part of the scene to the window. <br /></td></tr>
+<tr class="separator:a0660162ba193ae8500efd79bbf1eb576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e3be3087e839f19b33effdf7bde59d"><td class="memItemLeft" align="right" valign="top"><a id="a00e3be3087e839f19b33effdf7bde59d"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a00e3be3087e839f19b33effdf7bde59d">AutoRefreshEnabled</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a00e3be3087e839f19b33effdf7bde59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables automatically display re-rendering triggered by add/remove objects or regions or the image. By default, it's on. <br /></td></tr>
+<tr class="separator:a00e3be3087e839f19b33effdf7bde59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4f56038c6366eda4bd3c20347895d8"><td class="memItemLeft" align="right" valign="top"><a id="abe4f56038c6366eda4bd3c20347895d8"></a>
 OLE_COLOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#abe4f56038c6366eda4bd3c20347895d8">BackColor</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:abe4f56038c6366eda4bd3c20347895d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background color of the display control. <br /></td></tr>
@@ -140,14 +148,30 @@ OLE_COLOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0b0398ff6fa618556f94bb816c03248c">DisplayFlags</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a0b0398ff6fa618556f94bb816c03248c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The display flags, see LPVDisplayFlags. <br /></td></tr>
 <tr class="separator:a0b0398ff6fa618556f94bb816c03248c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e88f1192a056072860d67d3844c0acd"><td class="memItemLeft" align="right" valign="top"><a id="a3e88f1192a056072860d67d3844c0acd"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a3e88f1192a056072860d67d3844c0acd">DrawingEnabled</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3e88f1192a056072860d67d3844c0acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables all display rendering. Useful when performing many graphics or image operations at once. <br /></td></tr>
+<tr class="separator:a3e88f1192a056072860d67d3844c0acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65e27f9bbe43fc421715b54d0a2b28df"><td class="memItemLeft" align="right" valign="top"><a id="a65e27f9bbe43fc421715b54d0a2b28df"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#ae827e237ee170050a198405731c9be14">LPVScrollBarPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a65e27f9bbe43fc421715b54d0a2b28df">HScrollBarPolicy</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a65e27f9bbe43fc421715b54d0a2b28df"><td class="mdescLeft">&#160;</td><td class="mdescRight">The policy of the horizontal scroll bar, see LPVScrollBarPolicy. <br /></td></tr>
 <tr class="separator:a65e27f9bbe43fc421715b54d0a2b28df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memItemLeft" align="right" valign="top"><a id="a685cd4ccb93f6a8ef101dd27ac97fabb"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a685cd4ccb93f6a8ef101dd27ac97fabb">PanX</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the x-coordinate direction for panning. The final display x position is calculated as: \( (x + panX) \times zoomX \). <br /></td></tr>
+<tr class="separator:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac837bfb9690964ba54356f556961efa9"><td class="memItemLeft" align="right" valign="top"><a id="ac837bfb9690964ba54356f556961efa9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ac837bfb9690964ba54356f556961efa9">PanY</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac837bfb9690964ba54356f556961efa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the y-coordinate direction for panning. The final display y position is calculated as: \( (y + panY) \times zoomY \). <br /></td></tr>
+<tr class="separator:ac837bfb9690964ba54356f556961efa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4301818dc221a0a7430da87c444e97"><td class="memItemLeft" align="right" valign="top"><a id="a5e4301818dc221a0a7430da87c444e97"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#ae827e237ee170050a198405731c9be14">LPVScrollBarPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5e4301818dc221a0a7430da87c444e97">VScrollBarPolicy</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a5e4301818dc221a0a7430da87c444e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">The policy of the vertical scroll bar, see LPVScrollBarPolicy. <br /></td></tr>
 <tr class="separator:a5e4301818dc221a0a7430da87c444e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e089a5fee7fd471a09d154132e70d19"><td class="memItemLeft" align="right" valign="top"><a id="a0e089a5fee7fd471a09d154132e70d19"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0e089a5fee7fd471a09d154132e70d19">Zoom</a><code> [set]</code></td></tr>
+<tr class="memdesc:a0e089a5fee7fd471a09d154132e70d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the scene's zoom factor in both x- and y-coordinate direction. <br /></td></tr>
+<tr class="separator:a0e089a5fee7fd471a09d154132e70d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6856314285e2e9206356a5554ad4f6c"><td class="memItemLeft" align="right" valign="top"><a id="aa6856314285e2e9206356a5554ad4f6c"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#aed764fec357cb9c2859be21e958f884f">LPVZoomAnchor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#aa6856314285e2e9206356a5554ad4f6c">ZoomAnchor</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:aa6856314285e2e9206356a5554ad4f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the control should position the scene when resized, see LPVZoomAnchor. <br /></td></tr>
@@ -160,30 +184,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ae7f979e70b4ed82a166006864dbb89cc">ZoomY</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ae7f979e70b4ed82a166006864dbb89cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's zoom factor in or out in the y-coordinate direction. <br /></td></tr>
 <tr class="separator:ae7f979e70b4ed82a166006864dbb89cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e089a5fee7fd471a09d154132e70d19"><td class="memItemLeft" align="right" valign="top"><a id="a0e089a5fee7fd471a09d154132e70d19"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0e089a5fee7fd471a09d154132e70d19">Zoom</a><code> [set]</code></td></tr>
-<tr class="memdesc:a0e089a5fee7fd471a09d154132e70d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the scene's zoom factor in both x- and y-coordinate direction. <br /></td></tr>
-<tr class="separator:a0e089a5fee7fd471a09d154132e70d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memItemLeft" align="right" valign="top"><a id="a685cd4ccb93f6a8ef101dd27ac97fabb"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a685cd4ccb93f6a8ef101dd27ac97fabb">PanX</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the x-coordinate direction for panning. The final display x position is calculated as: \( (x + panX) \times zoomX \). <br /></td></tr>
-<tr class="separator:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac837bfb9690964ba54356f556961efa9"><td class="memItemLeft" align="right" valign="top"><a id="ac837bfb9690964ba54356f556961efa9"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ac837bfb9690964ba54356f556961efa9">PanY</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac837bfb9690964ba54356f556961efa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the y-coordinate direction for panning. The final display y position is calculated as: \( (y + panY) \times zoomY \). <br /></td></tr>
-<tr class="separator:ac837bfb9690964ba54356f556961efa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0660162ba193ae8500efd79bbf1eb576"><td class="memItemLeft" align="right" valign="top"><a id="a0660162ba193ae8500efd79bbf1eb576"></a>
-<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0660162ba193ae8500efd79bbf1eb576">Alignment</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a0660162ba193ae8500efd79bbf1eb576"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alignment the control is used when fit some part of the scene to the window. <br /></td></tr>
-<tr class="separator:a0660162ba193ae8500efd79bbf1eb576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e88f1192a056072860d67d3844c0acd"><td class="memItemLeft" align="right" valign="top"><a id="a3e88f1192a056072860d67d3844c0acd"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a3e88f1192a056072860d67d3844c0acd">DrawingEnabled</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3e88f1192a056072860d67d3844c0acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables all display rendering. Useful when performing many graphics or image operations at once. <br /></td></tr>
-<tr class="separator:a3e88f1192a056072860d67d3844c0acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00e3be3087e839f19b33effdf7bde59d"><td class="memItemLeft" align="right" valign="top"><a id="a00e3be3087e839f19b33effdf7bde59d"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a00e3be3087e839f19b33effdf7bde59d">AutoRefreshEnabled</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a00e3be3087e839f19b33effdf7bde59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables automatically display re-rendering triggered by add/remove objects or regions or the image. By default, it's on. <br /></td></tr>
-<tr class="separator:a00e3be3087e839f19b33effdf7bde59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide basic functionalities of the display controls. </p>
@@ -191,23 +191,35 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>To use this interface, you should create a display control, such as:</p>
 <p><a class="el" href="class_l_p_v_display_lib_1_1_l_display.html">LDisplay</a>... </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2c2ed3482f17828158b0a681b4e613ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c2ed3482f17828158b0a681b4e613ae">&#9670;&nbsp;</a></span>SetSize()</h2>
+<a id="a68b6649b7ed6d9c66fb7ac4de72d2977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b6649b7ed6d9c66fb7ac4de72d2977">&#9670;&nbsp;</a></span>AddReferenceLineH()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SetSize </td>
+          <td class="memname">int AddReferenceLineH </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>relativePosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>attached</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OLE_COLOR&#160;</td>
+          <td class="paramname"><em>clr</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,10 +228,73 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the size of the scene, in pixel unit. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add a horizontal reference line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the scene. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the scene. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>The y-coordinate of the reference line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>The relative y-coordinate of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">refLineId</td><td>Return the ID of the new reference line in the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64ce1f707c2857a5eda2d20a5e9b7803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ce1f707c2857a5eda2d20a5e9b7803">&#9670;&nbsp;</a></span>AddReferenceLineV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AddReferenceLineV </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>relativePosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>attached</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OLE_COLOR&#160;</td>
+          <td class="paramname"><em>clr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a vertical reference line. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>The x-coordinate of the reference line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>The relative x-coordinate of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">refLineId</td><td>Return the ID of the new reference line in the scene. </td></tr>
   </table>
   </dd>
 </dl>
@@ -342,30 +417,42 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<a id="a09363be5a60d131aa2dd7da89a85aef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09363be5a60d131aa2dd7da89a85aef9">&#9670;&nbsp;</a></span>SaveWindowToFile()</h2>
+<a id="ae4719fff6f90f1ff3fb7cc84b82785cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4719fff6f90f1ff3fb7cc84b82785cf">&#9670;&nbsp;</a></span>RemoveAllReferenceLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int SaveWindowToFile </td>
+          <td class="memname">void RemoveAllReferenceLine </td>
           <td>(</td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Save the snapshot of the window to file as a color image. The image size is the same as the window size. The image format is chosen based on the filename extension (.bmp, .png, .jpg, etc.). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Remove all reference lines from the scene. </p>
+
+</div>
+</div>
+<a id="a939e4c94b88e34bbb135d269880bc334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939e4c94b88e34bbb135d269880bc334">&#9670;&nbsp;</a></span>RemoveReferenceLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveReferenceLine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refLineId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the reference line from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. see LPVErrorCode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refLineId</td><td>The reference line's ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -406,8 +493,38 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>Save the entire scene to file as a color image. The image size is the same as the zoomed scene size. The image format is chosen based on the filename extension (.bmp, .png, .jpg, etc.). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's 1, means the true 100% scale. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. see LPVErrorCode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09363be5a60d131aa2dd7da89a85aef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09363be5a60d131aa2dd7da89a85aef9">&#9670;&nbsp;</a></span>SaveWindowToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveWindowToFile </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Save the snapshot of the window to file as a color image. The image size is the same as the window size. The image format is chosen based on the filename extension (.bmp, .png, .jpg, etc.). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -455,155 +572,38 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<a id="a68b6649b7ed6d9c66fb7ac4de72d2977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68b6649b7ed6d9c66fb7ac4de72d2977">&#9670;&nbsp;</a></span>AddReferenceLineH()</h2>
+<a id="a2c2ed3482f17828158b0a681b4e613ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2ed3482f17828158b0a681b4e613ae">&#9670;&nbsp;</a></span>SetSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int AddReferenceLineH </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>relativePosition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BOOL&#160;</td>
-          <td class="paramname"><em>attached</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OLE_COLOR&#160;</td>
-          <td class="paramname"><em>clr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Add a horizontal reference line. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>The y-coordinate of the reference line </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>The relative y-coordinate of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">refLineId</td><td>Return the ID of the new reference line in the scene. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a64ce1f707c2857a5eda2d20a5e9b7803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64ce1f707c2857a5eda2d20a5e9b7803">&#9670;&nbsp;</a></span>AddReferenceLineV()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int AddReferenceLineV </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>relativePosition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BOOL&#160;</td>
-          <td class="paramname"><em>attached</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OLE_COLOR&#160;</td>
-          <td class="paramname"><em>clr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Add a vertical reference line. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>The x-coordinate of the reference line </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>The relative x-coordinate of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">refLineId</td><td>Return the ID of the new reference line in the scene. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a939e4c94b88e34bbb135d269880bc334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a939e4c94b88e34bbb135d269880bc334">&#9670;&nbsp;</a></span>RemoveReferenceLine()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RemoveReferenceLine </td>
+          <td class="memname">void SetSize </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>refLineId</em></td><td>)</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove the reference line from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the size of the scene, in pixel unit. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">refLineId</td><td>The reference line's ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the scene. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the scene. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ae4719fff6f90f1ff3fb7cc84b82785cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4719fff6f90f1ff3fb7cc84b82785cf">&#9670;&nbsp;</a></span>RemoveAllReferenceLine()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RemoveAllReferenceLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove all reference lines from the scene. </p>
 
 </div>
 </div>

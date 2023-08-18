@@ -97,16 +97,16 @@ Inheritance diagram for ILMatchResults:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
-<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb7c47723f72f9554e3905fc94140e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a0cb7c47723f72f9554e3905fc94140e4">Count</a> ()</td></tr>
 <tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba58a9e171dd44314e4d8013056ac4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">ILMatchResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a8ba58a9e171dd44314e4d8013056ac4a">Item</a> (int index)</td></tr>
-<tr class="separator:a8ba58a9e171dd44314e4d8013056ac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf6eb9241192e30fc075de26f2a5d0fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#abf6eb9241192e30fc075de26f2a5d0fc">Draw</a> (HDC hdc, int index, <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:abf6eb9241192e30fc075de26f2a5d0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3931184d879ad244b5adeb19d56a7795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a3931184d879ad244b5adeb19d56a7795">DrawAll</a> (HDC hdc, <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a3931184d879ad244b5adeb19d56a7795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba58a9e171dd44314e4d8013056ac4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">ILMatchResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a8ba58a9e171dd44314e4d8013056ac4a">Item</a> (int index)</td></tr>
+<tr class="separator:a8ba58a9e171dd44314e4d8013056ac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface holds a collection of pattern matching results. </p>
@@ -130,24 +130,6 @@ Public Member Functions</h2></td></tr>
 <div class="line">    <span class="comment">// handle each line result</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reset the matching results object, all data is cleaned up. </p>
-
-</div>
-</div>
 <a id="a0cb7c47723f72f9554e3905fc94140e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cb7c47723f72f9554e3905fc94140e4">&#9670;&nbsp;</a></span>Count()</h2>
 
@@ -163,36 +145,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get count of the results. </p>
-
-</div>
-</div>
-<a id="a8ba58a9e171dd44314e4d8013056ac4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ba58a9e171dd44314e4d8013056ac4a">&#9670;&nbsp;</a></span>Item()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">ILMatchResult</a>* Item </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Fetch one result with given index. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the matching result of given index. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -322,6 +274,54 @@ Public Member Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#abf6eb9241192e30fc075de26f2a5d0fc">Draw()</a> </dd>
 <dd>
 <a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8ba58a9e171dd44314e4d8013056ac4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba58a9e171dd44314e4d8013056ac4a">&#9670;&nbsp;</a></span>Item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">ILMatchResult</a>* Item </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fetch one result with given index. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return the matching result of given index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset the matching results object, all data is cleaned up. </p>
 
 </div>
 </div>

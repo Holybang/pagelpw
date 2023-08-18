@@ -112,6 +112,8 @@ $(function() {
 <tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_contour">Contour Detection</a></td><td>Demonstrate contour detection with sub-pixel precision. </td></tr>
 <tr>
+<td><a class="el" href="how_to_play_with_demo.html#demo_crossmark">Cross Mark Detection</a></td><td>Demonstrate cross mark detection with sub-pixel precision. </td></tr>
+<tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_gauge">Gauging</a></td><td>Demonstrate the inspection using gauge tools for various shapes. </td></tr>
 <tr>
 <td><a class="el" href="how_to_play_with_demo.html#demo_calib">Calibration</a></td><td>Demonstrate the camera calibration, including n-points, pin-hole, FFD camera models using different types of calibration boards. </td></tr>
@@ -451,6 +453,33 @@ Contour Detection</h1>
 <li><b>2 Either</b>: Either polarity is acceptable.</li>
 </ul>
 </li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_crossmark"></a>
+Cross Mark Detection</h1>
+<p>Demonstrate cross mark detection with sub-pixel precision.</p>
+<blockquote class="doxtable">
+<p><b>Source code (C++):</b> mfcdemo/MFCCrossMark<br  />
+ <b>Source code (C#):</b> csharpdemo/CSharpCrossMark<br  />
+ <b>Image files:</b> cross_white.png, cross_edge.png, cross_12.png</p>
+<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_detector.html">LCrossMarkDetector</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_results.html">LCrossMarkResults</a> </p>
+</blockquote>
+<p><a href="t02_20_crossmark.png"><img src="t02_20_crossmark.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>Click <b>Load Image</b> button, load image from file.</li>
+<li>Drag the handles of the region, move or resize the rectangle region.</li>
+<li>Check <b>Use Auto-Threshold</b> to enable using auto-thresholding, or set the proper <b>Mark Range</b> for custom-thresholding, to locate the cross mark candidate positions.</li>
+<li>Choose the proper <b>Polarity</b> to precisely locate the two cross lines:<ul>
+<li><b>0 Dark to Light</b> : by the line edges from black(dark) pixels to white(light).</li>
+<li><b>1 Light to Dark</b> ：by the line edges from white(light) pixels to black(dark).</li>
+<li><b>2 Dark on Light</b> ：by the black(dark) pixels on the line out of white(light) background.</li>
+<li><b>3 Light on Dark</b> ：by the white(light) pixels on the line out of black(dark) background.</li>
+</ul>
+</li>
+<li>Set the proper <b>Size Range</b> and <b>Width</b> , it helps filter the false detections</li>
+<li>Click <b>Detect</b> or <b>Detect in ROI</b> button to do detection. The table shows all valid results and their center positions.</li>
+<li>Select one to highlight it on the canvas.</li>
 </ol>
 <p><br  />
 </p>
