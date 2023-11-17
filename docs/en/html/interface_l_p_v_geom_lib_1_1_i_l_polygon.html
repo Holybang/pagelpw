@@ -122,6 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfdd039f303a7db96647cef0aab476d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddf">LPVIntersectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">ILLine</a> *line, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
 <tr class="separator:abfdd039f303a7db96647cef0aab476d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91603715db9e887b79f6274d3442d365"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a91603715db9e887b79f6274d3442d365">IntersectPolygon</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *polygon, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
+<tr class="separator:a91603715db9e887b79f6274d3442d365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c5b715682596bcab7b04a1ecaeabbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a99c5b715682596bcab7b04a1ecaeabbb">Item</a> (int index)</td></tr>
 <tr class="separator:a99c5b715682596bcab7b04a1ecaeabbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1289c9d71ccf35d16928b3e894c184be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a356bf5122b41e1df6078c995fe15deb8">LPVPointTestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a1289c9d71ccf35d16928b3e894c184be">PointTest</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *point)</td></tr>
@@ -513,7 +515,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Determines whether this polygon intersects with the given line. Return the intersection points if yes. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Determines whether this polygon intersects with the given line. Return the intersection points if they are intersected. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, 1 or more points for intersected case. </td></tr>
@@ -527,6 +529,47 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#aa2b2934da7bdf97faf287ea4593ed0dc">ILLine::IntersectPoly()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a91603715db9e887b79f6274d3442d365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91603715db9e887b79f6274d3442d365">&#9670;&nbsp;</a></span>IntersectPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL IntersectPolygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **&#160;</td>
+          <td class="paramname"><em>intersectPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determines whether this polygon intersects with another given polygon, and output the intersection points if intersected. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>The input another polygon </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, 1 or more points for intersected case. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return true if they are intersected, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

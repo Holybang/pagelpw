@@ -183,22 +183,23 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. <table class="markdownTable">
-<tr>
-<th class="markdownTableHeadLeft">Event</th><th class="markdownTableHeadLeft">Event Code</th><th class="markdownTableHeadLeft">Event Data</th><th class="markdownTableHeadLeft">Supported IntelliBlink Tools </th></tr>
-<tr>
-<td>Reset</td><td>LPVIBEventReset</td><td>&ndash;</td><td>Statistics, NG / OK, Data Fitting, Collect Points, Foreground Detect, Multi-Frame Blending, HDR, Normal Reconstruct, Foreground Extract, Optical Flow, 4 Points Calibration, 9 Points Calibration, 1 Points Calibration In Multi-Frame, Grid Calibration, FFD Grid Calibration, Flat Field Calibration </td></tr>
-<tr>
-<td>Import</td><td>LPVIBEventImport</td><td>File path(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Data Fitting, Import Calibration, Import Flat Field Calibration </td></tr>
-<tr>
-<td>Export</td><td>LPVIBEventExport</td><td>File path(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Data Fitting, 4 Points Calibration, 9 Points Calibration, 1 Points Calibration In Multi-Frame, Grid Calibration, FFD Grid Calibration, Flat Field Calibration </td></tr>
-<tr>
-<td>Re-Execute</td><td>LPVIBEventReExecute</td><td>Custom event name(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Event Wrapper </td></tr>
-</table>
-</td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed.</td></tr>
   </table>
   </dd>
 </dl>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft">Event</th><th class="markdownTableHeadLeft">Event Code</th><th class="markdownTableHeadLeft">Event Data</th><th class="markdownTableHeadLeft">Supported IntelliBlink Tools </th></tr>
+<tr>
+<td>Reset</td><td>LPVIBEventReset</td><td>&ndash;</td><td>Event Wrapper, Statistics, NG / OK, Data Fitting, Collect Points, Foreground Detect, Multi-Frame Blending, HDR, Normal Reconstruct, Foreground Extract, Optical Flow, 4 Points Calibration, 9 Points Calibration, 1 Points Calibration In Multi-Frame, Grid Calibration, FFD Grid Calibration, Flat Field Calibration </td></tr>
+<tr>
+<td>Import</td><td>LPVIBEventImport</td><td>File path(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Event Wrapper, Data Fitting, Import Calibration, Import Flat Field Calibration </td></tr>
+<tr>
+<td>Export</td><td>LPVIBEventExport</td><td>File path(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Event Wrapper, Data Fitting, 4 Points Calibration, 9 Points Calibration, 1 Points Calibration In Multi-Frame, Grid Calibration, FFD Grid Calibration, Flat Field Calibration </td></tr>
+<tr>
+<td>Re-Execute</td><td>LPVIBEventReExecute</td><td>Custom event name(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Event Wrapper </td></tr>
+</table>
+<p><em>Note: For <b>Event Wrapper</b> tool, you may trigger set the custom event name to the pass-in data name (<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a702bf43ab0d89f3f85af19741ccc16b9">LIBData::Name</a>), to trigger the exact one event.</em> </p>
 
 </div>
 </div>

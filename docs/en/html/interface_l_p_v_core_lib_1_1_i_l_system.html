@@ -97,6 +97,8 @@ Inheritance diagram for ILSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a575540cc61a850a9a4674c1d9e8ad739"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a575540cc61a850a9a4674c1d9e8ad739">CheckLib</a> (BSTR libName)</td></tr>
+<tr class="separator:a575540cc61a850a9a4674c1d9e8ad739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76a10a7c8696e5d12827104873bd4682"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a76a10a7c8696e5d12827104873bd4682">CheckLicense</a> ()</td></tr>
 <tr class="separator:a76a10a7c8696e5d12827104873bd4682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe1b71ed02f499e949fdcd94b7ac1c79"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#abe1b71ed02f499e949fdcd94b7ac1c79">CheckVersion</a> (long majorVersion, long minorVersion, long microVersion)</td></tr>
@@ -149,6 +151,42 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSystem sys = <span class="keyword">new</span> LSystem();</div>
 <div class="line">sys.SetDrawPointSize(20);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a575540cc61a850a9a4674c1d9e8ad739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575540cc61a850a9a4674c1d9e8ad739">&#9670;&nbsp;</a></span>CheckLib()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CheckLib </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>libName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether the library is licensed then you can use the algorithms in that library.<br  />
+You may call it as:</p>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">VARIANT_BOOL checkResult = sys-&gt;CheckLib(L<span class="stringliteral">&quot;lpvCore&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed for lpvCore library</span></div>
+</div><!-- fragment --> </div>   <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys.CheckLib(<span class="stringliteral">&quot;lpvCore&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed for lpvCore library</span></div>
+</div><!-- fragment --> </div> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">libName</td><td>Pass in the name of the library. The name is case-insensitive, and the "lpv" prefix can be omitted, say "lpvCore.dll", "lpvCore", "core", "CORE". </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>True for valid license, otherwise, return False. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a76a10a7c8696e5d12827104873bd4682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76a10a7c8696e5d12827104873bd4682">&#9670;&nbsp;</a></span>CheckLicense()</h2>
 
@@ -163,7 +201,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check any valid license is available. Note: we won't exam the feature IDs here.<br  />
+<p>Check any valid license is available. Note: we won't exam the feature IDs here, you should call <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a575540cc61a850a9a4674c1d9e8ad739">CheckLib()</a> instead.<br  />
 You may call it as:</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">VARIANT_BOOL checkResult = sys-&gt;CheckLicense();</div>
 <div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed</span></div>

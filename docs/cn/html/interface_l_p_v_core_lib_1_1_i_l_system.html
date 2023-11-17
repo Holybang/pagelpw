@@ -97,6 +97,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
+<tr class="memitem:a575540cc61a850a9a4674c1d9e8ad739"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a575540cc61a850a9a4674c1d9e8ad739">CheckLib</a> (BSTR libName)</td></tr>
+<tr class="separator:a575540cc61a850a9a4674c1d9e8ad739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76a10a7c8696e5d12827104873bd4682"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a76a10a7c8696e5d12827104873bd4682">CheckLicense</a> ()</td></tr>
 <tr class="separator:a76a10a7c8696e5d12827104873bd4682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe1b71ed02f499e949fdcd94b7ac1c79"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#abe1b71ed02f499e949fdcd94b7ac1c79">CheckVersion</a> (long majorVersion, long minorVersion, long microVersion)</td></tr>
@@ -149,6 +151,42 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSystem sys = <span class="keyword">new</span> LSystem();</div>
 <div class="line">sys.SetDrawPointSize(20);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a575540cc61a850a9a4674c1d9e8ad739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575540cc61a850a9a4674c1d9e8ad739">&#9670;&nbsp;</a></span>CheckLib()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CheckLib </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>libName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>检查某个模块是否合法授权。授权后，可以正常使用该模块中的类和算法函数。<br  />
+通常按照如下方式调用：</p>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">VARIANT_BOOL checkResult = sys-&gt;CheckLib(L<span class="stringliteral">&quot;lpvCore&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed for lpvCore library</span></div>
+</div><!-- fragment --> </div>   <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys.CheckLib(<span class="stringliteral">&quot;lpvCore&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed for lpvCore library</span></div>
+</div><!-- fragment --> </div> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">libName</td><td>输入模块的名称。 该名称不区分大小写，且可省略 "lpv" 前缀，如 "lpvCore.dll", "lpvCore", "core", "CORE". </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>若检查成功，返回 True，否则返回 False </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a76a10a7c8696e5d12827104873bd4682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76a10a7c8696e5d12827104873bd4682">&#9670;&nbsp;</a></span>CheckLicense()</h2>
 
@@ -163,7 +201,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>检查是否存在任一合法授权。注意：此处并不检查功能ID。<br  />
+<p>检查是否存在任一合法授权。注意：此处并不检查功能ID。功能模块的授权检查需调用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a575540cc61a850a9a4674c1d9e8ad739">CheckLib()</a>.<br  />
 通常按照如下方式调用：</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">VARIANT_BOOL checkResult = sys-&gt;CheckLicense();</div>
 <div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed</span></div>

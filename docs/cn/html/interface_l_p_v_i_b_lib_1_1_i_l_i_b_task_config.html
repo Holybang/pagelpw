@@ -183,22 +183,23 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>返回错误码（查阅<a class="el" href="ib_error.html">错误码对照表</a>）。若成功，返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a>. <table class="markdownTable">
-<tr>
-<th class="markdownTableHeadLeft">事件</th><th class="markdownTableHeadLeft">事件代码</th><th class="markdownTableHeadLeft">事件数据</th><th class="markdownTableHeadLeft">支持的灵闪工具 </th></tr>
-<tr>
-<td>重置</td><td>LPVIBEventReset</td><td>&ndash;</td><td>统计，NG / OK，数据拟合, 点收集, 前景检测，多帧融合，HDR，法向重建，前景分割，光流，四点标定，九点标定，单点多帧标定，网格标定，FFD网格标定，平场标定 </td></tr>
-<tr>
-<td>导入</td><td>LPVIBEventImport</td><td>文件路径(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>数据拟合，导入标定参数，导入平场标定 </td></tr>
-<tr>
-<td>导出</td><td>LPVIBEventExport</td><td>文件路径(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>数据拟合，四点标定，九点标定，单点多帧标定，网格标定，FFD网格标定，平场标定 </td></tr>
-<tr>
-<td>执行</td><td>LPVIBEventReExecute</td><td>代理事件名称(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>事件代理 </td></tr>
-</table>
-</td></tr>
+    <tr><td class="paramname">errCode</td><td>返回错误码（查阅<a class="el" href="ib_error.html">错误码对照表</a>）。若成功，返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a>.</td></tr>
   </table>
   </dd>
 </dl>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft">事件</th><th class="markdownTableHeadLeft">事件代码</th><th class="markdownTableHeadLeft">事件数据</th><th class="markdownTableHeadLeft">支持的灵闪工具 </th></tr>
+<tr>
+<td>重置</td><td>LPVIBEventReset</td><td>&ndash;</td><td>事件代理，统计，NG / OK，数据拟合, 点收集, 前景检测，多帧融合，HDR，法向重建，前景分割，光流，四点标定，九点标定，单点多帧标定，网格标定，FFD网格标定，平场标定 </td></tr>
+<tr>
+<td>导入</td><td>LPVIBEventImport</td><td>文件路径(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>事件代理，数据拟合，导入标定参数，导入平场标定 </td></tr>
+<tr>
+<td>导出</td><td>LPVIBEventExport</td><td>文件路径(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>事件代理，数据拟合，四点标定，九点标定，单点多帧标定，网格标定，FFD网格标定，平场标定 </td></tr>
+<tr>
+<td>执行</td><td>LPVIBEventReExecute</td><td>代理事件名称(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>事件代理 </td></tr>
+</table>
+<p><em>注意：对于<b>事件代理</b>工具，可将代理事件名称设置为传入数据的名称（<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a702bf43ab0d89f3f85af19741ccc16b9">LIBData::Name</a>），用于触发某个特定的代理事件</em> </p>
 
 </div>
 </div>
