@@ -1,0 +1,711 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: ILImageConvert接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></li><li class="navelem"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">ILImageConvert</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a>  </div>
+  <div class="headertitle">
+<div class="title">ILImageConvert接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该接口类提供了用于图像类型转换的功能，可进行颜色空间转换、通道操作、位深转换等。  
+ <a href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#details">更多...</a></p>
+<div class="dynheader">
+类 ILImageConvert 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.png" usemap="#ILImageConvert_map" alt=""/>
+  <map id="ILImageConvert_map" name="ILImageConvert_map">
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,0,100,24"/>
+<area href="class_l_p_v_img_proc_lib_1_1_l_image_convert.html" alt="LImageConvert" shape="rect" coords="0,112,100,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af2a8aada4aed77b30e5ce7ccd4858803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#af2a8aada4aed77b30e5ce7ccd4858803">BGRMix</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *bgrImg, double w0, double w1, double w2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *grayImg)</td></tr>
+<tr class="separator:af2a8aada4aed77b30e5ce7ccd4858803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7921292ee2561db87f57eb474d2d5ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7921292ee2561db87f57eb474d2d5ea6">BGRToGray</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *bgrImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *grayImg)</td></tr>
+<tr class="separator:a7921292ee2561db87f57eb474d2d5ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c75cafcce514a8982906d8165d38c6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7c75cafcce514a8982906d8165d38c6f">BGRToGrayColor</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> bgrColor)</td></tr>
+<tr class="separator:a7c75cafcce514a8982906d8165d38c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac069c1f4dec729c0f9a9702dc4aa317"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aac069c1f4dec729c0f9a9702dc4aa317">ColorMap</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="namespace_l_p_v_core_lib.html#aa61b8f7137f2cd27bab07c0036ade80d">LPVColorMap</a> cmap, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *bgrImg, BOOL inv, BOOL normalize, double minValue, double maxValue)</td></tr>
+<tr class="separator:aac069c1f4dec729c0f9a9702dc4aa317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc4044d8dcdebce8193105857f8e52d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#acfc4044d8dcdebce8193105857f8e52d">Convert</a> (<a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a> fromColorSpace, enum <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a> toColorSpace, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *srcColorImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *dstColorImg)</td></tr>
+<tr class="separator:acfc4044d8dcdebce8193105857f8e52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833c2ff4f474497f2c2f036492de6282"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a833c2ff4f474497f2c2f036492de6282">ConvertColor</a> (<a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a> fromColorSpace, enum <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a> toColorSpace, <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> srcColor)</td></tr>
+<tr class="separator:a833c2ff4f474497f2c2f036492de6282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b9becd57103a3c8b4971dc137d489f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a75b9becd57103a3c8b4971dc137d489f">Depth16To8</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img16Bit, int fromNthBit, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img8Bit)</td></tr>
+<tr class="separator:a75b9becd57103a3c8b4971dc137d489f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2e5a346ff7fc576ea4061080bc8e4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a5a2e5a346ff7fc576ea4061080bc8e4b">Depth8To16</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img8Bit, int fromNthBit, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img16Bit)</td></tr>
+<tr class="separator:a5a2e5a346ff7fc576ea4061080bc8e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba17d8fbe10ef7feaf9d29cade8bc695"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aba17d8fbe10ef7feaf9d29cade8bc695">GrayToBGR</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *grayImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *bgrImg)</td></tr>
+<tr class="separator:aba17d8fbe10ef7feaf9d29cade8bc695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124f8ce3b59b0f7eb25fe0f879334f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a124f8ce3b59b0f7eb25fe0f879334f6a">GrayToBGRColor</a> (int grayColor)</td></tr>
+<tr class="separator:a124f8ce3b59b0f7eb25fe0f879334f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401acc2200aef341efed608a1b785fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a401acc2200aef341efed608a1b785fc4">NormalizeTo8</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double minValue, double maxValue, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img8Bit)</td></tr>
+<tr class="separator:a401acc2200aef341efed608a1b785fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
+<tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74069eb14437a9a889322b62e52db75f inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
+<tr class="separator:a74069eb14437a9a889322b62e52db75f inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b6e3ad558d350e70a837c28554acf4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a86b6e3ad558d350e70a837c28554acf4">Save</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
+<tr class="separator:a86b6e3ad558d350e70a837c28554acf4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
+<tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该接口类提供了用于图像类型转换的功能，可进行颜色空间转换、通道操作、位深转换等。 </p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_image_convert.html">LImageConvert</a> 对象。</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cpp </p><div class="fragment"><div class="line">ILImageConvertPtr imgCvter = LImageConvert::Create();</div>
+<div class="line">imgCvter-&gt;BGRToGray(colorImg, grayImg);</div>
+<div class="line">imgCvter-&gt;Convert(LPVColorSpaceBGR, LPVColorSpaceHSV, colorImg, hsvImg);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cs </p><div class="fragment"><div class="line">LImageConvert imgCvter = <span class="keyword">new</span> LImageConvert();</div>
+<div class="line">imgCvter.BGRToGray(colorImg, grayImg);</div>
+<div class="line">imgCvter.Convert(<a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceBGR, <a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceHSV, colorImg, hsvImg);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1665</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><p> Code snippets: snippets/ColorSpace.cpp </p><div class="fragment"><div class="line">ILImageConvertPtr imgCvter = LImageConvert::Create();</div>
+<div class="line"><span class="comment">// or, ILImageConvertPtr imgCvter(__uuidof(LImageConvert)), for absence of built-in Create functions (before 2.2.0)</span></div>
+<div class="line">imgCvter-&gt;BGRToGray(colorImg, grayImg);</div>
+<div class="line">imgCvter-&gt;Convert(LPVColorSpaceBGR, LPVColorSpaceHSV, colorImg, hsvImg);</div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="af2a8aada4aed77b30e5ce7ccd4858803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a8aada4aed77b30e5ce7ccd4858803">&#9670;&nbsp;</a></span>BGRMix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BGRMix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>bgrImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>grayImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据指定的各通道权重，混合 BGR 彩色图像的三个通道</p>
+<p class="formulaDsp">
+\[ Gray = w0⋅B + w1⋅G + w2⋅R \]
+</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的 BGR 彩色图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w0</td><td>第一个（蓝色）通道的权重，取值范围在 -255 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w1</td><td>第二个（绿色）通道的权重，取值范围在 -255 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w2</td><td>第三个（红色）通道的权重，取值范围在 -255 ~ 255 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回灰度图像，尺寸与输入的彩色图像一致。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7921292ee2561db87f57eb474d2d5ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7921292ee2561db87f57eb474d2d5ea6">&#9670;&nbsp;</a></span>BGRToGray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BGRToGray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>bgrImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>grayImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将 BGR 彩色图像转换为灰度图</p>
+<p class="formulaDsp">
+\[ Gray = 0.114⋅B + 0.587⋅G + 0.299⋅R \]
+</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的 BGR 彩色图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回灰度图像，尺寸与输入的彩色图像一致。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aba17d8fbe10ef7feaf9d29cade8bc695">GrayToBGR()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7c75cafcce514a8982906d8165d38c6f">BGRToGrayColor()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a124f8ce3b59b0f7eb25fe0f879334f6a">GrayToBGRColor()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7c75cafcce514a8982906d8165d38c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c75cafcce514a8982906d8165d38c6f">&#9670;&nbsp;</a></span>BGRToGrayColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BGRToGrayColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>bgrColor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将 BGR 颜色值转换为灰度值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bgrColor</td><td>输入的 BGR 颜色值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">grayColor</td><td>返回灰度值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7921292ee2561db87f57eb474d2d5ea6">BGRToGray()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a124f8ce3b59b0f7eb25fe0f879334f6a">GrayToBGRColor()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aac069c1f4dec729c0f9a9702dc4aa317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac069c1f4dec729c0f9a9702dc4aa317">&#9670;&nbsp;</a></span>ColorMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColorMap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#aa61b8f7137f2cd27bab07c0036ade80d">LPVColorMap</a>&#160;</td>
+          <td class="paramname"><em>cmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>bgrImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>inv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>normalize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对输入图像应用颜色映射表，生成一张伪彩图，通常用于进行数据可视化 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmap</td><td>指定要应用的颜色映射表，查阅 LPVColorMap </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回彩色图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inv</td><td>是否使用反向的颜色映射表。默认为否。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>是否对输入图像进行归一化，用于将颜色映射集中到感兴趣的数值区域 minValue ~ maxValue 。默认为否。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minValue</td><td>指定用于归一化的感兴趣的最小值。传入负数，表示使用当前图像的最小值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxValue</td><td>指定用于归一化的感兴趣的最大值。传入负数，表示使用当前图像的最大值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>样例</dt>
+<dd>Convert16To8Bit.cpp/cs</dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.4.0 </dd></dl>
+
+</div>
+</div>
+<a id="acfc4044d8dcdebce8193105857f8e52d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc4044d8dcdebce8193105857f8e52d">&#9670;&nbsp;</a></span>Convert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Convert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>&#160;</td>
+          <td class="paramname"><em>fromColorSpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>&#160;</td>
+          <td class="paramname"><em>toColorSpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>srcColorImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>dstColorImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对彩色图像进行颜色空间转换，如，从 BGR 转到 HSV 空间 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromColorSpace</td><td>输入图像的当前颜色空间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">toColorSpace</td><td>期望的颜色空间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcColorImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的彩色图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dstColorImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回颜色空间转换后的结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a833c2ff4f474497f2c2f036492de6282">ConvertColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="a833c2ff4f474497f2c2f036492de6282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833c2ff4f474497f2c2f036492de6282">&#9670;&nbsp;</a></span>ConvertColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> ConvertColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>&#160;</td>
+          <td class="paramname"><em>fromColorSpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>&#160;</td>
+          <td class="paramname"><em>toColorSpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>srcColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromColorSpace</td><td>当前的颜色空间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">toColorSpace</td><td>期望的颜色空间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcColor</td><td>输入的彩色颜色值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">dstColor</td><td>返回颜色空间转换后的结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75b9becd57103a3c8b4971dc137d489f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b9becd57103a3c8b4971dc137d489f">&#9670;&nbsp;</a></span>Depth16To8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Depth16To8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img16Bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fromNthBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img8Bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>转换 16 位图像到 8 位图像，从指定索引开始提取连续 8 位。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> 输入的 16 位图 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>指定提取的开始索引，取值范围为 -7 ~ 15 以保证至少 1 位有效位 <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">指定索引   </th><th class="markdownTableHeadNone">用途    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">提取高 8 位    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">提取低 8 位    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">提取中 8 位   </td></tr>
+</table>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回 8 位结果图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>样例</dt>
+<dd>Convert16To8Bit.cpp/cs</dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.4.0 </dd></dl>
+
+</div>
+</div>
+<a id="a5a2e5a346ff7fc576ea4061080bc8e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2e5a346ff7fc576ea4061080bc8e4b">&#9670;&nbsp;</a></span>Depth8To16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Depth8To16 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img8Bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fromNthBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img16Bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>转换 8 位图像到 16 位图像，将连续的 8 位数值设置到指定索引位置。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> 输入的 16 位图 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>指定设置的开始索引，取值范围为 -7 ~ 15 以保证至少 1 位有效位 <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">指定索引   </th><th class="markdownTableHeadNone">用途    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">放置到高 8 位    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">放置到低 8 位    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">放置到中 8 位   </td></tr>
+</table>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回 8 位结果图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.4.0 </dd></dl>
+
+</div>
+</div>
+<a id="aba17d8fbe10ef7feaf9d29cade8bc695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba17d8fbe10ef7feaf9d29cade8bc695">&#9670;&nbsp;</a></span>GrayToBGR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GrayToBGR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>grayImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>bgrImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将灰度图转换为 BGR 彩色图像</p>
+<p class="formulaDsp">
+\[ B = Gray, G = Gray, R = Gray \]
+</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的灰度图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回 BGR 彩色图像，尺寸与输入的彩色图像一致。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7921292ee2561db87f57eb474d2d5ea6">BGRToGray()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7c75cafcce514a8982906d8165d38c6f">BGRToGrayColor()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a124f8ce3b59b0f7eb25fe0f879334f6a">GrayToBGRColor()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a124f8ce3b59b0f7eb25fe0f879334f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124f8ce3b59b0f7eb25fe0f879334f6a">&#9670;&nbsp;</a></span>GrayToBGRColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> GrayToBGRColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grayColor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将灰度值转换为 BGR 颜色值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayColor</td><td>输入的灰度值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bgrColor</td><td>返回 BGR 颜色值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aba17d8fbe10ef7feaf9d29cade8bc695">GrayToBGR()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7c75cafcce514a8982906d8165d38c6f">BGRToGrayColor()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a401acc2200aef341efed608a1b785fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401acc2200aef341efed608a1b785fc4">&#9670;&nbsp;</a></span>NormalizeTo8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NormalizeTo8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img8Bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>归一化输入图像（任意位深），输出一张 8 位图，拉伸指定最小最大值范围内的像素到 0 ~ 255 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minValue</td><td>指定感兴趣的最小值。传入负数，表示使用当前图像的最小值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxValue</td><td>指定感兴趣的最大值。传入负数，表示使用当前图像的最大值 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回 8 位结果图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>样例</dt>
+<dd>Convert16To8Bit.cpp/cs</dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.4.0 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

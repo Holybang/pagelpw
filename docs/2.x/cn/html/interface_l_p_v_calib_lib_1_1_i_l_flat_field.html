@@ -1,0 +1,402 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: ILFlatField接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_l_p_v_calib_lib.html">LPVCalibLib</a></li><li class="navelem"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html">ILFlatField</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">ILFlatField接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该接口提供平场标定和校正等功能。  
+ <a href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#details">更多...</a></p>
+<div class="dynheader">
+类 ILFlatField 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_l_p_v_calib_lib_1_1_i_l_flat_field.png" usemap="#ILFlatField_map" alt=""/>
+  <map id="ILFlatField_map" name="ILFlatField_map">
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,0,71,24"/>
+<area href="class_l_p_v_calib_lib_1_1_l_flat_field.html" alt="LFlatField" shape="rect" coords="0,112,71,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab3b5ec6cb9ccb7dd76b228f215137af7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *fixedImage)</td></tr>
+<tr class="separator:ab3b5ec6cb9ccb7dd76b228f215137af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71068be4b0b4b6e13fb538c25f06e028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a71068be4b0b4b6e13fb538c25f06e028">GetFlatField</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *previewImage)</td></tr>
+<tr class="separator:a71068be4b0b4b6e13fb538c25f06e028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb434c2170d12543d8f9530244db555e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
+<tr class="separator:adb434c2170d12543d8f9530244db555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c0b05112cf83cd62472f78963aebe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#ad2c0b05112cf83cd62472f78963aebe3">SetDarkFrame</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image)</td></tr>
+<tr class="separator:ad2c0b05112cf83cd62472f78963aebe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a244b90f48b149a74775c2be0d1e050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a6a244b90f48b149a74775c2be0d1e050">Train</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
+<tr class="separator:a6a244b90f48b149a74775c2be0d1e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
+<tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74069eb14437a9a889322b62e52db75f inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
+<tr class="separator:a74069eb14437a9a889322b62e52db75f inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b6e3ad558d350e70a837c28554acf4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a86b6e3ad558d350e70a837c28554acf4">Save</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
+<tr class="separator:a86b6e3ad558d350e70a837c28554acf4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
+<tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a578080e61d50698076077b040524ba0b"><td class="memItemLeft" align="right" valign="top"><a id="a578080e61d50698076077b040524ba0b"></a>
+<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a578080e61d50698076077b040524ba0b">ColorMode</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a578080e61d50698076077b040524ba0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置平场的模式，处理灰度或彩色图像 <br /></td></tr>
+<tr class="separator:a578080e61d50698076077b040524ba0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebef45da9d7e82149a89578802d83905"><td class="memItemLeft" align="right" valign="top"><a id="aebef45da9d7e82149a89578802d83905"></a>
+<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#aebef45da9d7e82149a89578802d83905">FromColor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aebef45da9d7e82149a89578802d83905"><td class="mdescLeft">&#160;</td><td class="mdescRight">平场的原始颜色，即矫正前的颜色值。用于彩色模式。 <br /></td></tr>
+<tr class="separator:aebef45da9d7e82149a89578802d83905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56977ab6b6fd870be6ab255e53aac582"><td class="memItemLeft" align="right" valign="top"><a id="a56977ab6b6fd870be6ab255e53aac582"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a56977ab6b6fd870be6ab255e53aac582">FromGray</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a56977ab6b6fd870be6ab255e53aac582"><td class="mdescLeft">&#160;</td><td class="mdescRight">平场的原始灰度值，即矫正前的灰度值。用于灰度模式。 <br /></td></tr>
+<tr class="separator:a56977ab6b6fd870be6ab255e53aac582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe1c67e11510263d518d0ef583c0c96"><td class="memItemLeft" align="right" valign="top"><a id="acbe1c67e11510263d518d0ef583c0c96"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#acbe1c67e11510263d518d0ef583c0c96">KernelWidth</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:acbe1c67e11510263d518d0ef583c0c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">核尺寸。影响训练时前景和光场的更新范围，以及结果平场的平滑性。 需要是一个奇数，如 3, 5, 7 等。 <br /></td></tr>
+<tr class="separator:acbe1c67e11510263d518d0ef583c0c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5720323a52f32cec2d35c7d7c74952"><td class="memItemLeft" align="right" valign="top"><a id="aab5720323a52f32cec2d35c7d7c74952"></a>
+<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#aab5720323a52f32cec2d35c7d7c74952">ToColor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aab5720323a52f32cec2d35c7d7c74952"><td class="mdescLeft">&#160;</td><td class="mdescRight">平场的目标颜色，即矫正后的颜色值。用于彩色模式。 <br /></td></tr>
+<tr class="separator:aab5720323a52f32cec2d35c7d7c74952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69848b2c0bac888bddb61e61aa183955"><td class="memItemLeft" align="right" valign="top"><a id="a69848b2c0bac888bddb61e61aa183955"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a69848b2c0bac888bddb61e61aa183955">ToGray</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a69848b2c0bac888bddb61e61aa183955"><td class="mdescLeft">&#160;</td><td class="mdescRight">平场的目标灰度值，即矫正后的灰度值。用于灰度模式。 <br /></td></tr>
+<tr class="separator:a69848b2c0bac888bddb61e61aa183955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585dc9985644d65192009ac9022ed3c0"><td class="memItemLeft" align="right" valign="top"><a id="a585dc9985644d65192009ac9022ed3c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a585dc9985644d65192009ac9022ed3c0">Tolerance</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a585dc9985644d65192009ac9022ed3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">颜色或灰度值在图像中的容差范围，表示所关心的前景色的分布范围，取值范围为 1 ~ 50，默认值为 10. 0 为特殊值，表示整个图像都作为前景像素处理。 <br /></td></tr>
+<tr class="separator:a585dc9985644d65192009ac9022ed3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba3c49545ce4e4b13d63242f080cf47"><td class="memItemLeft" align="right" valign="top"><a id="adba3c49545ce4e4b13d63242f080cf47"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#adba3c49545ce4e4b13d63242f080cf47">UpdateRate</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:adba3c49545ce4e4b13d63242f080cf47"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于控制光场在训练时的更新率，取值范围为 0 ~ 1. 数值越大表示基于新图像的更新权重越大。 通常推荐在初期的几个训练迭代，使用比较高的更新率，使得光场快速初始化到整个画幅，然后逐步降低学习率，使得光场数值稳定更新。 默认值为 0，表示将基于当前已知的前景像素占比，实时自动地确定更新率。 <br /></td></tr>
+<tr class="separator:adba3c49545ce4e4b13d63242f080cf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该接口提供平场标定和校正等功能。 </p>
+<p>平场校正用于补偿相机和镜头组合的成像不均匀性，如：</p><ul>
+<li>视场中不均匀的照明强度</li>
+<li>相机传感器上像元之间的感光度差异</li>
+<li>镜头阴影，这是镜头渐晕的一种常见形式，其中光线衰减可能是不对称的，并且可能会出现色偏</li>
+</ul>
+<p>平场标定的通常方法是使用一个能够覆盖整个视场的标准物，通常为一张标准灰卡或白卡。平场图像通过以下方式采集：</p><ol type="1">
+<li>将标准物放置在相机视野中，并覆盖整个视野</li>
+<li>调整镜头光圈和照明强度，在不过曝的前提下获得尽可能亮的图像</li>
+<li>采集多张图像，使用 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#acfe14eacf1d5bc838d521a82f1ce0b6a">多帧融合</a> 工具将其合并为一张降噪后的图像，并传递给 <a class="el" href="class_l_p_v_calib_lib_1_1_l_flat_field.html">LFlatField</a> 对象进行 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a6a244b90f48b149a74775c2be0d1e050">训练</a></li>
+</ol>
+<p>另一种可行的方法是使用实际用于检测的被测物体作为标准物。这种方法的优点在于，可以采集到被测物材质表面的真实光照反射情况，使得校正更适用于被测物体。 这种方法的平场图像通过以下方式采集：</p><ol type="1">
+<li>调整镜头光圈和照明强度，在不过曝和检测目标显著的前提下获得尽可能亮的图像</li>
+<li>设定 <a class="el" href="class_l_p_v_calib_lib_1_1_l_flat_field.html">LFlatField</a> 对象的原始和目标颜色或灰度值，以提取前景像素。也可以借助其他定位工具，检测目标位置再生成前景像素的区域或蒙版。</li>
+<li>在多个不同位置采集被测物体的图像，使之覆盖整个视野。将这些图像（及该位置的前景区域或蒙版）传递给 <a class="el" href="class_l_p_v_calib_lib_1_1_l_flat_field.html">LFlatField</a> 对象进行 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a6a244b90f48b149a74775c2be0d1e050">训练</a></li>
+</ol>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_calib_lib_1_1_l_flat_field.html">LFlatField</a> 对象。</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/FlatFieldWhiteBoard.cpp, snippets/FlatFieldSolar.cpp </p><div class="fragment"><div class="line">ILFlatFieldPtr ffc = LFlatField::Create();</div>
+<div class="line"><span class="comment">// with white board</span></div>
+<div class="line">ffc-&gt;ColorMode = LPVImageFormat::LPVImageFormatGrayscale8;</div>
+<div class="line">ffc-&gt;ToGray = 160; <span class="comment">// correct the white board to 160 gray</span></div>
+<div class="line">ffc-&gt;Tolerance = 0; <span class="comment">// make use of the entire image as foreground</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ffc-&gt;SetDarkFrame(darkImg); <span class="comment">// set dark frame</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line">err = ffc-&gt;Train(wbImg, NULL); <span class="comment">// train the white board image</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line">ILImagePtr correctedImg = LImage::Create();</div>
+<div class="line">err = ffc-&gt;FixImage(rawImg, correctedImg); <span class="comment">// do flat field correction</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/FlatFieldWhiteBoard.cs, snippets/FlatFieldSolar.cs </p><div class="fragment"><div class="line">LFlatField ffc = <span class="keyword">new</span> LFlatField();</div>
+<div class="line"><span class="comment">// with white board</span></div>
+<div class="line">ffc.ColorMode = <a class="code" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>.LPVImageFormatGrayscale8;</div>
+<div class="line">ffc.ToGray = 160; <span class="comment">// correct the white board to 160 gray</span></div>
+<div class="line">ffc.Tolerance = 0; <span class="comment">// make use of the entire image as foreground</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ffc.SetDarkFrame(darkImg); <span class="comment">// set dark frame</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line">err = ffc.Train(wbImg, <span class="keyword">null</span>); <span class="comment">// train the white board image</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line">LImage correctedImg = <span class="keyword">new</span> LImage();</div>
+<div class="line">err = ffc.FixImage(rawImg, correctedImg); <span class="comment">// do flat field correction</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a0205db5ad70eff44ebd76708a72459e0"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVCoreLib::LPVImageFormat</a></div><div class="ttdeci">LPVImageFormat</div><div class="ttdoc">该枚举表示图像类型</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1640</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILFlatFieldPtr ffc = LFlatField::Create();</div>
+<div class="line"><span class="comment">// or, ILFlatFieldPtr ffc(__uuidof(LFlatField)), for absence of built-in Create functions (before 2.2.0)</span></div>
+<div class="line"><span class="comment">// with white board</span></div>
+<div class="line">ffc-&gt;ColorMode = LPVImageFormat::LPVImageFormatGrayscale8;</div>
+<div class="line">ffc-&gt;ToGray = 160; <span class="comment">// correct the white board to 160 gray</span></div>
+<div class="line">ffc-&gt;Tolerance = 0; <span class="comment">// make use of the entire image as foreground</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ffc-&gt;SetDarkFrame(darkImg); <span class="comment">// set dark frame</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line">err = ffc-&gt;Train(wbImg, NULL); <span class="comment">// train the white board image</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line">ILImagePtr correctedImg = LImage::Create();</div>
+<div class="line"><span class="comment">// or, ILImagePtr correctedImg(__uuidof(LImage)), for absence of built-in Create functions (before 2.2.0)</span></div>
+<div class="line">err = ffc-&gt;FixImage(rawImg, correctedImg); <span class="comment">// do flat field correction</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="ab3b5ec6cb9ccb7dd76b228f215137af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b5ec6cb9ccb7dd76b228f215137af7">&#9670;&nbsp;</a></span>FixImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> FixImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>fixedImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>应用平场校正，修正图像中的阴影、镜头色偏或光源的不均匀性。<br  />
+平场对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入的图像，图像格式与当前平场模式相同 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fixedImage</td><td>输出修正后的结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a6a244b90f48b149a74775c2be0d1e050">Train()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a71068be4b0b4b6e13fb538c25f06e028">GetFlatField()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a71068be4b0b4b6e13fb538c25f06e028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71068be4b0b4b6e13fb538c25f06e028">&#9670;&nbsp;</a></span>GetFlatField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetFlatField </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>previewImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取预览平场图像。图像中较亮像素处的光强较强。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">previewImage</td><td>输出预览平场图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb434c2170d12543d8f9530244db555e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb434c2170d12543d8f9530244db555e">&#9670;&nbsp;</a></span>IsCalibrated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL IsCalibrated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>检查是该平场已标定 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>若已标定，返回 True，否则，返回 False </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2c0b05112cf83cd62472f78963aebe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c0b05112cf83cd62472f78963aebe3">&#9670;&nbsp;</a></span>SetDarkFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> SetDarkFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置暗场图像，表示相机传感器暗电流对图像的影响，应从平场校正图像中剔除。 获取暗场图像的方式，通常是将镜头盖盖上，然后抓取一些图像，再通过 多帧融合 降噪。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入的暗场图像，图像格式与当前平场模式相同 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a244b90f48b149a74775c2be0d1e050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a244b90f48b149a74775c2be0d1e050">&#9670;&nbsp;</a></span>Train()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Train </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于输入图像训练平场。基于设置的原始颜色或灰度值范围及容差，从输入图像中提取前景像素，然后更新到结果光场中。 若 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a585dc9985644d65192009ac9022ed3c0" title="颜色或灰度值在图像中的容差范围，表示所关心的前景色的分布范围，取值范围为 1 ~ 50，默认值为 10. 0 为特殊值，表示整个图像都作为前景像素处理。">Tolerance</a> 设置为 0，则输入图像和区域中的所有像素均被视为前景作用于光场。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入的图像，图像格式与当前平场模式相同 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，可选，用于指定可能的前景范围 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#ad2c0b05112cf83cd62472f78963aebe3">SetDarkFrame()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a71068be4b0b4b6e13fb538c25f06e028">GetFlatField()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a585dc9985644d65192009ac9022ed3c0" title="颜色或灰度值在图像中的容差范围，表示所关心的前景色的分布范围，取值范围为 1 ~ 50，默认值为 10. 0 为特殊值，表示整个图像都作为前景像素处理。">Tolerance</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

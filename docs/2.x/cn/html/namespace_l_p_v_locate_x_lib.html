@@ -1,0 +1,333 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: LPVLocateXLib 模块参考手册</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle">
+<div class="title">LPVLocateXLib 模块参考手册</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>LPV 高级定位模块，提供用于复杂目标或边缘的定位算法。  
+<a href="namespace_l_p_v_locate_x_lib.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html">ILContourDetector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供轮廓定位的功能。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html">ILContourResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口表示单个轮廓检测结果，可获取其具体属性。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_results.html">ILContourResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供一个轮廓检测结果集合，包含一个或多个轮廓检测结果。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_results.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_detector.html">ILCrossMarkDetector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供亚像素十字标记定位的功能。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_detector.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_result.html">ILCrossMarkResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口表示单个十字标记检测结果，可获取其具体属性。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_result.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_results.html">ILCrossMarkResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供一个十字标记检测结果集合，包含一个或多个十字标记检测结果。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_results.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html">ILPathDetector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供路径定位的功能。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html">ILPathResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口表示单个路径检测结果，可获取其具体属性。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html">ILPathResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供一个路径检测结果集合，包含一个或多个路径检测结果。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_contour_detector.html">LContourDetector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_contour_result.html">LContourResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_contour_results.html">LContourResults</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_cross_mark_detector.html">LCrossMarkDetector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_cross_mark_result.html">LCrossMarkResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_cross_mark_results.html">LCrossMarkResults</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_path_detector.html">LPathDetector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_path_result.html">LPathResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_locate_x_lib_1_1_l_path_results.html">LPathResults</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aaa2e9719b6eb36005bee7f29188cbb41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41">LPVContourDrawFlags</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41afdaaf2e9fe18c777dc0adcdd1f10ce02">LPVContourDrawContour</a> = 1
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41afb9c7e513e195ea1ad887886d4b7d20a">LPVContourDrawBoundingRect</a> = 2
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41a4d158054b701f81cb39e3e7ddfc91a02">LPVContourCenter</a> = 4
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41a7c2954cb97e6bd5464b410cb867979e8">LPVContourDrawIndex</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41a2f38a035420b4a108e9d92c2b05e1d23">LPVContourDrawDefault</a> = LPVContourDrawContour
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41a7f43bd353d282f895da7441f3285124b">LPVContourDrawAll</a> = 0xff
+<br />
+ }</td></tr>
+<tr class="memdesc:aaa2e9719b6eb36005bee7f29188cbb41"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于控制轮廓检测结果绘制的行为  <a href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41">更多...</a><br /></td></tr>
+<tr class="separator:aaa2e9719b6eb36005bee7f29188cbb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2dadcdf61703cae763dc4e946e0c76e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76e">LPVContourFeatures</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76eacc06c72efe1ae34a7a5cfc482bf7f656">LPVContourPositionX</a> = 0
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76ea655ea2fade6e555e63e3bc68617c8ea6">LPVContourPositionY</a> = 1
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76ead5209a43ac30a4cbb76c98714e0dc4e2">LPVContourAvgMag</a> = 2
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76ead570a48e9a760fada3a63f1ea4539701">LPVContourSumMag</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76ea0904b44b5f07576acbccc97fd7d63ad7">LPVContourLength</a> = 4
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76ead07fdb3043c3c04f2993327b3e39b5b5">LPVContourArea</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:ad2dadcdf61703cae763dc4e946e0c76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示轮廓的数值类型的属性特征  <a href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76e">更多...</a><br /></td></tr>
+<tr class="separator:ad2dadcdf61703cae763dc4e946e0c76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c31080c6a61d80cd0c6df2dae7fa293"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293">LPVCrossMarkDrawFlags</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293a023f2e5398bce1b7015e165b139eb6ed">LPVCrossMarkDrawCenter</a> = 1
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293aba3b300c88d4f1e79bde86d279935655">LPVCrossMarkDrawBoundingRect</a> = 2
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293adb8e4a85b8f135cae232326b93daa669">LPVCrossMarkDrawMidLines</a> = 4
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293ae2316a0799c786b10454bf3ab1b05d8d">LPVCrossMarkDrawIndex</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293a493d6033cf1599456ab5ad2b2a7e4b21">LPVCrossMarkDrawDefault</a> = LPVCrossMarkDrawCenter
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293a98fd284a631fd11d4c51b6209cdf3dfc">LPVCrossMarkDrawAll</a> = 0xff
+<br />
+ }</td></tr>
+<tr class="memdesc:a0c31080c6a61d80cd0c6df2dae7fa293"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于控制十字标记检测结果绘制的行为  <a href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293">更多...</a><br /></td></tr>
+<tr class="separator:a0c31080c6a61d80cd0c6df2dae7fa293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27890a5a7fc881096505f92c05465b28"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28">LPVPathDrawFlags</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28acc342792c4c3c04477644657c4cf882f">LPVPathDrawPath</a> = 1
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28a8ae18b32540d68de0b9313400d4e2b73">LPVPathDrawEndPoints</a> = 2
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28abde54bdf765a3d8cd57269a51f4b5ace">LPVPathDrawIndex</a> = 4
+, <a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28a9421adbe8ea61123a30d9f24d929cc10">LPVPathDrawDefault</a> = LPVPathDrawPath
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28a8b0afdd6fa58a68bbd29d6dc36182670">LPVPathDrawAll</a> = 0xff
+<br />
+ }</td></tr>
+<tr class="memdesc:a27890a5a7fc881096505f92c05465b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于控制路径检测结果绘制的行为  <a href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28">更多...</a><br /></td></tr>
+<tr class="separator:a27890a5a7fc881096505f92c05465b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>LPV 高级定位模块，提供用于复杂目标或边缘的定位算法。 </p>
+<p>该模块提供一些算法类，用于目标或边缘定位的复杂任务。使用该模块中的类和算法，需按照以下方式引用该模块：</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVLocateX.h&quot;</span></div>
+</div><!-- fragment --><p> <b>Qt Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_path">QtPath</a>, <a class="el" href="how_to_play_with_demo.html#demo_contour">QtContour</a>, <a class="el" href="how_to_play_with_demo.html#demo_crossmark">QtCrossMark</a> </p> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_locate_x_lib.html">LPVLocateXLib</a>;</div>
+<div class="ttc" id="anamespace_l_p_v_locate_x_lib_html"><div class="ttname"><a href="namespace_l_p_v_locate_x_lib.html">LPVLocateXLib</a></div><div class="ttdoc">LPV 高级定位模块，提供用于复杂目标或边缘的定位算法。</div><div class="ttdef"><b>Definition:</b> LPVLocateX.idl:82</div></div>
+</div><!-- fragment --><p> <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_path">CSharpPath</a>, <a class="el" href="how_to_play_with_demo.html#demo_contour">CSharpContour</a>, <a class="el" href="how_to_play_with_demo.html#demo_crossmark">CSharpCrossMark</a> </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
+<div class="line">#include &quot;LPVLocateX.h&quot;</div>
+</div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_path">MFCPath</a>, <a class="el" href="how_to_play_with_demo.html#demo_contour">MFCContour</a>, <a class="el" href="how_to_play_with_demo.html#demo_crossmark">MFCCrossMark</a> </p> </div>  </div><h2 class="groupheader">枚举类型说明</h2>
+<a id="aaa2e9719b6eb36005bee7f29188cbb41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2e9719b6eb36005bee7f29188cbb41">&#9670;&nbsp;</a></span>LPVContourDrawFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_locate_x_lib.html#aaa2e9719b6eb36005bee7f29188cbb41">LPVContourDrawFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于控制轮廓检测结果绘制的行为 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aaa2e9719b6eb36005bee7f29188cbb41afdaaf2e9fe18c777dc0adcdd1f10ce02"></a>LPVContourDrawContour&#160;</td><td class="fielddoc"><p>绘制轮廓 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaa2e9719b6eb36005bee7f29188cbb41afb9c7e513e195ea1ad887886d4b7d20a"></a>LPVContourDrawBoundingRect&#160;</td><td class="fielddoc"><p>绘制轮廓的包围矩形 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaa2e9719b6eb36005bee7f29188cbb41a4d158054b701f81cb39e3e7ddfc91a02"></a>LPVContourCenter&#160;</td><td class="fielddoc"><p>绘制轮廓的中心点 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaa2e9719b6eb36005bee7f29188cbb41a7c2954cb97e6bd5464b410cb867979e8"></a>LPVContourDrawIndex&#160;</td><td class="fielddoc"><p>绘制轮廓的索引，在其中心点附近 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaa2e9719b6eb36005bee7f29188cbb41a2f38a035420b4a108e9d92c2b05e1d23"></a>LPVContourDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制轮廓 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaa2e9719b6eb36005bee7f29188cbb41a7f43bd353d282f895da7441f3285124b"></a>LPVContourDrawAll&#160;</td><td class="fielddoc"><p>绘制所有部分 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad2dadcdf61703cae763dc4e946e0c76e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2dadcdf61703cae763dc4e946e0c76e">&#9670;&nbsp;</a></span>LPVContourFeatures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_locate_x_lib.html#ad2dadcdf61703cae763dc4e946e0c76e">LPVContourFeatures</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示轮廓的数值类型的属性特征 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad2dadcdf61703cae763dc4e946e0c76eacc06c72efe1ae34a7a5cfc482bf7f656"></a>LPVContourPositionX&#160;</td><td class="fielddoc"><p>轮廓的 x 方向位置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2dadcdf61703cae763dc4e946e0c76ea655ea2fade6e555e63e3bc68617c8ea6"></a>LPVContourPositionY&#160;</td><td class="fielddoc"><p>轮廓的 y 方向位置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2dadcdf61703cae763dc4e946e0c76ead5209a43ac30a4cbb76c98714e0dc4e2"></a>LPVContourAvgMag&#160;</td><td class="fielddoc"><p>轮廓的平均梯度强度 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2dadcdf61703cae763dc4e946e0c76ead570a48e9a760fada3a63f1ea4539701"></a>LPVContourSumMag&#160;</td><td class="fielddoc"><p>轮廓的梯度强度总和，通常平均梯度强度越大，轮廓越长，梯度强度总和越大 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2dadcdf61703cae763dc4e946e0c76ea0904b44b5f07576acbccc97fd7d63ad7"></a>LPVContourLength&#160;</td><td class="fielddoc"><p>轮廓的长度 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2dadcdf61703cae763dc4e946e0c76ead07fdb3043c3c04f2993327b3e39b5b5"></a>LPVContourArea&#160;</td><td class="fielddoc"><p>轮廓的面积。对于非闭合轮廓，面积计算基于两个端点相连后的形状计算 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0c31080c6a61d80cd0c6df2dae7fa293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c31080c6a61d80cd0c6df2dae7fa293">&#9670;&nbsp;</a></span>LPVCrossMarkDrawFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_locate_x_lib.html#a0c31080c6a61d80cd0c6df2dae7fa293">LPVCrossMarkDrawFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于控制十字标记检测结果绘制的行为 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0c31080c6a61d80cd0c6df2dae7fa293a023f2e5398bce1b7015e165b139eb6ed"></a>LPVCrossMarkDrawCenter&#160;</td><td class="fielddoc"><p>绘制十字标记中心点 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0c31080c6a61d80cd0c6df2dae7fa293aba3b300c88d4f1e79bde86d279935655"></a>LPVCrossMarkDrawBoundingRect&#160;</td><td class="fielddoc"><p>绘制十字标记的包围矩形 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0c31080c6a61d80cd0c6df2dae7fa293adb8e4a85b8f135cae232326b93daa669"></a>LPVCrossMarkDrawMidLines&#160;</td><td class="fielddoc"><p>绘制十字标记的两条交叉中线 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0c31080c6a61d80cd0c6df2dae7fa293ae2316a0799c786b10454bf3ab1b05d8d"></a>LPVCrossMarkDrawIndex&#160;</td><td class="fielddoc"><p>绘制十字标记的索引，在其中心点附近 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0c31080c6a61d80cd0c6df2dae7fa293a493d6033cf1599456ab5ad2b2a7e4b21"></a>LPVCrossMarkDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制中心点 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0c31080c6a61d80cd0c6df2dae7fa293a98fd284a631fd11d4c51b6209cdf3dfc"></a>LPVCrossMarkDrawAll&#160;</td><td class="fielddoc"><p>绘制所有部分 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a27890a5a7fc881096505f92c05465b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27890a5a7fc881096505f92c05465b28">&#9670;&nbsp;</a></span>LPVPathDrawFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_locate_x_lib.html#a27890a5a7fc881096505f92c05465b28">LPVPathDrawFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于控制路径检测结果绘制的行为 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a27890a5a7fc881096505f92c05465b28acc342792c4c3c04477644657c4cf882f"></a>LPVPathDrawPath&#160;</td><td class="fielddoc"><p>绘制路径 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27890a5a7fc881096505f92c05465b28a8ae18b32540d68de0b9313400d4e2b73"></a>LPVPathDrawEndPoints&#160;</td><td class="fielddoc"><p>绘制路径的两个端点 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27890a5a7fc881096505f92c05465b28abde54bdf765a3d8cd57269a51f4b5ace"></a>LPVPathDrawIndex&#160;</td><td class="fielddoc"><p>绘制路径的索引，在其起点的右侧 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27890a5a7fc881096505f92c05465b28a9421adbe8ea61123a30d9f24d929cc10"></a>LPVPathDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制圆 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27890a5a7fc881096505f92c05465b28a8b0afdd6fa58a68bbd29d6dc36182670"></a>LPVPathDrawAll&#160;</td><td class="fielddoc"><p>绘制所有部分 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

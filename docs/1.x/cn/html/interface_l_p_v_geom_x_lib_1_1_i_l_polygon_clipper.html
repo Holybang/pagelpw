@@ -1,0 +1,795 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: ILPolygonClipper接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">1.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_l_p_v_geom_x_lib.html">LPVGeomXLib</a></li><li class="navelem"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html">ILPolygonClipper</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a>  </div>
+  <div class="headertitle">
+<div class="title">ILPolygonClipper接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该接口类提供了多种多边形滤波、剪裁、修改等工具，可用于对 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> 对象进行平滑、简化、布尔运算、膨胀、收缩等操作。  
+ <a href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#details">更多...</a></p>
+<div class="dynheader">
+类 ILPolygonClipper 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8a1ce261e8e9a5d4e999994e85cce89b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a8a1ce261e8e9a5d4e999994e85cce89b">Expand</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly, double delta, double miterLimit)</td></tr>
+<tr class="separator:a8a1ce261e8e9a5d4e999994e85cce89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744b2abd5f318c36a7e6157ad992d11c"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly2)</td></tr>
+<tr class="separator:a744b2abd5f318c36a7e6157ad992d11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2fed4af992bb7683d2ead7f0427441"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#abb2fed4af992bb7683d2ead7f0427441">Intersect1</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly2)</td></tr>
+<tr class="separator:abb2fed4af992bb7683d2ead7f0427441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2790a43164771e13153b9f1b02ebe5f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a2790a43164771e13153b9f1b02ebe5f8">Shrink</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly, double delta, double miterLimit)</td></tr>
+<tr class="separator:a2790a43164771e13153b9f1b02ebe5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecabc74af0606b67050c05995a1aa88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#acecabc74af0606b67050c05995a1aa88">Simplify</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly, int maxVertexes, double areaThreshold, double angleThreshold)</td></tr>
+<tr class="separator:acecabc74af0606b67050c05995a1aa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af084aa488f1a0617f2377f0a7ec7dd59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#af084aa488f1a0617f2377f0a7ec7dd59">SimplifyDP</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly, double distThreshold)</td></tr>
+<tr class="separator:af084aa488f1a0617f2377f0a7ec7dd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ed1be146327a6a28bbe753e207ce11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a22ed1be146327a6a28bbe753e207ce11">Smooth</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly, double nbRange)</td></tr>
+<tr class="separator:a22ed1be146327a6a28bbe753e207ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626b3a8de1735ea2d682f1e631dc254d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a626b3a8de1735ea2d682f1e631dc254d">SmoothIterative</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly, double filterNbRng, double updateNbRng, int maxIterCount, double stopCriteria)</td></tr>
+<tr class="separator:a626b3a8de1735ea2d682f1e631dc254d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851676441488da02676f480294f5cb72"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly2)</td></tr>
+<tr class="separator:a851676441488da02676f480294f5cb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6b9de526cfb799bf674ee94f459486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a7e6b9de526cfb799bf674ee94f459486">Subtract1</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly2)</td></tr>
+<tr class="separator:a7e6b9de526cfb799bf674ee94f459486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c716cbda46997651e58b4a43295951"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a87c716cbda46997651e58b4a43295951">TrimCollinear</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly)</td></tr>
+<tr class="separator:a87c716cbda46997651e58b4a43295951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9d18bac9933ce0466a2b9a30d7971e"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly2)</td></tr>
+<tr class="separator:a0c9d18bac9933ce0466a2b9a30d7971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cd173ddba9133a4e9e12d2544485d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a91cd173ddba9133a4e9e12d2544485d2">Union1</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly2)</td></tr>
+<tr class="separator:a91cd173ddba9133a4e9e12d2544485d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ad6048f146d2b67122852c7e081137"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#ab2ad6048f146d2b67122852c7e081137">XOR</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *poly2)</td></tr>
+<tr class="separator:ab2ad6048f146d2b67122852c7e081137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该接口类提供了多种多边形滤波、剪裁、修改等工具，可用于对 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> 对象进行平滑、简化、布尔运算、膨胀、收缩等操作。 </p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_geom_x_lib_1_1_l_polygon_clipper.html">LPolygonClipper</a> 对象。</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/PolygonClipper.cpp </p><div class="fragment"><div class="line">ILPolygonClipperPtr clipper(__uuidof(LPolygonClipper));</div>
+<div class="line">ILPolygonPtr smoothPoly = clipper-&gt;Smooth(blobContour, 30);</div>
+<div class="line">ILPolygonPtr resultPoly = clipper-&gt;Simplify(smoothPoly, 0, 20, 150);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/PolygonClipper.cs </p><div class="fragment"><div class="line">LPolygonClipper clipper = <span class="keyword">new</span> LPolygonClipper();</div>
+<div class="line">LPolygon smoothPoly = clipper.Smooth(blobContour, 30);</div>
+<div class="line">LPolygon resultPoly = clipper.Simplify(smoothPoly, 0, 20, 150);</div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a8a1ce261e8e9a5d4e999994e85cce89b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1ce261e8e9a5d4e999994e85cce89b">&#9670;&nbsp;</a></span>Expand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Expand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>miterLimit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将多边形的边向其外侧偏移，创建一个与原始输入边平行的膨胀后的多边形。 </p><div class="image">
+<object type="image/svg+xml" data="polygon_expand.svg" style="pointer-events: none;"></object>
+</div>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>偏移距离 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">miterLimit</td><td>偏移后多边形边的斜接阈值，以避免窄角连接产生过长和过窄的尖峰。 当斜接连接超过指定的距离限制（相对于偏移距离）时，将改用方形连接。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a2790a43164771e13153b9f1b02ebe5f8">Shrink()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a744b2abd5f318c36a7e6157ad992d11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a744b2abd5f318c36a7e6157ad992d11c">&#9670;&nbsp;</a></span>Intersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SAFEARRAY* Intersect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>计算两个输入多边形的交集， \( P = P_1 \cap P_2 \) . 当这两个多边形在多处相交时，输出结果为复数。<br  />
+<em>注意：仅支持封闭多边形</em> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>输入的第一个多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly2</td><td>输入的第二个多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPolys</td><td>返回相交结果集合（一组多边形 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> 的列表） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#abb2fed4af992bb7683d2ead7f0427441">Intersect1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a91cd173ddba9133a4e9e12d2544485d2">Union1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a7e6b9de526cfb799bf674ee94f459486">Subtract1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#ab2ad6048f146d2b67122852c7e081137">XOR()</a> </dd></dl>
+
+</div>
+</div>
+<a id="abb2fed4af992bb7683d2ead7f0427441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2fed4af992bb7683d2ead7f0427441">&#9670;&nbsp;</a></span>Intersect1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Intersect1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>功能与 <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect()</a> 类似，为方便使用，仅返回单个多边形结果。 若交集结果包含多个多边形，该方法返回其中面积最大的部分。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>输入的第一个多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly2</td><td>输入的第二个多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a91cd173ddba9133a4e9e12d2544485d2">Union1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a7e6b9de526cfb799bf674ee94f459486">Subtract1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#ab2ad6048f146d2b67122852c7e081137">XOR()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2790a43164771e13153b9f1b02ebe5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2790a43164771e13153b9f1b02ebe5f8">&#9670;&nbsp;</a></span>Shrink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Shrink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>miterLimit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将多边形的边向其内侧偏移，创建一个与原始输入边平行的收缩后的多边形。 </p><div class="image">
+<object type="image/svg+xml" data="polygon_shrink.svg" style="pointer-events: none;"></object>
+</div>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>偏移距离 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">miterLimit</td><td>偏移后多边形边的斜接阈值，以避免窄角连接产生过长和过窄的尖峰。 当斜接连接超过指定的距离限制（相对于偏移距离）时，将改用方形连接。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a8a1ce261e8e9a5d4e999994e85cce89b">Expand()</a> </dd></dl>
+
+</div>
+</div>
+<a id="acecabc74af0606b67050c05995a1aa88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecabc74af0606b67050c05995a1aa88">&#9670;&nbsp;</a></span>Simplify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Simplify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxVertexes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>areaThreshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angleThreshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>简化多边形，基于给定的面积或角度阈值，清除多边形上多余的顶点。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxVertexes</td><td>结果的最大顶点数量。可指定为 0，即剔除所有满足阈值的顶点。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">areaThreshold</td><td>面积阈值。面积指的是删除某个顶点（及其相邻的所有已删除顶点）所造成的总缺失面积。 若该总面积小于指定的面积阈值，则该顶点为可删除顶点。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angleThreshold</td><td>角度阈值。角度指的是某个顶点以及与之相邻的两个其他顶点所组成的夹角。 若该角度小于角度阈值，则该顶点为可删除顶点。角度阈值的取值范围在 0 ~ 180 之间。 若同时指定了面积阈值和角度阈值，则面积和角度加权后同时参与简化过程。<br  />
+若面积阈值和角度阈值均为 0，则简化过程退化为清除所有与相邻顶点共线的冗余顶点的操作。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#af084aa488f1a0617f2377f0a7ec7dd59">SimplifyDP()</a> </dd></dl>
+
+</div>
+</div>
+<a id="af084aa488f1a0617f2377f0a7ec7dd59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af084aa488f1a0617f2377f0a7ec7dd59">&#9670;&nbsp;</a></span>SimplifyDP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* SimplifyDP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distThreshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>简化多边形，基于经典的 <a href="http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm">Douglas-Peucker 算法</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distThreshold</td><td>距离阈值，简化后的多边形到原始输入的最大距离。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#acecabc74af0606b67050c05995a1aa88">Simplify()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a22ed1be146327a6a28bbe753e207ce11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ed1be146327a6a28bbe753e207ce11">&#9670;&nbsp;</a></span>Smooth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Smooth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>nbRange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>平滑多边形，计算指定邻域范围内所有顶点的均值作为新的多边形顶点。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbRange</td><td>指定邻域范围 \( (-nbRange, nbRange) \)，即沿着多边形的边长距离小于 nbRange 的顶点。 对邻域临界处的顶点，若其超出邻域距离，将在这条边上临时创建一个插值后的顶点。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a626b3a8de1735ea2d682f1e631dc254d">SmoothIterative()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a626b3a8de1735ea2d682f1e631dc254d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626b3a8de1735ea2d682f1e631dc254d">&#9670;&nbsp;</a></span>SmoothIterative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* SmoothIterative </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>filterNbRng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>updateNbRng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxIterCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>stopCriteria</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>平滑多边形，迭代地对多边形边的法向进行均值滤波并以此优化更新顶点位置 该方法相对于普通的均值滤波（即 <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a22ed1be146327a6a28bbe753e207ce11">Smooth()</a> ），更容易获得形状更好的多边形，且不易造成过度平滑，但耗时更长。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filterNbRng</td><td>滤波邻域 \( (-filterNbRng, filterNbRng) \)，即沿着多边形的边长距离小于 filterNbRng 的顶点（包含临界处的插值）将参与法向滤波。 滤波邻域越大，滤波结果越平滑。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateNbRng</td><td>更新邻域 \( (-updateNbRng, updateNbRng) \)，即沿着多边形的边长距离小于 filterNbRng 的顶点（包含临界处的插值）将参与更新多边形顶点。 更新邻域通常小于滤波邻域，合适的更新邻域可加速迭代过程的收敛，使得迭代提前结束。推荐使用 2 ~ 5，默认设置为 0 即使用滤波邻域的 10% 作为更新邻域。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxIterCount</td><td>最大迭代次数。默认值为 30. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stopCriteria</td><td>迭代终止条件。默认值为 0.001 。若当前迭代所有顶点的最大移动距离小于设定值，或者前后两次迭代移动距离的差值小于 10，则迭代终止，即: \( m_i &lt; criteria || (m_i - m_{i-1}) / m_{i-1} &lt; 0.1% \) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a22ed1be146327a6a28bbe753e207ce11">Smooth()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a851676441488da02676f480294f5cb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851676441488da02676f480294f5cb72">&#9670;&nbsp;</a></span>Subtract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SAFEARRAY* Subtract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将两个输入多边形相减求其差集， \( P = P_1 - P_2 \) . 当被减的多边形被分割为多个部分时，输出结果为复数。<br  />
+<em>注意：仅支持封闭多边形</em> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>输入的第一个多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly2</td><td>输入的第二个多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPolys</td><td>返回相减结果集合（一组多边形 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> 的列表） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a7e6b9de526cfb799bf674ee94f459486">Subtract1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a91cd173ddba9133a4e9e12d2544485d2">Union1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#abb2fed4af992bb7683d2ead7f0427441">Intersect1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#ab2ad6048f146d2b67122852c7e081137">XOR()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7e6b9de526cfb799bf674ee94f459486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6b9de526cfb799bf674ee94f459486">&#9670;&nbsp;</a></span>Subtract1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Subtract1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>功能与 <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract()</a> 类似，为方便使用，仅返回单个多边形结果。 若差集结果包含多个多边形，该方法返回其中面积最大的部分。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>输入的第一个多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly2</td><td>输入的第二个多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a91cd173ddba9133a4e9e12d2544485d2">Union1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#abb2fed4af992bb7683d2ead7f0427441">Intersect1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#ab2ad6048f146d2b67122852c7e081137">XOR()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a87c716cbda46997651e58b4a43295951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c716cbda46997651e58b4a43295951">&#9670;&nbsp;</a></span>TrimCollinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* TrimCollinear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>剔除多边形中与相邻顶点共线的冗余顶点，以及未知重叠的重复顶点。通常用于在不改变多边形形状的前提下，减少顶点数量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#acecabc74af0606b67050c05995a1aa88">Simplify()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0c9d18bac9933ce0466a2b9a30d7971e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9d18bac9933ce0466a2b9a30d7971e">&#9670;&nbsp;</a></span>Union()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SAFEARRAY* Union </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>合并多边形，输出其并集， \( P = P_1 \cup P_2 \) . 对于两个不相交的多边形输入，输出结果为复数；否则，将合并两个多边形为一个。<br  />
+<em>注意：仅支持封闭多边形</em> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>输入的第一个多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly2</td><td>输入的第二个多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPolys</td><td>返回合并结果集合（一组多边形 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> 的列表） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a91cd173ddba9133a4e9e12d2544485d2">Union1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a7e6b9de526cfb799bf674ee94f459486">Subtract1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#abb2fed4af992bb7683d2ead7f0427441">Intersect1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#ab2ad6048f146d2b67122852c7e081137">XOR()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a91cd173ddba9133a4e9e12d2544485d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cd173ddba9133a4e9e12d2544485d2">&#9670;&nbsp;</a></span>Union1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Union1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>功能与 <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union()</a> 类似，为方便使用，仅返回单个多边形结果。 若合并结果包含多个多边形，该方法返回其中面积最大的部分。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>输入的第一个多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly2</td><td>输入的第二个多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPoly</td><td>返回多边形结果对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a7e6b9de526cfb799bf674ee94f459486">Subtract1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#abb2fed4af992bb7683d2ead7f0427441">Intersect1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#ab2ad6048f146d2b67122852c7e081137">XOR()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab2ad6048f146d2b67122852c7e081137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ad6048f146d2b67122852c7e081137">&#9670;&nbsp;</a></span>XOR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SAFEARRAY* XOR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>计算两个输入多边形的异或结果， \( P = P_1 \oplus P_2 \) . 输出结果通常为复数。<br  />
+<em>注意：仅支持封闭多边形</em> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>输入的第一个多边形对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly2</td><td>输入的第二个多边形对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultPolys</td><td>返回异或结果集合（一组多边形 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> 的列表） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a0c9d18bac9933ce0466a2b9a30d7971e">Union()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a91cd173ddba9133a4e9e12d2544485d2">Union1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a851676441488da02676f480294f5cb72">Subtract()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a7e6b9de526cfb799bf674ee94f459486">Subtract1()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a744b2abd5f318c36a7e6157ad992d11c">Intersect()</a>, <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#abb2fed4af992bb7683d2ead7f0427441">Intersect1()</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

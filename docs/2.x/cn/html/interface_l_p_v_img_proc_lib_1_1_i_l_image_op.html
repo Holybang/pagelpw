@@ -1,0 +1,1345 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: ILImageOp接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></li><li class="navelem"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html">ILImageOp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">ILImageOp接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该接口类提供了图像基础和高级运算功能，如缩放、旋转、数值运算、多帧融合、多图平铺等。  
+ <a href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#details">更多...</a></p>
+<div class="dynheader">
+类 ILImageOp 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.png" usemap="#ILImageOp_map" alt=""/>
+  <map id="ILImageOp_map" name="ILImageOp_map">
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,0,72,24"/>
+<area href="class_l_p_v_img_proc_lib_1_1_l_image_op.html" alt="LImageOp" shape="rect" coords="0,112,72,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3e5def54f8136e79315f20cc80992cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a3e5def54f8136e79315f20cc80992cdf">Add</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a3e5def54f8136e79315f20cc80992cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17bc3e2a9a5ba1e1532f5e930039970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ab17bc3e2a9a5ba1e1532f5e930039970">AddWeighted</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, double alpha, double beta, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:ab17bc3e2a9a5ba1e1532f5e930039970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe14eacf1d5bc838d521a82f1ce0b6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#acfe14eacf1d5bc838d521a82f1ce0b6a">Blend</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:acfe14eacf1d5bc838d521a82f1ce0b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ce706b860d77991b5447d74ab7a6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a94ce706b860d77991b5447d74ab7a6ca">Diff</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a94ce706b860d77991b5447d74ab7a6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a28d791687c074c41b9c44d43bf858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa0a28d791687c074c41b9c44d43bf858">Divide</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:aa0a28d791687c074c41b9c44d43bf858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69163617efcc3e863d467bc147af34e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a69163617efcc3e863d467bc147af34e4">Flip</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="namespace_l_p_v_core_lib.html#aca29028958a911e3c81e54458680682f">LPVFlipType</a> flipType, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a69163617efcc3e863d467bc147af34e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2fdb50ded7f6231c8a2cf2a655bb66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a9e2fdb50ded7f6231c8a2cf2a655bb66">GainOffset</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, double gain, double offset)</td></tr>
+<tr class="separator:a9e2fdb50ded7f6231c8a2cf2a655bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009217aa93d3f41dfdf5a3c070264aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a009217aa93d3f41dfdf5a3c070264aab">Invert</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a009217aa93d3f41dfdf5a3c070264aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fb50f951e9df17d7243b6e7db56a9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a09fb50f951e9df17d7243b6e7db56a9c">Log</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double base, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a09fb50f951e9df17d7243b6e7db56a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c79b8eb70dff2f1169d0a06db7bad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ae7c79b8eb70dff2f1169d0a06db7bad1">Max</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:ae7c79b8eb70dff2f1169d0a06db7bad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca3e1de386b0ff5fb6fad7fd3a54d2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#afca3e1de386b0ff5fb6fad7fd3a54d2d">Min</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:afca3e1de386b0ff5fb6fad7fd3a54d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24a05c09037b92bf79e964ac8118c56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa24a05c09037b92bf79e964ac8118c56">Multiply</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:aa24a05c09037b92bf79e964ac8118c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51684082a5ca31d6db24aba6be294b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#af51684082a5ca31d6db24aba6be294b3">Pow</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double power, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:af51684082a5ca31d6db24aba6be294b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1501a3fbcf6b7f741134d9af0ceef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_array.html">LArray</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#afc1501a3fbcf6b7f741134d9af0ceef9">ProjectX</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType)</td></tr>
+<tr class="separator:afc1501a3fbcf6b7f741134d9af0ceef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af52d9cf013941f00b02e54831c8dec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_array.html">LArray</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a8af52d9cf013941f00b02e54831c8dec">ProjectY</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType)</td></tr>
+<tr class="separator:a8af52d9cf013941f00b02e54831c8dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b035d4123952719d670e3f9072029b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a2b035d4123952719d670e3f9072029b8">Resize</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double zoomX, double zoomY, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a2b035d4123952719d670e3f9072029b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d23a653d5816ffbb6089950840fa5c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a3d23a653d5816ffbb6089950840fa5c5">ResizeTo</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int w, int h, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a3d23a653d5816ffbb6089950840fa5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2cd12aabad596e032548b18af31928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double angle, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a5a2cd12aabad596e032548b18af31928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63734a869140124d46e534ec5fbadde3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double angle, double zoomX, double zoomY, double pivotImgX, double pivotImgY, double pivotResultX, double pivotResultY, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a63734a869140124d46e534ec5fbadde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a6aa20ebb5264ac83616ce57a100a7da0">Sub</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102798855741d439b8903234884713a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a102798855741d439b8903234884713a8">TileX</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, int columnCount, BOOL compactMode, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a102798855741d439b8903234884713a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee13ea45a863b3805c6d711be3b9672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a4ee13ea45a863b3805c6d711be3b9672">TileY</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, int rowCount, BOOL compactMode, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a4ee13ea45a863b3805c6d711be3b9672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f47cc18862bd892bae73e722c9443d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a1f47cc18862bd892bae73e722c9443d4">Transform</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a1f47cc18862bd892bae73e722c9443d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
+<tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74069eb14437a9a889322b62e52db75f inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
+<tr class="separator:a74069eb14437a9a889322b62e52db75f inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b6e3ad558d350e70a837c28554acf4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a86b6e3ad558d350e70a837c28554acf4">Save</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
+<tr class="separator:a86b6e3ad558d350e70a837c28554acf4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
+<tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a2e7696fb1229d15ab0022bafe882b69f"><td class="memItemLeft" align="right" valign="top"><a id="a2e7696fb1229d15ab0022bafe882b69f"></a>
+<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a2e7696fb1229d15ab0022bafe882b69f">BGColor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2e7696fb1229d15ab0022bafe882b69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景色，用于填充计算过程中未覆盖的像素，如 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a102798855741d439b8903234884713a8">TileX()</a>。默认设置为黑色。 <br /></td></tr>
+<tr class="separator:a2e7696fb1229d15ab0022bafe882b69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac665151de36f62491cbc143500cac3cd"><td class="memItemLeft" align="right" valign="top"><a id="ac665151de36f62491cbc143500cac3cd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ac665151de36f62491cbc143500cac3cd">ResultGain</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac665151de36f62491cbc143500cac3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">对运算结果进行增益，放大或缩小数值分布范围。需要是一个非零值，默认值为 1，即不缩放。 <br /></td></tr>
+<tr class="separator:ac665151de36f62491cbc143500cac3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memItemLeft" align="right" valign="top"><a id="aa89fd99d76e4f617802fdffabe63ef9a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa89fd99d76e4f617802fdffabe63ef9a">ResultOffset</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa89fd99d76e4f617802fdffabe63ef9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将运算结果加上偏移值，在增益 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ac665151de36f62491cbc143500cac3cd" title="对运算结果进行增益，放大或缩小数值分布范围。需要是一个非零值，默认值为 1，即不缩放。">ResultGain</a> 之后进行。默认值为 0，即无偏移。 <br /></td></tr>
+<tr class="separator:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该接口类提供了图像基础和高级运算功能，如缩放、旋转、数值运算、多帧融合、多图平铺等。 </p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_image_op.html">LImageOp</a> 对象。</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageOpPtr imgOp = LImageOp::Create();</div>
+<div class="line"><span class="comment">// resultImg = img * 1.1 + 20</span></div>
+<div class="line">imgOp-&gt;GainOffset(img, resultImg, 1.1, 20);</div>
+<div class="line"><span class="comment">// resultImg = avg(imgList)</span></div>
+<div class="line">imgOp-&gt;Blend(imgList, LPVAggregation::LPVAggAvg, resultImg);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageOp imgOp = <span class="keyword">new</span> LImageOp();</div>
+<div class="line"><span class="comment">// resultImg = img * 1.1 + 20</span></div>
+<div class="line">imgOp.GainOffset(img, resultImg, 1.1, 20);</div>
+<div class="line"><span class="comment">// resultImg = avg(imgList)</span></div>
+<div class="line">imgOp.Blend(imgList, LPVAggregation::LPVAggAvg, resultImg);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageOpPtr imgOp = LImageOp::Create();</div>
+<div class="line"><span class="comment">// or, ILImageOpPtr imgOp(__uuidof(LImageOp)), for absence of built-in Create functions (before 2.2.0)</span></div>
+<div class="line"><span class="comment">// resultImg = img * 1.1 + 20</span></div>
+<div class="line">imgOp-&gt;GainOffset(img, resultImg, 1.1, 20);</div>
+<div class="line"><span class="comment">// resultImg = avg(imgList)</span></div>
+<div class="line">imgOp-&gt;Blend(imgList, LPVAggregation::LPVAggAvg, resultImg);</div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a3e5def54f8136e79315f20cc80992cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5def54f8136e79315f20cc80992cdf">&#9670;&nbsp;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将两个图像逐像素相加，输出一个新图像， \( I&#39; = I_{1} + I_{2} \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab17bc3e2a9a5ba1e1532f5e930039970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17bc3e2a9a5ba1e1532f5e930039970">&#9670;&nbsp;</a></span>AddWeighted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddWeighted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将两个图像逐像素相加，输出一个新图像， \( I&#39; = I_{1} * alpha + I_{2} * beta \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>第一个输入图像的权重 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">beta</td><td>第二个输入图像的权重 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acfe14eacf1d5bc838d521a82f1ce0b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe14eacf1d5bc838d521a82f1ce0b6a">&#9670;&nbsp;</a></span>Blend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Blend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>&#160;</td>
+          <td class="paramname"><em>aggType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>多帧图像融合用于将多张同一场景的图像融合为一张。在不同的场景，通过使用不同的聚合方式达到不同目的。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">聚合方式   </th><th class="markdownTableHeadNone">效果    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">均值   </td><td class="markdownTableBodyNone">降低图像噪声，在光照条件不佳、亮度不断变化的场景下，获得更稳定的图像质量。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">最小值   </td><td class="markdownTableBodyNone">减少亮部区域，例如，用于减少过曝区域。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">最大值   </td><td class="markdownTableBodyNone">减少暗部区域，减少阴影    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">标准差   </td><td class="markdownTableBodyNone">结果图像中的较亮像素表示在多帧图像中该位置的像素值变化较大   </td></tr>
+</table>
+<p><em>注意：图像融合不支持其他为指明的聚合方式。</em></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>输入用于融合的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>融合方式 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出融合结果图像</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>样例</dt>
+<dd>ImageBlend.cpp/cs</dd>
+</dl>
+
+</div>
+</div>
+<a id="a94ce706b860d77991b5447d74ab7a6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ce706b860d77991b5447d74ab7a6ca">&#9670;&nbsp;</a></span>Diff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Diff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>两个图像逐像素差值，输出一个新图像， \( I&#39; = abs(I_{1} - I_{2}) \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0a28d791687c074c41b9c44d43bf858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a28d791687c074c41b9c44d43bf858">&#9670;&nbsp;</a></span>Divide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Divide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>第一个输入图像逐像素除以第二个输入图像的像素，输出一个新图像， \( I&#39; = I_{1} / I_{2} \) . 对于第二个图像中的 0 像素，输出结果为 0. 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a69163617efcc3e863d467bc147af34e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69163617efcc3e863d467bc147af34e4">&#9670;&nbsp;</a></span>Flip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Flip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#aca29028958a911e3c81e54458680682f">LPVFlipType</a>&#160;</td>
+          <td class="paramname"><em>flipType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>水平或垂直翻转一个图像。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flipType</td><td>翻转方式 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e2fdb50ded7f6231c8a2cf2a655bb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2fdb50ded7f6231c8a2cf2a655bb66">&#9670;&nbsp;</a></span>GainOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GainOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>图像增益和偏移， \( I&#39; = I * gain + offset \). </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>增益值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>偏移值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a009217aa93d3f41dfdf5a3c070264aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009217aa93d3f41dfdf5a3c070264aab">&#9670;&nbsp;</a></span>Invert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Invert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>反转图像， \( I&#39; = 255 - I \) 对 8 位图， \( I&#39; = 65535 - I \) 对 16 位图. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09fb50f951e9df17d7243b6e7db56a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fb50f951e9df17d7243b6e7db56a9c">&#9670;&nbsp;</a></span>Log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对输入图像进行逐像素对数运算，输出一个新图像， \( I&#39; = I^{power} \) . </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>输入的底数，必须为一个正数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7c79b8eb70dff2f1169d0a06db7bad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c79b8eb70dff2f1169d0a06db7bad1">&#9670;&nbsp;</a></span>Max()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Max </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>两个图像逐像素比较，取其最大值，输出一个新图像， \( I&#39; = \max (I_{1}, I_{2}) \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afca3e1de386b0ff5fb6fad7fd3a54d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca3e1de386b0ff5fb6fad7fd3a54d2d">&#9670;&nbsp;</a></span>Min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Min </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>两个图像逐像素比较，取其最小值，输出一个新图像， \( I&#39; = \min (I_{1}, I_{2}) \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa24a05c09037b92bf79e964ac8118c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24a05c09037b92bf79e964ac8118c56">&#9670;&nbsp;</a></span>Multiply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>两个图像逐像素相乘，输出一个新图像， \( I&#39; = I_{1} \cdot I_{2} \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af51684082a5ca31d6db24aba6be294b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51684082a5ca31d6db24aba6be294b3">&#9670;&nbsp;</a></span>Pow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>power</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对输入图像进行逐像素幂运算，输出一个新图像， \( I&#39; = I^{power} \) . </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">power</td><td>输入的指数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afc1501a3fbcf6b7f741134d9af0ceef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1501a3fbcf6b7f741134d9af0ceef9">&#9670;&nbsp;</a></span>ProjectX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_l_array.html">LArray</a>&lt;double&gt; ProjectX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>&#160;</td>
+          <td class="paramname"><em>aggType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>水平投影图像，聚合每一行上的像素 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>投影时所使用的聚合方式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>返回投影获得的结果向量，这是一组浮点数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8af52d9cf013941f00b02e54831c8dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af52d9cf013941f00b02e54831c8dec">&#9670;&nbsp;</a></span>ProjectY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_l_array.html">LArray</a>&lt;double&gt; ProjectY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>&#160;</td>
+          <td class="paramname"><em>aggType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>垂直投影图像，聚合每一列上的像素 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>投影时所使用的聚合方式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>返回投影获得的结果向量，这是一组浮点数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2b035d4123952719d670e3f9072029b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b035d4123952719d670e3f9072029b8">&#9670;&nbsp;</a></span>Resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td>
+          <td class="paramname"><em>interMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>缩放输入图像，按照给定的缩放比例。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a3d23a653d5816ffbb6089950840fa5c5">ResizeTo()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a1f47cc18862bd892bae73e722c9443d4">Transform()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3d23a653d5816ffbb6089950840fa5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d23a653d5816ffbb6089950840fa5c5">&#9670;&nbsp;</a></span>ResizeTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResizeTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td>
+          <td class="paramname"><em>interMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>缩放输入图像到指定的尺寸。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>输出图像的宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>输出图像的高度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a2b035d4123952719d670e3f9072029b8">Resize()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a1f47cc18862bd892bae73e722c9443d4">Transform()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5a2cd12aabad596e032548b18af31928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2cd12aabad596e032548b18af31928">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rotate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td>
+          <td class="paramname"><em>interMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>顺时针旋转输入图像，输出一个新图像，使用图像中心作为旋转中心。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>旋转角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a63734a869140124d46e534ec5fbadde3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63734a869140124d46e534ec5fbadde3">&#9670;&nbsp;</a></span>ScaleRotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScaleRotate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pivotImgX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pivotImgY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pivotResultX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pivotResultY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td>
+          <td class="paramname"><em>interMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>缩放和旋转输入图像，使用用户指定的锚点。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>顺时针旋转角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotImgX</td><td>输入图像上的锚点的 x 坐标。该锚点将作为缩放和旋转的中心。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotImgY</td><td>输入图像上的锚点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultX</td><td>结果图像上的锚点的 x 坐标。该锚点位置上的像素与输入图像锚点位置上的像素为“同一个”。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultY</td><td>结果图像上的锚点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a3d23a653d5816ffbb6089950840fa5c5">ResizeTo()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a1f47cc18862bd892bae73e722c9443d4">Transform()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6aa20ebb5264ac83616ce57a100a7da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa20ebb5264ac83616ce57a100a7da0">&#9670;&nbsp;</a></span>Sub()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sub </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>两个图像逐像素相减，输出一个新图像， \( I&#39; = I_{1} - I_{2} \) . 两个输入图像的尺寸需相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a102798855741d439b8903234884713a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102798855741d439b8903234884713a8">&#9670;&nbsp;</a></span>TileX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columnCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>compactMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>水平平铺一组图像，合成一张大尺寸图像 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>输入的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columnCount</td><td>每行的图像个数。若队列中的图像总数不被整除，则最后一行的剩余像素将被填充为背景色。<br  />
+传入 0 或负数，用于生成单行的合成图像。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>在紧凑模式下（True），一行中的图像被紧密地连续排布。 否则（False），结果图像的尺寸由输入图像中的最大长宽决定，其中较小的图像将被放置在对应行列的中心。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>样例</dt>
+<dd>TileImage.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a4ee13ea45a863b3805c6d711be3b9672">TileY()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4ee13ea45a863b3805c6d711be3b9672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee13ea45a863b3805c6d711be3b9672">&#9670;&nbsp;</a></span>TileY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>compactMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>垂直平铺一组图像，合成一张大尺寸图像 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>输入的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowCount</td><td>每列的图像个数。若队列中的图像总数不被整除，则最后一列的剩余像素将被填充为背景色。<br  />
+传入 0 或负数，用于生成单列的合成图像。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>在紧凑模式下（True），一行中的图像被紧密地连续排布。 否则（False），结果图像的尺寸由输入图像中的最大长宽决定，其中较小的图像将被放置在对应行列的中心。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>样例</dt>
+<dd>TileImage.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a102798855741d439b8903234884713a8">TileX()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1f47cc18862bd892bae73e722c9443d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f47cc18862bd892bae73e722c9443d4">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *&#160;</td>
+          <td class="paramname"><em>tf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td>
+          <td class="paramname"><em>interMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>应用指定的变换矩阵到输入图像，得到一个新的图像。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>变换矩阵 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>样例</dt>
+<dd>LinearTransform.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a2b035d4123952719d670e3f9072029b8">Resize()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a3d23a653d5816ffbb6089950840fa5c5">ResizeTo()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate()</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

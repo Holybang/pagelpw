@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found</title>
+    <script>
+        var url = window.location.href;
+        if (url.indexOf("/2.x/") !== -1 || url.indexOf("/1.x/") !== -1) {
+            window.location.href = "/";
+        }
+        else if (url.indexOf("/en/") !== -1) {
+            window.location.href = url.replace("/en/", "/2.x/en/");
+        }
+        else if (url.indexOf("/cn/") !== -1) {
+            window.location.href = url.replace("/cn/", "/2.x/cn/");
+        }
+        else {
+            window.location.href = "/";
+        }
+    </script>
+  </head>
+</html>

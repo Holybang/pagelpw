@@ -1,0 +1,431 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: ILHistogram接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">1.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></li><li class="navelem"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html">ILHistogram</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a>  </div>
+  <div class="headertitle">
+<div class="title">ILHistogram接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该接口类提供了计算图像直方图的功能。  
+ <a href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#details">更多...</a></p>
+<div class="dynheader">
+类 ILHistogram 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a224974bdf8cadeeca3eeff325bb6afa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a224974bdf8cadeeca3eeff325bb6afa4">Build</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, int binCount, int lowerBound, int upperBound)</td></tr>
+<tr class="separator:a224974bdf8cadeeca3eeff325bb6afa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa043d1fcfa1848cdbb8e30f0da8d39a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#aa043d1fcfa1848cdbb8e30f0da8d39a2">BuildFromDataVec</a> (SAFEARRAY *dataVec, int binCount, double lowerBound, double upperBound)</td></tr>
+<tr class="separator:aa043d1fcfa1848cdbb8e30f0da8d39a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ffb370593685192e8a363a326b80f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a03ffb370593685192e8a363a326b80f6">Draw</a> (HDC hdc, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a> drawFlags, int xGridStep, int yGridStep)</td></tr>
+<tr class="separator:a03ffb370593685192e8a363a326b80f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8071f51feee163d084fe2f9eb850b636"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a8071f51feee163d084fe2f9eb850b636">Item</a> (int index)</td></tr>
+<tr class="separator:a8071f51feee163d084fe2f9eb850b636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6645e9be5b37153839bc3ae8df272a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#aa6645e9be5b37153839bc3ae8df272a0">MeanStdDev</a> (double *meanValue, double *stdDevValue)</td></tr>
+<tr class="separator:aa6645e9be5b37153839bc3ae8df272a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a90d114151f990d985ea83e875b07f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a75a90d114151f990d985ea83e875b07f">MinMax</a> (int *minIdx, double *minValue, int *maxIdx, double *maxValue)</td></tr>
+<tr class="separator:a75a90d114151f990d985ea83e875b07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该接口类提供了计算图像直方图的功能。 </p>
+<p>图像直方图将输入图像中的像素按照其灰度值，统计其数值在给定范围和步长上的分布。 在一个视觉系统中，图像直方图通常用于观察和分析输入图像的亮度和对比度状态，用于调整整个视觉系统的光学成像。 也可根据直方图中隐含的灰度特征，用于目标识别和检测。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_histogram.html">LHistogram</a> 对象。</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILHistogramPtr m_hist(__uuidof(LHistogram));</div>
+<div class="line">m_hist-&gt;Build(m_img, m_roi, 256, 0, 255);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LHistogram m_hist = <span class="keyword">new</span> LHistogram();</div>
+<div class="line">m_hist.Build(m_img, m_roi, 256, 0, 255);</div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a224974bdf8cadeeca3eeff325bb6afa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a224974bdf8cadeeca3eeff325bb6afa4">&#9670;&nbsp;</a></span>Build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Build </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>binCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lowerBound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>upperBound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于输入图像和区域，生成直方图。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入区域，可为空（检测全图） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">binCount</td><td>将直方图分为若干个统计区域，推荐设置为总数据范围的因子，比如对一个灰度图，常用设置为 256 ，128，32 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>统计数据范围的下限，比如对一个灰度图，常用设置为 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>统计数据范围的上限，比如对一个灰度图，常用设置为 255. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#aa043d1fcfa1848cdbb8e30f0da8d39a2">BuildFromDataVec()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa043d1fcfa1848cdbb8e30f0da8d39a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa043d1fcfa1848cdbb8e30f0da8d39a2">&#9670;&nbsp;</a></span>BuildFromDataVec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BuildFromDataVec </td>
+          <td>(</td>
+          <td class="paramtype">SAFEARRAY *&#160;</td>
+          <td class="paramname"><em>dataVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>binCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lowerBound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>upperBound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>基于输入图像和区域，生成直方图。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataVec</td><td>输入数值向量，这是一组浮点数值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">binCount</td><td>将直方图分为若干个统计区域。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>统计数据范围的下限。默认设置上下限均为 0，表示将计算和使用输入数据的最小和最大值作为上下限。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>统计数据范围的上限。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a224974bdf8cadeeca3eeff325bb6afa4">Build()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a03ffb370593685192e8a363a326b80f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ffb370593685192e8a363a326b80f6">&#9670;&nbsp;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Draw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a>&#160;</td>
+          <td class="paramname"><em>drawFlags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xGridStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yGridStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将直方图绘制到给定的设备，使用索引作为 x 轴、数值作为 y 轴。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8071f51feee163d084fe2f9eb850b636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8071f51feee163d084fe2f9eb850b636">&#9670;&nbsp;</a></span>Item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Item </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取某一个直方图区域的值，表示数值落入该区域的像素总数。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>直方图区域的索引。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">value</td><td>输出该直方图区域的值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6645e9be5b37153839bc3ae8df272a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6645e9be5b37153839bc3ae8df272a0">&#9670;&nbsp;</a></span>MeanStdDev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MeanStdDev </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>meanValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>stdDevValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>计算直方图的均值和标准差。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">meanValue</td><td>返回均值。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stdDevValue</td><td>返回标准差。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75a90d114151f990d985ea83e875b07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a90d114151f990d985ea83e875b07f">&#9670;&nbsp;</a></span>MinMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinMax </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>minIdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>minValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>maxIdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>maxValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>查找直方图上的最大和最小值，及其对应的索引。若有多个区域的值相同，返回第一个区域。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">minIdx</td><td>返回最小值对应的索引。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">minValue</td><td>返回最小值。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">maxIdx</td><td>返回最大值对应的索引。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">maxValue</td><td>返回最大值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>重置直方图，清空当前直方图中的所有数据和统计值。 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

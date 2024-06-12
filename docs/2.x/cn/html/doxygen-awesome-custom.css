@@ -1,0 +1,8 @@
+/* custom.css */
+html {
+    /* define light-mode variable overrides here */
+	
+	/* The content is centered and constraint in it's width. To make the content fill the whole page, set the variable to auto.*/
+    --content-maxwidth: 1200px;
+	
+}

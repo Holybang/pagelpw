@@ -1,0 +1,231 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: 快速上手 - Linux</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">快速上手 - Linux </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>目录</h3>
+<ul><li class="level1"><a href="#autotoc_md4">配置要求</a></li>
+<li class="level1"><a href="#autotoc_md5">安装</a><ul><ul><li class="level3"><a href="#autotoc_md6">安装 x86_64 版本</a></li>
+<li class="level3"><a href="#autotoc_md7">安装 arm64 版本</a></li>
+</ul>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md8">授权</a><ul><ul><li class="level3"><a href="#autotoc_md9">使用 License 文件进行授权</a></li>
+</ul>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md10">集成和调用</a><ul><ul><li class="level3"><a href="#autotoc_md11">集成 LPW</a></li>
+<li class="level3"><a href="#autotoc_md12">添加 LPW 到 CMake 工程</a></li>
+<li class="level3"><a href="#autotoc_md13">添加 LPW 到 Qt 工程</a></li>
+</ul>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t01_quick_guide_linux"></a></p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+配置要求</h1>
+<p>LPW 可在 x86 或 ARM 版本的 Linux 系统上运行，目前仅支持 x64 版本。更多细节，请查阅 <a class="el" href="sys_requirements.html">平台支持和最低配置要求</a> 。</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+安装</h1>
+<p>下载并解压 <b>lpw_sdk_x.x.x.x_linux_arch.tar.gz</b> 到任意文件夹。</p>
+<h3><a class="anchor" id="autotoc_md6"></a>
+安装 x86_64 版本</h3>
+<p><code>mkdir lpv &amp; tar -xf lpv_sdk_x.x.x.x_linux_x86_64.tar.gz -C lpv</code></p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+安装 arm64 版本</h3>
+<p><code>mkdir lpv &amp; tar -xf lpv_sdk_x.x.x.x_linux_arm64.tar.gz -C lpv</code></p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+授权</h1>
+<h3><a class="anchor" id="autotoc_md9"></a>
+使用 License 文件进行授权</h3>
+<ol type="1">
+<li>运行 LPW <b>bin</b> 目录下的 <b>lpvKeyTool.exe</b> ，生成 <b>lpv.key</b> 文件。</li>
+<li>将生成的 lpv.key 文件发给我们或者您的 LPW SDK 技术支持，我们将为您的机器进行授权，并发回 **.lic** 授权文件。</li>
+<li>您需要将授权文件手动放置在以下任一目录下：<ul>
+<li>LPW <b>lib</b> 文件夹</li>
+<li>/home/LPV/</li>
+</ul>
+</li>
+</ol>
+<p><br  />
+ </p><hr  />
+<h1><a class="anchor" id="autotoc_md10"></a>
+集成和调用</h1>
+<h3><a class="anchor" id="autotoc_md11"></a>
+集成 LPW</h3>
+<p>在 Linux 平台，LPW 接口通过 C 符号导出，然后封装为易用性更好的 C++ 类和接口。</p>
+<p>在调用方的 C++ 代码中，添加 <code>#include "LPVXXX.h"</code> 引用所需的 LPW 模块，然后通过静态的 <code>LClass::Create()</code> 函数创建对应的 LPW 算法类实例。以下提供了一段简单的调用示例代码： </p><div class="fragment"><div class="line"><span class="comment">// 添加 include</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span>;</div>
+<div class="line"><span class="preprocessor">#include &quot;LPVGeom.h&quot;</span>;</div>
+<div class="line"><span class="preprocessor">#include &quot;LPVPat.h&quot;</span>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_l_p_v_pat_lib.html">LPVPatLib</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 创建算法类实例</span></div>
+<div class="line"><span class="comment">// 以下创建了一个 LMatch 对象，并获取了指向其的 ILMatch 接口类指针</span></div>
+<div class="line">ILMatchPtr lmatch = LMatch::Create();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 调用接口函数，如下，设置模板匹配数量，设置角度范围</span></div>
+<div class="line">lmatch-&gt;MaxCount = 1;</div>
+<div class="line">lmatch-&gt;AngleTolerance = 180;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 调用接口函数，处理返回错误码，如下，进行模板匹配</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = lmatch-&gt;Match(sourceImg, roi, out matchResults);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != LPVErrorCode::LPVNoError) {}</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:427</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
+<div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV 几何库，提供几何形状相关的数据定义、计算和测量功能。</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:80</div></div>
+<div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV 模板匹配模块，用于提供模板匹配功能。</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:80</div></div>
+</div><!-- fragment --><p><br  />
+</p>
+<h3><a class="anchor" id="autotoc_md12"></a>
+添加 LPW 到 CMake 工程</h3>
+<p>编辑 CMakeList.txt，添加 include 路径和库链接路径。 </p><div class="fragment"><div class="line"><span class="preprocessor"># 设置 C++ 标准为至少 cpp11</span></div>
+<div class="line">set(CMAKE_CXX_STANDARD 11)</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 添加 include 路径</span></div>
+<div class="line"><span class="preprocessor"># ${LPV_INCLUDE_PATH} 指向 include 文件夹</span></div>
+<div class="line">target_include_directories(${PROJECT_NAME} ${LPV_INCLUDE_PATH})</div>
+<div class="line"> </div>
+<div class="line"># 链接到 lpv 模块</div>
+<div class="line"># ${LPV_LIB_PATH} 指向 lib 文件夹</div>
+<div class="line"><span class="keyword">function</span>(link_lpv_lib module_name)</div>
+<div class="line">    find_library(LPV_LIBRARY_${module_name} NAMES ${module_name} PATHS ${LPV_LIB_PATH})</div>
+<div class="line">    <span class="keywordflow">if</span>(NOT LPV_LIBRARY_${module_name})</div>
+<div class="line">        message(<span class="stringliteral">&quot;!!!! LPV_LIBRARY_${module_name} not found&quot;</span>)</div>
+<div class="line">    else()</div>
+<div class="line">        target_link_libraries(${PROJECT_NAME} ${LPV_LIBRARY_${module_name}})</div>
+<div class="line">    endif()</div>
+<div class="line">endfunction()</div>
+<div class="line"> </div>
+<div class="line">link_lpv_lib(lpvCore)</div>
+<div class="line">link_lpv_lib(lpvGeom)</div>
+<div class="line">link_lpv_lib(lpvPat)</div>
+</div><!-- fragment --><p><br  />
+</p>
+<h3><a class="anchor" id="autotoc_md13"></a>
+添加 LPW 到 Qt 工程</h3>
+<p>如果您正在使用 Qt Creator,</p>
+<ol type="1">
+<li>右键项目，选择 <b>添加库</b> 。</li>
+<li>选择 <b>外部库</b> ，然后点击下一步。</li>
+<li>将 <b>库文件</b> 路径指向 LPW <b>lib</b> 文件夹下的动态链接库。</li>
+<li>将 <b>包含路径</b> 路径指向 LPW <b>include</b> 文件夹。</li>
+<li>勾选 <b>Linux</b> 平台和 <b>动态</b> 链接。</li>
+<li>点击下一步，然后完成。</li>
+</ol>
+<p>或者，您也可以手动编辑 .pro 文件，如下所示：</p>
+<div class="fragment"><div class="line"><span class="preprocessor"># 添加 include 路径</span></div>
+<div class="line"><span class="preprocessor"># ${LPV_INCLUDE_PATH} 指向 include 文件夹</span></div>
+<div class="line">INCLUDEPATH += $$LPV_INCLUDE_PATH</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 链接到 lpv 模块</span></div>
+<div class="line"><span class="preprocessor"># ${LPV_LIB_PATH} 指向 lib 文件夹</span></div>
+<div class="line"> </div>
+<div class="line">LIBS += -L$$LPV_LIB_PATH -llpvCore -llpvGeom -llpvPat</div>
+<div class="line">DEPENDPATH += $$LPV_LIB_PATH</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> 不支持 </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><p> 手动编辑 .pro 文件，如下所示：</p>
+<div class="fragment"><div class="line"><span class="preprocessor"># 启用 COM 接口</span></div>
+<div class="line">DEFINES += LPV_COM</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 添加 include 路径</span></div>
+<div class="line"><span class="preprocessor"># ${LPV_INCLUDE_PATH} 指向 include 文件夹</span></div>
+<div class="line">INCLUDEPATH += $$LPV_INCLUDE_PATH</div>
+</div><!-- fragment --></div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

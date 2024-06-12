@@ -1,0 +1,266 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: LDisplay 显示控件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">LDisplay 显示控件 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>目录</h3>
+<ul><li class="level1"><a href="#autotoc_md38">如何添加显示控件到工程</a><ul><li class="level2"><a href="#autotoc_md39">方法 1: 使用工具箱</a></li>
+<li class="level2"><a href="#autotoc_md40">方法 2: 使用类向导（MFC）</a></li>
+<li class="level2"><a href="#autotoc_md41">方法 3: 使用 #import 指令（C++）</a></li>
+<li class="level2"><a href="#autotoc_md42">方法 4: 添加引用（C#）</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md43">在代码中创建 LDisplay 控件</a><ul><li class="level2"><a href="#autotoc_md44">示例代码（在UI程序中使用）</a></li>
+<li class="level2"><a href="#autotoc_md45">示例代码（在控制台程序中使用）</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t03_use_display_control"></a> <b>注意</b>：绘制函数和 <a class="el" href="use_display_control.html">LDisplay Control</a> 仅在 Windows 平台实现，其他平台保留接口但无任何调用效果。</p>
+<p><br  />
+</p>
+<p><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html">LDisplay</a> 显示控件基于 Win32 GDI 接口开发，用于显示和操作可绘制的 LPW 对象，如图像、区域、几何图形等，可无缝嵌入到 OEM 应用及设备平台，帮助机器视觉解决方案的快速开发。</p>
+<ul>
+<li>同时显示大尺寸图像、海量的几何图形和算法结果</li>
+<li>支持鼠标拖拽、缩放或使用滚动条改变显示区域</li>
+<li>支持鼠标操作编辑 Region 对象</li>
+<li>支持适应尺寸到当前窗口、某一个显示图形或指定区域</li>
+<li>支持保存当前图像和显示截图到文件</li>
+<li>支持自定义辅助线显示</li>
+<li>支持显示鼠标位置及对应像素值</li>
+</ul>
+<p><em>用户也可以选择另一种更灵活的显示调用方式，使用 LPW 类型自带的<a class="el" href="use_draw_functions.html">绘制函数</a></em></p>
+<p><img src="t03_07_displayctrl.png" alt="" class="inline" title="LDisplay Control"/></p>
+<h1><a class="anchor" id="autotoc_md38"></a>
+如何添加显示控件到工程</h1>
+<p>模块: <b>lpvDisplay.dll</b></p>
+<p><em>注意: 请确保所需 LPW 算法库均已注册并授权。</em></p>
+<h2><a class="anchor" id="autotoc_md39"></a>
+方法 1: 使用工具箱</h2>
+<p><b>步骤 1</b> - 在所需配置的工程的资源界面，右键点击工具箱窗口的任意位置，在菜单中点击 <b>选择项</b> 。</p>
+<p><img src="t03_01_rmc_choose_items.png" alt="" class="inline" title="T03 01 Rmc Choose Items"/></p>
+<p><b>步骤 2</b> - 选择工具箱项窗口列出系统中已注册的所有可添加到工具箱的组件，其中打勾项为已经添加的组件。</p>
+<p><b>步骤 3 (A)</b> - 选择 <b>COM组件</b> 页面，在列表中勾选 <b>LDispaly class</b> 组件，然后点击 <b>确定</b> 。可以在工具箱中找到刚加入的 LDisplay 控件。</p>
+<p><img src="t03_02_choose_items_dialog.png" alt="" class="inline" title="T03 02 Choose Items Dialog"/></p>
+<p><b>步骤 3 (B)</b> - 或者，也可以通过浏览到 <b>lpvDisplay.dll</b> 文件所在位置的方式，添加 LDisplay 控件。</p>
+<p><b>步骤 4</b> - 之后，您就可以在工具箱中通过双击或拖拽LDisplay控件，将其添加到 MFC 或 .NET 窗口中。相关的引用配置将被自动添加到工程文件。</p>
+<p><img src="t03_03_display_control_in_design.png" alt="" class="inline" title="T03 03 Display Control In Design"/></p>
+<h2><a class="anchor" id="autotoc_md40"></a>
+方法 2: 使用类向导（MFC）</h2>
+<p><b>步骤 1</b> - 在所需配置的工程的解决方案页面，右键点击该项目，在菜单中选择 <b>类向导</b> 。</p>
+<p><img src="t03_04_rmc_class_wizard.png" alt="" class="inline" title="T03 04 Rmc Class Wizard"/></p>
+<p><b>步骤 2</b> - 选择并打开 <b>从 ActiveX 控件添加类向导</b> 窗口。</p>
+<p><img src="t03_05_add_class_from_activex_control.png" alt="" class="inline" title="T03 05 Add Class From ActiveX Control"/></p>
+<p><b>步骤 3</b> - 选择从 <b>文件</b> 来源添加类，浏览并打开 <b>lpvDisplay.dll</b> 文件所在位置.</p>
+<p><b>步骤 4</b> - 选择 <b>ILDisplay</b> 接口并单击添加，生成相应的封装类。</p>
+<p><img src="t03_06_add_interface_wrapper_class.png" alt="" class="inline" title="T03 06 Add Interface Wrapper Class"/></p>
+<p><b>步骤 5</b> - 点击 <b>完成**然后**确定</b> 。工程中将新增自动生成的 CLDisplay.h 和 CLDisplay.cpp 文件。</p>
+<p><b>步骤 6</b> - 之后，您就可以在工程中添加相关代码，使用该显示控件。更多使用样例，请查阅 <b>demo/mfcdemo/MFCDisplay</b> 样例工程。</p>
+<p>或者，您也可以直接使用我们在发布版本中附带的封装类。.h和.cpp位于 demo/mfcdemo/Wrappers/LPVDisplay 文件加中，您需要引用 <b>LPVDisplay.h</b> ，并将 CLDisplay.cpp 加到工程中。</p>
+<h2><a class="anchor" id="autotoc_md41"></a>
+方法 3: 使用 #import 指令（C++）</h2>
+<p>该指令用于导入类型库中的类、接口等信息。更多细节，请参考 <a href="https://docs.microsoft.com/zh-cn/cpp/preprocessor/hash-import-directive-cpp">https://docs.microsoft.com/zh-cn/cpp/preprocessor/hash-import-directive-cpp</a> 。</p>
+<p>在代码中添加以下导入命令：</p>
+<div class="fragment"><div class="line"><span class="comment">// 使用 LPVDisplay 模块的 uuid</span></div>
+<div class="line"><span class="preprocessor">#import &quot;libid:5b289f4f-ebc9-4a41-bd94-07f4a4e4e5f6&quot;</span></div>
+</div><!-- fragment --><p>-or-</p>
+<div class="fragment"><div class="line"><span class="comment">// 使用 LPVDisplay 模块文件所在的路径</span></div>
+<div class="line"><span class="preprocessor">#import &quot;Y:\\bin\\x86\\lpvDisplay.dll&quot;</span></div>
+</div><!-- fragment --><p>-or-</p>
+<div class="fragment"><div class="line"><span class="comment">// 使用 LDisplay 类的 progid</span></div>
+<div class="line"><span class="preprocessor">#import &quot;progid:LPV.LDisplay&quot;</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
+方法 4: 添加引用（C#）</h2>
+<p>您可以按照使用其他 LPW 模块的方式，添加 LPVDisplay 模块到 C# 工程：</p>
+<ol type="1">
+<li>右键工程的 Reference 项，点击 Add Reference</li>
+<li>选择 COM 页面，找到并添加 LPVDisplayLib，勾选后点击 OK 。</li>
+<li>在代码文件中添加 <code>using <a class="el" href="namespace_l_p_v_display_lib.html" title="LPV 显示模块模块，提供 UI 控件，用于图像、region、几何形状及算法结果的显示和交互。">LPVDisplayLib</a>;</code></li>
+</ol>
+<h1><a class="anchor" id="autotoc_md43"></a>
+在代码中创建 LDisplay 控件</h1>
+<h2><a class="anchor" id="autotoc_md44"></a>
+示例代码（在UI程序中使用）</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line"><span class="keywordtype">void</span> QtDisplay::OnBnClickedBtnDisplayDlg()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// create a prompt display dialog</span></div>
+<div class="line">    QDialog displayDlg(<span class="keyword">this</span>);</div>
+<div class="line">    QAxWidget displayWgt(&amp;displayDlg);</div>
+<div class="line">    displayWgt.setControl(QStringLiteral(<span class="stringliteral">&quot;LPV.LDisplay&quot;</span>));</div>
+<div class="line"> </div>
+<div class="line">    QHBoxLayout* l = <span class="keyword">new</span> QHBoxLayout(&amp;displayDlg);</div>
+<div class="line">    l-&gt;addWidget(&amp;displayWgt);</div>
+<div class="line">    l-&gt;setMargin(0);</div>
+<div class="line">    displayDlg.setLayout(l);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// show it</span></div>
+<div class="line">    displayDlg.resize(QSize(400, 300));</div>
+<div class="line">    displayDlg.exec();</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">namespace </span>CSharpDisplay</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">public</span> <span class="keyword">partial class </span>CSharpDisplay : Form</div>
+<div class="line">    {</div>
+</div><!-- fragment --><div class="fragment"><div class="line">        <span class="keyword">private</span> <span class="keywordtype">void</span> btnDisplayDlg_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// create a prompt display dialog</span></div>
+<div class="line">            Form prompt = <span class="keyword">new</span> Form();</div>
+<div class="line">            </div>
+<div class="line">            <span class="comment">// create a display control, add it to the dialog</span></div>
+<div class="line">            AxLDisplay displayCtrlInDlg = <span class="keyword">new</span> AxLDisplay();</div>
+<div class="line">            displayCtrlInDlg.Dock = System.Windows.Forms.DockStyle.Fill;</div>
+<div class="line">            prompt.Controls.Add(displayCtrlInDlg);</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">// resize the dialog and show it</span></div>
+<div class="line">            prompt.Width = 600;</div>
+<div class="line">            prompt.Height = 400;</div>
+<div class="line">            prompt.Text = <span class="stringliteral">&quot;Display Dialog&quot;</span>;</div>
+<div class="line">            prompt.ShowDialog();</div>
+<div class="line">        }</div>
+</div><!-- fragment --><div class="fragment"><div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">class </span>CDisplayDialog : <span class="keyword">public</span> CDialog</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">explicit</span> CDisplayDialog(UINT nIDTemplate, CWnd* pParentWnd = NULL) :</div>
+<div class="line">        CDialog(nIDTemplate, pParentWnd) {}</div>
+<div class="line"> </div>
+<div class="line">    CLDisplay displayCtrl;</div>
+<div class="line">    <span class="keyword">virtual</span> BOOL OnInitDialog()</div>
+<div class="line">    {</div>
+<div class="line">        CDialog::OnInitDialog();</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// get the dialog&#39;s size and position</span></div>
+<div class="line">        RECT r;</div>
+<div class="line">        GetClientRect(&amp;r);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// create a display control, add it to the dialog</span></div>
+<div class="line">        displayCtrl.Create(L<span class="stringliteral">&quot;Display Control&quot;</span>,</div>
+<div class="line">            WS_CHILD | WS_VISIBLE,</div>
+<div class="line">            r, <span class="keyword">this</span>, 0);</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> TRUE;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> CMFCDisplayDlg::OnBnClickedBtnDisplayDlg()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// create a prompt display dialog, see CDisplayDialog::OnInitDialog for implementation</span></div>
+<div class="line">    CDisplayDialog displayDlg(IDD_DISPLAY_DLG, <span class="keyword">this</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// show it</span></div>
+<div class="line">    displayDlg.DoModal();</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div> <h2><a class="anchor" id="autotoc_md45"></a>
+示例代码（在控制台程序中使用）</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImagePtr resultImg = LImage::Create();</div>
+<div class="line"><span class="comment">// show result in the display control, close the window to continue</span></div>
+<div class="line">ILDisplayPtr displayCtrl(__uuidof(LDisplay));</div>
+<div class="line">displayCtrl-&gt;SetImage(LObjectToDispatch(*resultImg));</div>
+<div class="line">displayCtrl-&gt;ShowDialog(L<span class="stringliteral">&quot;Window Title&quot;</span>, 0, 0, 0, 0); <span class="comment">// full screen</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImagePtr resultImg = <span class="keyword">new</span> LImage();</div>
+<div class="line"><span class="comment">// show result in the display control, close the window to continue</span></div>
+<div class="line">LDisplay displayCtrl = <span class="keyword">new</span> LDisplay();</div>
+<div class="line">displayCtrl.SetImage(resultImg);</div>
+<div class="line">displayCtrl.ShowDialog(<span class="stringliteral">&quot;Window Title&quot;</span>); <span class="comment">// full screen</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImagePtr resultImg(__uuidof(LImage));</div>
+<div class="line"><span class="comment">// show result in the display control, close the window to continue</span></div>
+<div class="line">ILDisplayPtr displayCtrl(__uuidof(LDisplay));</div>
+<div class="line">displayCtrl-&gt;SetImage(resultImg);</div>
+<div class="line">displayCtrl-&gt;ShowDialog(L<span class="stringliteral">&quot;Window Title&quot;</span>, 0, 0, 0, 0); <span class="comment">// full screen</span></div>
+</div><!-- fragment --> </div>  </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

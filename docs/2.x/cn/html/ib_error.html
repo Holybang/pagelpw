@@ -1,0 +1,390 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPW: 灵闪（IntelliBlink）错误码对照</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpw_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper WaferScan Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">灵闪（IntelliBlink）错误码对照 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t07_iberror_lookup_table"></a> 该页面用于查找 <a class="el" href="namespace_l_p_v_i_b_lib.html">IB Service</a> 模块在连接或调用灵闪功能时，可能获得的错误码及其含义。 通常在返回值不为 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a>，需要在下表中查看错误码的对照信息。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">错误码   </th><th class="markdownTableHeadLeft">说明    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80000001   </td><td class="markdownTableBodyLeft">实例化 Engine 失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80000002   </td><td class="markdownTableBodyLeft">Engine 版本过低    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80000003   </td><td class="markdownTableBodyLeft">无法获取 Request-Control    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80000004   </td><td class="markdownTableBodyLeft">无法获取 Request-Notify    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80000005   </td><td class="markdownTableBodyLeft">Engine 服务未初始化    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80001001   </td><td class="markdownTableBodyLeft">已存在某个解决方案，无法再创建或打开其他解决方案    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80001002   </td><td class="markdownTableBodyLeft">解决方案不存在，无法使用    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80001003   </td><td class="markdownTableBodyLeft">初始化解决方案失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80001004   </td><td class="markdownTableBodyLeft">反初始化解决方案失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80001005   </td><td class="markdownTableBodyLeft">解决方案信息校验失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80001010   </td><td class="markdownTableBodyLeft">创建作业失败，输入参数错误    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80001011   </td><td class="markdownTableBodyLeft">创建作业失败，当前总作业数量已达上限    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80001012   </td><td class="markdownTableBodyLeft">创建或更改作业名称失败，该名称与已有作业的名称重复    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80001013   </td><td class="markdownTableBodyLeft">删除作业失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80001020   </td><td class="markdownTableBodyLeft">加载解决方案失败，路径非法    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80001021   </td><td class="markdownTableBodyLeft">保存解决方案失败，路径非法    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80001022   </td><td class="markdownTableBodyLeft">加载设备管理器失败，打开文件失败，或该文件未包含任何设备管理相关信息    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002001   </td><td class="markdownTableBodyLeft">作业 ID 非法    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002002   </td><td class="markdownTableBodyLeft">作业类型错误    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002003   </td><td class="markdownTableBodyLeft">该作业没有绑定任何图像源    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002004   </td><td class="markdownTableBodyLeft">该作业的所有执行工作线程均为繁忙状态    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002005   </td><td class="markdownTableBodyLeft">初始化作业失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002006   </td><td class="markdownTableBodyLeft">反初始化作业失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002007   </td><td class="markdownTableBodyLeft">创建作业默认虚拟相机失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002008   </td><td class="markdownTableBodyLeft">创建作业默认虚拟图像源失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002009   </td><td class="markdownTableBodyLeft">作业中的特殊变量 ID 非法    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002010   </td><td class="markdownTableBodyLeft">创建算法工具失败，输入参数错误    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002011   </td><td class="markdownTableBodyLeft">创建算法工具失败，当前作业中的总算法工具数量已达上限    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002012   </td><td class="markdownTableBodyLeft">创建或更改算法工具名称失败，该名称与已有算法工具的名称重复    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002013   </td><td class="markdownTableBodyLeft">复制算法工具失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002014   </td><td class="markdownTableBodyLeft">删除算法工具失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002015   </td><td class="markdownTableBodyLeft">算法工具排序失败，可能存在算法工具间的依赖成环等问题    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002016   </td><td class="markdownTableBodyLeft">Quick-Cast失败：无法找到所需的算法工具包    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002017   </td><td class="markdownTableBodyLeft">Quick-Cast失败：算法工具包的类型与作业类型不匹配    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002018   </td><td class="markdownTableBodyLeft">Quick-Cast失败：创建算法工具失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002020   </td><td class="markdownTableBodyLeft">无法打开指定文件    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002021   </td><td class="markdownTableBodyLeft">读取或解析指定文件失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002022   </td><td class="markdownTableBodyLeft">创建标定作业失败，相关标定作业已存在    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002023   </td><td class="markdownTableBodyLeft">复制作业失败，可能是由于没有找到匹配的作业 ID    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002024   </td><td class="markdownTableBodyLeft">同步或应用作业配置失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002025   </td><td class="markdownTableBodyLeft">批量查找同类型的参数失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002026   </td><td class="markdownTableBodyLeft">该作业实例保留的图像为空    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80002027   </td><td class="markdownTableBodyLeft">导出算法工具失败，检测到非法全局变量依赖    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80002028   </td><td class="markdownTableBodyLeft">导入算法工具失败，文件中包含错误的属性配置    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003001   </td><td class="markdownTableBodyLeft">算法工具 ID 非法    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003002   </td><td class="markdownTableBodyLeft">初始化算法工具失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003003   </td><td class="markdownTableBodyLeft">反初始化算法工具失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003004   </td><td class="markdownTableBodyLeft">算法工具校验失败，算法工具的版本与当前灵闪版本不匹配    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003005   </td><td class="markdownTableBodyLeft">执行算法工具事件失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003006   </td><td class="markdownTableBodyLeft">算法工具类型不匹配且不兼容    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003010   </td><td class="markdownTableBodyLeft">更新依赖失败，未知的依赖类型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003011   </td><td class="markdownTableBodyLeft">更新依赖失败，未知的依赖关键字    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003012   </td><td class="markdownTableBodyLeft">更新依赖失败，非法依赖源    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003013   </td><td class="markdownTableBodyLeft">获取依赖失败，未知的依赖类型    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003014   </td><td class="markdownTableBodyLeft">获取依赖失败，未知的依赖关键字    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003020   </td><td class="markdownTableBodyLeft">算法工具参数 ID 非法    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003021   </td><td class="markdownTableBodyLeft">算法工具参数名称非法    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003022   </td><td class="markdownTableBodyLeft">更新算法工具参数失败（固定值）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003023   </td><td class="markdownTableBodyLeft">获取算法工具参数失败（固定值）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003024   </td><td class="markdownTableBodyLeft">算法工具参数的显示名称非法    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003030   </td><td class="markdownTableBodyLeft">ROI 添加失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003031   </td><td class="markdownTableBodyLeft">ROI 删除失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003032   </td><td class="markdownTableBodyLeft">ROI 顺序修改失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003033   </td><td class="markdownTableBodyLeft">ROI 属性修改失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80003034   </td><td class="markdownTableBodyLeft">ROI 属性获取失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80003035   </td><td class="markdownTableBodyLeft">更新 ROI 失败，基于全图坐标系    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80004001   </td><td class="markdownTableBodyLeft">未知或不支持的执行类型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80004002   </td><td class="markdownTableBodyLeft">执行失败，无输入图像    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80004003   </td><td class="markdownTableBodyLeft">执行失败，无空闲执行工作线程    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80004004   </td><td class="markdownTableBodyLeft">执行失败，表达式编译失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80004005   </td><td class="markdownTableBodyLeft">执行失败，未找到包含最新实例的工作线程    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80004006   </td><td class="markdownTableBodyLeft">执行失败，表达式中的依赖项目丢失    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80005001   </td><td class="markdownTableBodyLeft">未找到指定 ID 对应的相机    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80005002   </td><td class="markdownTableBodyLeft">未知或不支持的相机类型    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80005003   </td><td class="markdownTableBodyLeft">创建相机失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80005004   </td><td class="markdownTableBodyLeft">删除相机失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80005005   </td><td class="markdownTableBodyLeft">删除相机对象失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80005006   </td><td class="markdownTableBodyLeft">获取相机配置失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80005007   </td><td class="markdownTableBodyLeft">更新相机配置失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80005010   </td><td class="markdownTableBodyLeft">打开相机失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80005011   </td><td class="markdownTableBodyLeft">关闭相机失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80005012   </td><td class="markdownTableBodyLeft">开启相机失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80005013   </td><td class="markdownTableBodyLeft">停止相机失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80005014   </td><td class="markdownTableBodyLeft">触发拍照失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80005015   </td><td class="markdownTableBodyLeft">修改相机触发模式失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80006001   </td><td class="markdownTableBodyLeft">未找到指定ID对应的通信设备    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80006002   </td><td class="markdownTableBodyLeft">未知或不支持的通信设备类型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80006003   </td><td class="markdownTableBodyLeft">创建通信设备失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80006004   </td><td class="markdownTableBodyLeft">删除通信设备失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80006005   </td><td class="markdownTableBodyLeft">获取通信设备配置失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80006006   </td><td class="markdownTableBodyLeft">创建或更改通信设备名称失败，该名称与已有通信设备的名称重复    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80006007   </td><td class="markdownTableBodyLeft">串口格式错误，合法格式为：COM1，COM2等    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80006008   </td><td class="markdownTableBodyLeft">IP地址格式错误，合法格式为：xxx.xxx.xxx.xxx，如127.0.0.1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80006009   </td><td class="markdownTableBodyLeft">IP地址和端口格式错误，合法格式为：xxx.xxx.xxx.xxx:port，如127.0.0.1:502    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x8000600a   </td><td class="markdownTableBodyLeft">端口号冲突，该端口已被占用    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x8000600b   </td><td class="markdownTableBodyLeft">TCP端口的范围为0 ~ 65535    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x8000600c   </td><td class="markdownTableBodyLeft">UDP目标端口的范围为1025 ~ 65535，静态端口的范围为 0 ~ 65535    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x8000600d   </td><td class="markdownTableBodyLeft">通信设备名称不可为空    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80007001   </td><td class="markdownTableBodyLeft">未找到指定ID对应的图像源    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80007002   </td><td class="markdownTableBodyLeft">未知或不支持的图像源类型    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80007003   </td><td class="markdownTableBodyLeft">创建图像源失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80007004   </td><td class="markdownTableBodyLeft">删除图像源失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80007005   </td><td class="markdownTableBodyLeft">设置前置图像源失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80009001   </td><td class="markdownTableBodyLeft">未找到指定名称的算法模块    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x8000f001   </td><td class="markdownTableBodyLeft">指定 ID 不属于任何循环开始或循环结果工具    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x8000f002   </td><td class="markdownTableBodyLeft">指定的自定义算法控件不存在    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x8000f003   </td><td class="markdownTableBodyLeft">初始化自定义算法控件失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x8000f004   </td><td class="markdownTableBodyLeft">标定作业开始编辑失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x8000f005   </td><td class="markdownTableBodyLeft">标定作业结束编辑失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80010001   </td><td class="markdownTableBodyLeft">Request-Control：所有保存线程均被占用    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80010002   </td><td class="markdownTableBodyLeft">Request-Control：另存为所指定的文件已经存在    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80011001   </td><td class="markdownTableBodyLeft">Request-Notify：无相关监听    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80011002   </td><td class="markdownTableBodyLeft">Request-Notify：注册监听时使用了非法标志    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80013001   </td><td class="markdownTableBodyLeft">未找到指定关键字对应的事件通知    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80013002   </td><td class="markdownTableBodyLeft">创建事件通知失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80013003   </td><td class="markdownTableBodyLeft">删除事件通知失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80014001   </td><td class="markdownTableBodyLeft">创建绑定动作失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80014002   </td><td class="markdownTableBodyLeft">删除绑定动作失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80015001   </td><td class="markdownTableBodyLeft">未找到指定 ID 对应的全局变量    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80015002   </td><td class="markdownTableBodyLeft">未找到指定显示名称对应的全局变量    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80015003   </td><td class="markdownTableBodyLeft">未知或不支持的全局变量类型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80015004   </td><td class="markdownTableBodyLeft">全局变量的数值未初始化    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80015005   </td><td class="markdownTableBodyLeft">创建或更改全局变量名称失败，该名称与已有全局变量的名称重复    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x80015006   </td><td class="markdownTableBodyLeft">加载全局变量失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x80015007   </td><td class="markdownTableBodyLeft">保存全局变量失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x8001f001   </td><td class="markdownTableBodyLeft">文件夹目录路径为空    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x8001f002   </td><td class="markdownTableBodyLeft">移除文件失败    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x8001f003   </td><td class="markdownTableBodyLeft">移除文件夹失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x8001f004   </td><td class="markdownTableBodyLeft">当前操作不支持该文件类型    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x00002000   </td><td class="markdownTableBodyLeft">作业加载时，某些算法工具并未正确加载    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x00002001   </td><td class="markdownTableBodyLeft">作业加载时，某些输出适配器并未正确加载    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x00002002   </td><td class="markdownTableBodyLeft">作业保存时，某些算法工具并未正确保存    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x00002003   </td><td class="markdownTableBodyLeft">作业保存时，某些输出适配器并未正确保存    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x00002004   </td><td class="markdownTableBodyLeft">同时更新多ROI遇到未知且无法处理的错误    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x00002005   </td><td class="markdownTableBodyLeft">导出算法工具时，某些依赖关系丢失    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x00002006   </td><td class="markdownTableBodyLeft">算法工具删除时，某些工具删除失败    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x00003000   </td><td class="markdownTableBodyLeft">删除图像源时，该图像源已不存在    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x00003001   </td><td class="markdownTableBodyLeft">删除通信监听时，该通信监听已不存在    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x00003002   </td><td class="markdownTableBodyLeft">删除绑定动作时，该绑定动作已不存在    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x00004000   </td><td class="markdownTableBodyLeft">加载通信设备失败，该文件无法读取或未包含任何通信设备    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">0x00004001   </td><td class="markdownTableBodyLeft">加载相机设备失败，该文件无法读取或未包含任何相机设备    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">0x00004002   </td><td class="markdownTableBodyLeft">加载全局变量、通信监听、事件通知文件失败，该文件无法读取或未包含任何相关信息   </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>
